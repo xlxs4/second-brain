@@ -2,3 +2,4 @@
 - install: [Excalidraw](obsidian://show-plugin?id=obsidian-excalidraw-plugin)
 - enable: Excalidraw
 - install: [git](obsidian://show-plugin?id=obsidian-git)
+- enable: git
