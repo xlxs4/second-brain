@@ -25,3 +25,6 @@
 - enable: hover editor
 - install: [emoji toolbar](obsidian://show-plugin?id=obsidian-emoji-toolbar)
 - enable: emoji toolbar
+- `Settings` -> `Appearance` -> `Base theme` -> `Light`
+- `Settings` -> `Appearance` -> `Manage`
+- install: `Things` theme
