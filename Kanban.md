@@ -10,6 +10,9 @@ kanban-plugin: basic
 
 ## todo
 
+- [ ] Create Project list
+- [ ] Create Goal list
+- [ ] Create Areas list
 
 
 ## in progress
