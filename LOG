@@ -5,3 +5,23 @@
 - enable: git
 - command: `Obsidian Git: Create backup`
 - command: `Obsidian Git: Push`
+- install: [admonition](obsidian://show-plugin?id=obsidian-admonition)
+- enable: admonition
+- install: [sliding panes](obsidian://show-plugin?id=sliding-panes-obsidian)
+- enable: sliding panes
+- install: [kanban](obsidian://show-plugin?id=obsidian-kanban)
+- enable: kanban
+- install: [advanced tables](obsidian://show-plugin?id=table-editor-obsidian)
+- enable: advanced tables
+- install: [auto link title](obsidian://show-plugin?id=obsidian-auto-link-title)
+- enable: auto link title
+- install: [url into selection](obsidian://show-plugin?id=url-into-selection)
+- enable: url into selection
+- install: [citation](obsidian://show-plugin?id=obsidian-citation-plugin)
+- enable: citation
+- install: [ozan's image in editor](obsidian://show-plugin?id=oz-image-plugin)
+- enable: ozan's image in editor
+- install: [hover editor](obsidian://show-plugin?id=obsidian-hover-editor)
+- enable: hover editor
+- install: [emoji toolbar](obsidian://show-plugin?id=obsidian-emoji-toolbar)
+- enable: emoji toolbar
