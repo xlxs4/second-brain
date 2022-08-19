@@ -4,11 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "0ee39a686f0a740e",
+        "id": "5ca3e47d41d5dd46",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "kanban",
+          "state": {
+            "file": "Kanban.md"
+          }
         }
       }
     ],
@@ -73,6 +75,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Kanban.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +92,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Kanban.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -110,7 +114,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Kanban.md"
+              }
             }
           },
           {
@@ -128,6 +134,9 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "6f4dbf3a700f8a7b",
-  "lastOpenFiles": []
+  "active": "5ca3e47d41d5dd46",
+  "lastOpenFiles": [
+    "Kanban.md",
+    "README.md"
+  ]
 }
