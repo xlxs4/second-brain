@@ -3,3 +3,5 @@
 - enable: Excalidraw
 - install: [git](obsidian://show-plugin?id=obsidian-git)
 - enable: git
+- command: `Obsidian Git: Create backup`
+- command: `Obsidian Git: Push`
