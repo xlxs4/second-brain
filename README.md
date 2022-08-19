@@ -37,11 +37,11 @@ To whoever might find this useful, I did a thing. This is a distilled look into 
 - **A**rchives: *If none*, inactive items from the other three categories
   things I've completed or am no longer working on (review is important for this)
 
+---
+
 - don't organize by source, organize by actionability: "where will I use this info?"
 - organize for project, not by topic
-
 - every now and then, as part of a Review, put the Project list side-by-side with a Goal list and draw lines to match
-
 - The important distinction between Projects and Areas is the deadline
 - Projects *always* fall into Areas
 - A task can belong to no Project but to an Area
@@ -55,9 +55,10 @@ To whoever might find this useful, I did a thing. This is a distilled look into 
 - **D**istill
 - **E**xpress
 
+---
+
 - Collect should be *separate* from Organize. Don't have the mental burden on where to put the things you capture, just capture them
   - Organize should happen *opportunisticly*, only when you want to *use* the information
-
 - Work towards defining favorite problems like Feynman's 12 favorite problems
 
 ---
