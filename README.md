@@ -23,6 +23,21 @@ To whoever might find this useful, I did a thing. This is a distilled look into 
   - build different things from the same blocks
 - package things for your future self
 - share frequently, get as much feedback as possible; at every step along the way
+- each day:
+	- decide the order: determine what to work on the day, and at which order
+		- pay more attention to the first tasks of the day, rather than the later ones
+		- do some weekly review to help you with determining the upcoming tasks and their order
+		- do monthly reviews to cross-check progress on long-term goals
+	- split into process/background tasks, and immersive tasks
+		- background tasks are more important than immersive tasks
+		- identify the small things you can do that will start unlocking great value, e.g. asking a question about an upcoming meeting early in the morning
+	- use placeholders for open loops
+		- everything that you must devote your time to is a request, externalize/offload these requests from your mind to your (mostly digital) surroundings
+		- jot down a thought somewhere, add something to your calendar, capture an open loop to your task manager/kanban...
+	- have a finishing mindset
+		- if something is at 99% but not finished, it's of zero value
+		- finishing a tangible chunk of work means you get to have feedback!
+		- "how and when will I finish this?" -> don't make a plan for starting things, make a plan for finishing things
 
 ### Main Techniques
 
