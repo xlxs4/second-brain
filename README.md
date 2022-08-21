@@ -91,18 +91,19 @@ To whoever might find this useful, I did a thing. This is a distilled look into 
 
 ### Resources
 
-- https://notes.andymatuschak.org/About_these_notes
-- https://www.youtube.com/watch?v=fJMP6fg_eIQ
-- https://www.youtube.com/watch?v=jfXE6VCBo3k
-- https://www.zsolt.blog/2021/07/sketchnoting-for-pkm.html
-- https://www.zsolt.blog/2021/07/sketchnoting-book-in-obsidian.html
-- https://fortelabs.co/blog/para/
-- https://fortelabs.co/blog/p-a-r-a-ii-operations-manual/
-- https://fortelabs.co/blog/progressive-summarization-a-practical-technique-for-designing-discoverable-notes/
-- https://www.youtube.com/watch?v=pWcHBmJLvLc
-- https://www.youtube.com/watch?v=3i4CiImIYYA
-- https://www.youtube.com/watch?v=KTsw020KFf0
-- https://www.youtube.com/watch?v=Mo-o4c2pzYE
+- [About these notes](https://notes.andymatuschak.org/About_these_notes)
+- [The First Principles of Visual Note-Taking - YouTube](https://www.youtube.com/watch?v=fJMP6fg_eIQ)
+- [How to Sketchnote a Book - YouTube](https://www.youtube.com/watch?v=jfXE6VCBo3k)
+- [Sketchnoting for PKM](https://www.zsolt.blog/2021/07/sketchnoting-for-pkm.html)
+- [Sketchnoting a Book in Obsidian](https://www.zsolt.blog/2021/07/sketchnoting-book-in-obsidian.html)
+- [The PARA Method: A Universal System for Organizing Digital Information - Forte Labs](https://fortelabs.co/blog/para/)
+- [PARA Part 2: Operations Manual - Forte Labs](https://fortelabs.co/blog/p-a-r-a-ii-operations-manual/)
+- [Progressive Summarization: A Practical Technique for Designing Discoverable Notes - Forte Labs](https://fortelabs.co/blog/progressive-summarization-a-practical-technique-for-designing-discoverable-notes/)
+- [Mind mapping with Excalidraw-Obsidian - YouTube](https://www.youtube.com/watch?v=pWcHBmJLvLc)
+- [Part 1 Building a Second Brain Book on a Page - YouTube](https://www.youtube.com/watch?v=3i4CiImIYYA)
+- [Part 2 Behind the Scenes 1/2: Note highlights and initial sketches. Creating the BASB Book on a Page - YouTube](https://www.youtube.com/watch?v=KTsw020KFf0)
+- [Part 3 Behind the Scenes 2/2: Creating the final book on a page for Building a Second Brain - YouTube](https://www.youtube.com/watch?v=Mo-o4c2pzYE)
+- [The Productivity Secret of Michelin-Star Chefs | Work Clean by Dan Charnas - YouTube](https://www.youtube.com/watch?v=Wbznh-bPoEg)
 
 ### Plugins
 
