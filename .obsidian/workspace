@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "5ca3e47d41d5dd46",
+        "id": "0803ef612e4a3e8f",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README.md",
+            "file": "Playground.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Playground.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Playground.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,29 +117,25 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Playground.md"
               }
-            }
-          },
-          {
-            "id": "6f4dbf3a700f8a7b",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {}
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
   },
-  "active": "5ca3e47d41d5dd46",
+  "active": "0803ef612e4a3e8f",
   "lastOpenFiles": [
+    "Excalidraw/grad-anti-opt.excalidraw.md",
+    "Excalidraw/max-min-opt.excalidraw.md",
+    "Playground.md",
     "Kanban.md",
+    "Excalidraw/Playground.excalidraw.md",
     "README.md"
   ]
 }
