@@ -32,7 +32,13 @@ $Qf(\vec{p}) : X \subset R^n \rightarrow R, Qf(\vec{p})(x) = x^T\nabla^2f(p)x = 
 - *αρνητικά ορισμένος*, όταν $Qf(p)(x)<0, \forall x \in R^n$, με $x \neq 0$ 
 - *θετικά ημιορισμένος*, όταν $Qf(p)(x)\ge 0, \forall x \in R^n$
 - *αρνητικά ημιορισμένος*, όταν $Qf(p)(x)\le 0, \forall x \in R^n$
-- *αόριστος*, όταν υπάρχουν $u, v \in R^n$ με $Qf(p)(u)>0 και Qf(p)(v)<0$
+- *αόριστος*, όταν υπάρχουν $u, v \in R^n$ με $Qf(p)(u)>0$ και $Qf(p)(v)<0$
+```
+
+```ad-important
+1. Αν ο $\nabla^2f(x^*)$ είναι *θετικά ορισμένος* τότε το $x^*$ είναι *τοπικός ελαχιστοποιητής* της $f$
+2. Αν ο $\nabla^2f(x^*)$ είναι *αρνητικά ορισμένος* τότε το $x^*$ είναι *τοπικός βελτιστοποιητής* της $f$
+3. Αν ο $\nabla^2f(x^*)$ είναι *αόριστος* τότε το $x^*$ *δεν* είναι τοπικός βελτιστοποιητής της $f$
 ```
 
 ```ad-note
@@ -90,3 +96,16 @@ $Qf(\vec{p}) : X \subset R^n \rightarrow R, Qf(\vec{p})(x) = x^T\nabla^2f(p)x = 
 Επομένως, ο $x^*_\alpha$ είναι *τοπικός ελαχιστοποιητής* της $f$, ενώ ο $x^*_\beta$ *δεν* είναι τοπικός βελτιστοποιητής της συνάρτησης $f$.
 ```
 
+```ad-note
+*Πρωτεύουσες ελάσσονες ορίζουσες* του Εσσιανού πίνακα $\nabla^2f(p)$:
+
+$\Delta_1 = \frac{\partial^2f(p)}{\partial x^2_1}$,
+
+$\Delta_2 = \begin{vmatrix}\frac{\partial^2f(p)}{\partial x^2_1} & \frac{\partial^2f(p)}{\partial x_1\partial x_2}\\ \frac{\partial^2f(p)}{\partial x_2 x_1} & \frac{\partial^2f(p)}{\partial x^2_2}\end{vmatrix}$
+
+$\Delta_3 = \begin{vmatrix}\frac{\partial^2f(p)}{\partial x^2_1} & \frac{\partial^2f(p)}{\partial x_1\partial x_2} & \frac{\partial^2f(p)}{\partial x_1\partial x_3}\\ \frac{\partial^2f(p)}{\partial x_2 x_1} & \frac{\partial^2f(p)}{\partial x^2_2} & \frac{\partial^2f(p)}{\partial x_2 x_3}\\ \frac{\partial^2f(p)}{\partial x_3 x_1} & \frac{\partial^2f(p)}{\partial x_3\partial x_2} & \frac{\partial^2f(p)}{\partial x^2_3}\end{vmatrix}$
+
+$\vdots$
+
+$\Delta_n = |\nabla^2f(p)|$
+```
