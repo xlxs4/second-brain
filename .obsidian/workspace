@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Playground.md",
+            "file": "Optimization.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Playground.md",
+                "file": "Optimization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Playground.md",
+                "file": "Optimization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Playground.md"
+                "file": "Optimization.md"
               }
             }
           }
@@ -131,9 +131,10 @@
   },
   "active": "0803ef612e4a3e8f",
   "lastOpenFiles": [
+    "Playground.md",
+    "Optimization.md",
     "Excalidraw/grad-anti-opt.excalidraw.md",
     "Excalidraw/max-min-opt.excalidraw.md",
-    "Playground.md",
     "Kanban.md",
     "Excalidraw/Playground.excalidraw.md",
     "README.md"
