@@ -131,15 +131,15 @@
   },
   "active": "358cb7eff90f9eed",
   "lastOpenFiles": [
-    "Optimization/Chapter-2.md",
+    "Excalidraw/descent-direction-opt.excalidraw.md",
     "Optimization/Chapter-3.md",
+    "Excalidraw/descent-vecs-opt.excalidraw.md",
+    "Optimization/Chapter-2.md",
     "Optimization.md",
     "Excalidraw/searching-α-step-opt.excalidraw.md",
     "Excalidraw/general-algo-opt.excalidraw.md",
     "Excalidraw/grad-anti-opt.excalidraw.md",
     "Excalidraw/max-min-opt.excalidraw.md",
-    "Kanban.md",
-    "Playground.md",
-    "Excalidraw/Playground.excalidraw.md"
+    "Kanban.md"
   ]
 }
