@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "0803ef612e4a3e8f",
+        "id": "358cb7eff90f9eed",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Optimization.md",
+            "file": "Optimization/Chapter-3.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Optimization.md",
+                "file": "Optimization/Chapter-3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Optimization.md",
+                "file": "Optimization/Chapter-3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Optimization.md"
+                "file": "Optimization/Chapter-3.md"
               }
             }
           }
@@ -129,14 +129,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "0803ef612e4a3e8f",
+  "active": "358cb7eff90f9eed",
   "lastOpenFiles": [
-    "Playground.md",
+    "Optimization/Chapter-2.md",
+    "Optimization/Chapter-3.md",
     "Optimization.md",
+    "Excalidraw/searching-α-step-opt.excalidraw.md",
+    "Excalidraw/general-algo-opt.excalidraw.md",
     "Excalidraw/grad-anti-opt.excalidraw.md",
     "Excalidraw/max-min-opt.excalidraw.md",
     "Kanban.md",
-    "Excalidraw/Playground.excalidraw.md",
-    "README.md"
+    "Playground.md",
+    "Excalidraw/Playground.excalidraw.md"
   ]
 }

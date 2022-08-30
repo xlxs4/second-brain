@@ -1,4 +1,20 @@
-## Chapter 2
+# Chapter 2
+
+```ad-abstract
+Βελτιστοποίηση χωρίς περιορισμούς - εύρεση τοπικών βελτιστοποιητών. Τρεις προσεγγίσεις:
+
+1. Με **τετραγωνική μορφή** Εσσιανού ($\nabla^2$):
+  $Qf(\vec{p})(x) = x^T\nabla^2f(p)x = \sum_{i=1}^{n}\sum_{j=1}^{n}\frac{\partial^2f(p)}{\partial x_i\partial x_j}x_i x_j$
+3. Με **πρωτεύουσες ελάσσονες ορίζουσες**:
+  $\Delta_1 = \frac{\partial^2f(p)}{\partial x^2_1}$,
+  $\Delta_2 = \begin{vmatrix}\frac{\partial^2f(p)}{\partial x^2_1} & \frac{\partial^2f(p)}{\partial x_1\partial x_2}\\ \frac{\partial^2f(p)}{\partial x_2 x_1} & \frac{\partial^2f(p)}{\partial x^2_2}\end{vmatrix}$
+  $\Delta_3 = \begin{vmatrix}\frac{\partial^2f(p)}{\partial x^2_1} & \frac{\partial^2f(p)}{\partial x_1\partial x_2} & \frac{\partial^2f(p)}{\partial x_1\partial x_3}\\ \frac{\partial^2f(p)}{\partial x_2 x_1} & \frac{\partial^2f(p)}{\partial x^2_2} & \frac{\partial^2f(p)}{\partial x_2 x_3}\\ \frac{\partial^2f(p)}{\partial x_3 x_1} & \frac{\partial^2f(p)}{\partial x_3\partial x_2} & \frac{\partial^2f(p)}{\partial x^2_3}\end{vmatrix}$
+  $\cdots$
+  $\Delta_n = |\nabla^2f(p)|$
+3. Με **ιδιοτιμές** Εσσιανού
+
+Ανεξάρτητα από την προσέγγιση, πρώτα υπολογίζω **πρώτες μερικές παραγώγους** για την κλίση $\nabla f$, τις χρησιμοποιώ για να βρω τα **κρίσιμα σημεία** όπου $\nabla f = \begin{bmatrix} 0 & 0 & 0\end{bmatrix}^T$. Έπειτα υπολογίζω **δεύτερες μερικές παραγώγους** για τον Εσσιανό $\nabla^2f$
+```
 
 ```ad-note
 $$ max(f(\vec{x})) = -min(-f(\vec{x})) $$
@@ -250,7 +266,3 @@ $f(x_1, x_2, x_3) = x^3_1 + x^2_2 + x^2_3 - 3x_1$
    - **Πρωτεύουσες ελάσσονες ορίζουσες**: Υπολογίζω με βάση τον Εσσιανό και αντικαθιστώ στις ορίζουσες για κάθε κρίσιμο σημείο **ή**
    - χρησιμοποιώ τις **ιδιοτιμές** και αντικαθιστώ για κάθε κρίσιμο σημείο
 ```
-
-## Chapter 3
-
-
