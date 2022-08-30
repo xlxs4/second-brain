@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "358cb7eff90f9eed",
+        "id": "9df8b1a1d288d783",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -129,17 +129,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "358cb7eff90f9eed",
+  "active": "9df8b1a1d288d783",
   "lastOpenFiles": [
-    "Excalidraw/descent-direction-opt.excalidraw.md",
+    "Excalidraw/steepest-descent-vertical-opt.excalidraw.md",
     "Optimization/Chapter-3.md",
+    "Excalidraw/descent-direction-opt.excalidraw.md",
+    "Excalidraw/steepest-descent.excalidraw.md",
+    "Excalidraw/line-search-methods-opt.excalidraw.md",
     "Excalidraw/descent-vecs-opt.excalidraw.md",
     "Optimization/Chapter-2.md",
     "Optimization.md",
     "Excalidraw/searching-α-step-opt.excalidraw.md",
-    "Excalidraw/general-algo-opt.excalidraw.md",
-    "Excalidraw/grad-anti-opt.excalidraw.md",
-    "Excalidraw/max-min-opt.excalidraw.md",
-    "Kanban.md"
+    "Excalidraw/general-algo-opt.excalidraw.md"
   ]
 }
