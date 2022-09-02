@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Optimization/02-07-2021.md",
+            "file": "Optimization/17-06-2020-b.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Optimization/02-07-2021.md",
+                "file": "Optimization/17-06-2020-b.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Optimization/02-07-2021.md",
+                "file": "Optimization/17-06-2020-b.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Optimization/02-07-2021.md"
+                "file": "Optimization/17-06-2020-b.md"
               }
             }
           }
@@ -132,14 +132,14 @@
   "active": "3669b95bb9dfcb94",
   "lastOpenFiles": [
     "Optimization/Chapter-2.md",
-    "Optimization/02-07-2021.md",
-    "3D-printing-101.md",
-    "Optimization/17-06-2020.md",
-    "Excalidraw/general-algo-opt.excalidraw.md",
     "Optimization/17-06-2020-b.md",
     "Optimization/06-04-2022.md",
-    "Excalidraw/grad-anti-opt.excalidraw.md",
+    "Optimization/02-07-2021.md",
     "Optimization/17-09-2021.md",
+    "Optimization/17-06-2020.md",
+    "3D-printing-101.md",
+    "Excalidraw/general-algo-opt.excalidraw.md",
+    "Excalidraw/grad-anti-opt.excalidraw.md",
     "Optimization/Chapter-3.md"
   ]
 }
