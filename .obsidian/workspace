@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "1994b9c343b73843",
+        "id": "3669b95bb9dfcb94",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "3D-printing-101.md",
+            "file": "Optimization/02-07-2021.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3D-printing-101.md",
+                "file": "Optimization/02-07-2021.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3D-printing-101.md",
+                "file": "Optimization/02-07-2021.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3D-printing-101.md"
+                "file": "Optimization/02-07-2021.md"
               }
             }
           }
@@ -129,17 +129,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "1994b9c343b73843",
+  "active": "3669b95bb9dfcb94",
   "lastOpenFiles": [
+    "Optimization/Chapter-2.md",
+    "Optimization/02-07-2021.md",
+    "3D-printing-101.md",
     "Optimization/17-06-2020.md",
     "Excalidraw/general-algo-opt.excalidraw.md",
     "Optimization/17-06-2020-b.md",
     "Optimization/06-04-2022.md",
-    "Optimization/Chapter-2.md",
     "Excalidraw/grad-anti-opt.excalidraw.md",
     "Optimization/17-09-2021.md",
-    "Optimization/Chapter-3.md",
-    "Optimization/playground-jl.md",
-    "Excalidraw/playground.excalidraw.md"
+    "Optimization/Chapter-3.md"
   ]
 }
