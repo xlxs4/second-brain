@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Optimization/Chapter-4.md",
+            "file": "Optimization/17-06-2020-b.md",
             "mode": "source",
             "source": false
           }
@@ -61,8 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 220.5,
-    "collapsed": true
+    "width": 220.5
   },
   "right": {
     "id": "84884291b19ff56e",
@@ -78,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Optimization/Chapter-4.md",
+                "file": "Optimization/17-06-2020-b.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Optimization/Chapter-4.md",
+                "file": "Optimization/17-06-2020-b.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Optimization/Chapter-4.md"
+                "file": "Optimization/17-06-2020-b.md"
               }
             }
           }
@@ -132,15 +131,15 @@
   },
   "active": "3ee19b67d9fb6823",
   "lastOpenFiles": [
-    "Optimization/Chapter-3.md",
     "Optimization/Chapter-4.md",
-    "Optimization/Chapter-2.md",
     "Optimization/17-06-2020-b.md",
+    "Assets/17-06-2020-b-opt.png",
+    "Optimization/Chapter-3.md",
+    "Optimization/Chapter-2.md",
     "Optimization/06-04-2022.md",
     "Optimization/02-07-2021.md",
     "Optimization/17-09-2021.md",
     "Optimization/17-06-2020.md",
-    "3D-printing-101.md",
-    "Excalidraw/general-algo-opt.excalidraw.md"
+    "3D-printing-101.md"
   ]
 }
