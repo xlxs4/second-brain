@@ -1,16 +1,17 @@
 # Chapter 4
 
 ```ad-abstract
-$x_{k+1} = x_k - \alpha_k \begin{bmatrix}\nabla^2 f(x_k)\end{bmatrix}^{-1}\nabla f(x_k)$
+$$x_{k+1} = x_k - \alpha_k \begin{bmatrix}\nabla^2 f(x_k)\end{bmatrix}^{-1}\nabla f(x_k)$$
 
 
 ```
 
 ```ad-important
-Μέθοδος Newton: $x_{k+1} = x_k - \alpha_k \begin{bmatrix}\nabla^2 f(x_k)\end{bmatrix}^{-1}\nabla f(x_k)$
+Μέθοδος Newton: 
+$$x_{k+1} = x_k - \alpha_k \begin{bmatrix}\nabla^2 f(x_k)\end{bmatrix}^{-1}\nabla f(x_k)$$
 
 Δηλαδή, η μέθοδος Newton εφαρμόζεται για την αναζήτηση τοπικού ελαχιστοποιητή στην κατεύθυνση
-$p_k = -\begin{bmatrix}\nabla^2 f(x_k)\end{bmatrix}^{-1}\nabla f(x_k)$
+$$p_k = -\begin{bmatrix}\nabla^2 f(x_k)\end{bmatrix}^{-1}\nabla f(x_k)$$
 ```
 
 ```ad-important
@@ -28,11 +29,45 @@ $p_k = -\begin{bmatrix}\nabla^2 f(x_k)\end{bmatrix}^{-1}\nabla f(x_k)$
 ```
 
 ```ad-note
-TODO: Cholesky, etc.
+TODO: Cholesky (when positively defined!), etc.
 ```
 
 ```ad-note
 TODO: summary on how to solve exercise
+```
+
+```ad-important
+TODO: συνάρτηση με μία μεταβλητή και Newton
+```
+
+```ad-example
+Προσδιορίστε τις τρεις πρώτες επαναλήψεις της μεθόδου Newton για τη λύση του προβλήματος βελτιστοποίησης
+$$\textrm{minimize}\: f(x) = x^4 -1$$
+
+Θεωρώντας το αρχικό σημείο $x_0 = 4$. Επιπλέον, προσδιορίστε αναλυτικά την ακολουθία $x_k$ της μεθόδου και αποδείξτε ότι αυτή συγκλίνει προς τον ελαχιστοποιητή $x^*$ του προβλήματος. Επίσης, υπολογίστε τον ρυθμό σύγκλισης και εξηγήστε το αποτέλεσμα
+
+---
+
+- $f'(x) = 4x^3$
+- $f''(x) = 12x^2$
+
+Η αναδρομική ακολουθία $x_k$ της Newton προκύπτει από
+
+$$x_{k+1} = x_k - \frac{f'(x_k)}{f''(x_k)} = \frac{2}{3}x_k$$
+
+Έχουμε $\begin{vmatrix}\frac{x_{k+1}}{x_k}\end{vmatrix} = \frac{2}{3} < 1$, άρα η ακολουθία $x_k$ *συγκλίνει* *για κάθε* επιλογή του αρχικού σημείου $x_0$
+
+Επίσης, από την $x_{k+1} = \frac{2}{3}x_k$ έχουμε $x_k = \begin{pmatrix}\frac{2}{3}\end{pmatrix}^k, \: x_0 = 4\begin{pmatrix}\frac{2}{3}\end{pmatrix}^k, \: k = 0, 1, 2, \dots$
+
+Οπότε, για τις επόμενες επαναλήψεις μπορούμε να βρούμε κατευθείαν χρησιμοποιώντας την ακολουθία:
+
+- $x_1 = 4\cdot\frac{2}{3} = \frac{8}{3}$
+- $x_2 = 4\cdot\frac{4}{9} = \frac{16}{9}$
+- $x_3 = 4\cdot\frac{8}{27} = \frac{32}{27}$
+
+Για να βρούμε τον ελαχιστοποιητή μπορούμε επομένως να υπολογίσουμε το όριο της $x_k$:
+
+$$\lim_{x\to\infty} x_k = \lim_{x\to\infty} 4 \cdot \begin{pmatrix}\frac{2}{3}\end{pmatrix}^k$$
 ```
 
 ```ad-note
