@@ -35,6 +35,10 @@ TODO: Cholesky, etc.
 TODO: summary on how to solve exercise
 ```
 
+```ad-note
+TODO: details on Newton, convergence, comparison with Steepest Descent
+```
+
 ```ad-summary
 TODO
 ```
