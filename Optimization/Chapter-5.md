@@ -53,3 +53,47 @@ $\nabla f = \lambda\nabla g$ και $g(x_1, x_2) = 0$ $\Rightarrow 3x^2_1 = 2\la
 - Δεσμευμένοι τοπικοί ελαχιστοποιητές: $\vec{x^*_2}, \: \vec{x^*_4}$
 - Δεσμευμένοι τοπικοί μεγιστοποιητές: $\vec{x^*_1}, \: \vec{x^*_3}$
 ```
+```ad-example
+Βρείτε τα σημεία δεσμευμένων τοπικών ακροτάτων της
+$$f(x_1, x_2, x_3) = x^2_1 + x^2_2 + x^2_3$$
+υπό τη δέσμευση
+$$g(x_1, x_2, x_3) = x_1 + x_2 + x_3 - 1 = 0$$
+
+---
+
+$f, \: g \: C^2$ στο $\mathit{R}^2$
+
+- $fx_1 = 2x_1$
+- $fx_2 = 2x_2$
+- $fx_3 = 2x_3$
+
+- $fx_1 x_1 = 2$
+- $fx_1 x_2 = fx_2 x_1 = 0$
+- $fx_1 x_3 = 0$
+- $fx_2 x_2 = 2$
+- $fx_2 x_3 = fx_3 x_2 = 0$
+- $fx_3 x_3 = 2$
+
+- $gx_1 = 1$
+- $gx_2 = 1$
+- $gx_3 = 1$
+
+$\mathit{H} = \nabla^2f = \begin{bmatrix}2 & 0 & 0\\ 0 & 2 & 0\\ 0 & 0 & 2\end{bmatrix}$
+
+Από πολλαπλασιαστή Lagrange:
+$$\nabla f(\vec{x}) - \lambda \nabla g(\vec{x}) = 0 \land g(\vec{x}) = 0 \Rightarrow (2x_1 - \lambda, 2x_2 - \lambda, 2x_3 - \lambda) = 0 \land x_1 + x_2 + x_3 = 1$$
+
+- $2x_1 = \lambda \Rightarrow x_1 = \frac{1}{3}$
+- $2x_2 = \lambda \Rightarrow x_2 = \frac{1}{3}$
+- $2x_3 = \lambda \Rightarrow x_3 = \frac{1}{3}$
+- $x_1 + x_2 + x_3 = 1 \Rightarrow \lambda = \frac{2}{3}$
+
+$$\Rightarrow (\vec{x}^*, \lambda^*) = \begin{pmatrix}\frac{1}{3} & \frac{1}{3} & \frac{1}{3} & \frac{2}{3}\end{pmatrix} = \frac{1}{3}\begin{pmatrix}1 & 1 & 1 & 2\end{pmatrix}$$
+
+$$\nabla^2\mathit{L}(\vec{x}^*, \lambda^*) = \begin{bmatrix}2 & 0 & 0 & -1\\ 0 & 2 & 0 & -1\\ 0 & 0 & 2 & -1\\ -1 & -1 & -1 & 0\end{bmatrix}$$
+
+- $\Delta_3 = 8 > 0$
+- $\Delta_4 = -12 < 0$
+
+Άρα, το $\vec{x}^* = \begin{bmatrix}\frac{1}{3} & \frac{1}{3} & \frac{1}{3}\end{bmatrix}^T$ είναι δεσμευμένο τοπικό μέγιστο της $f$
+```
