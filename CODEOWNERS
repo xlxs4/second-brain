@@ -1,0 +1,14 @@
+# CI configuration.
+.github/workflows @xlxs4
+
+# MkDocs configuration.
+mkdocs.yml @xlxs4
+
+# Python project dependencies.
+requirements.txt @xlxs4
+
+# Obsidian configuration log.
+LOG.md @xlxs4
+
+# Obsidian configuration.
+.obsidian/ @xlxs4
