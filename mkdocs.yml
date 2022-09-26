@@ -1,0 +1,43 @@
+site_name: xlxs4 second brain
+site_url: https://xlxs4.github.io/second-brain/
+site_dir: public
+docs_dir: ./docs
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - toc.follow
+    - toc.integrate
+  palette:
+    scheme: slate
+
+# Built-in extensions.
+markdown_extensions:
+  - footnotes # https://squidfunk.github.io/mkdocs-material/reference/footnotes/
+  - attr_list # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/#attribute-lists
+  - pymdownx.highlight # https://facelessuser.github.io/pymdown-extensions/extensions/highlight/
+  - pymdownx.superfences # https://facelessuser.github.io/pymdown-extensions/extensions/superfences/
+  - pymdownx.details # https://facelessuser.github.io/pymdown-extensions/extensions/details/
+  - pymdownx.magiclink # https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/
+  - pymdownx.saneheaders # https://facelessuser.github.io/pymdown-extensions/extensions/saneheaders/
+  - pymdownx.tasklist # https://facelessuser.github.io/pymdown-extensions/extensions/tasklist/
+  - pymdownx.emoji # https://facelessuser.github.io/pymdown-extensions/extensions/emoji/
+  - admonition # https://squidfunk.github.io/mkdocs-material/reference/admonitions/
+  - toc:
+      permalink: true # https://python-markdown.github.io/extensions/toc/
+
+# Community plugins.
+plugins:
+  - search # https://www.mkdocs.org/user-guide/configuration/#search
+  - roamlinks # https://github.com/Jackiexiao/mkdocs-roamlinks-plugin
+  - exclude: # https://github.com/apenwarr/mkdocs-exclude
+      glob:
+        - Kanban/*
+        - Excalidraw/*
+        - Templates/*
