@@ -1,9 +1,9 @@
 {
-  "citationExportFormat": "csl-json",
+  "citationExportFormat": "biblatex",
   "literatureNoteTitleTemplate": "@{{citekey}}",
   "literatureNoteFolder": "References",
-  "literatureNoteContentTemplate": "---\ntitle: {{title}}\nauthors: {{authorString}}\nyear: {{year}}\n---\n\n",
+  "literatureNoteContentTemplate": "# {{title}}\n\n#### ({{year}}) - {{authorString}}\n\n- **Link**:: {{URL}}\n- **DOI**:: {{DOI}}\n- **Backlinks**:: \n- **Tags**:: #paper\n- **Cite Key**:: [[@{{citekey}}]]\n\n### Abstract\n\n```\n{{abstract}}\n```\n\n### Notes\n\n{{note}}",
   "markdownCitationTemplate": "[@{{citekey}}]",
   "alternativeMarkdownCitationTemplate": "@{{citekey}}",
-  "citationExportPath": "Thesis.json"
+  "citationExportPath": "Thesis.bib"
 }

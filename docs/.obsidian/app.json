@@ -1,4 +1,7 @@
 {
   "promptDelete": false,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "showLineNumber": true,
+  "autoPairMarkdown": false,
+  "spellcheck": true
 }

@@ -18,6 +18,8 @@
 
 #### Mathematics
 
+From [[@ajo-franklinRationalDesignMemory2007]]:
+
 We use a single mathematical framework to describe the relationship between the activator concentration and the production rate of either the reporter or autofeedback activator. We assume that the rate of production of either the reporter or autoactivator species, $(dX/dt)_{produce}$, can be described by the sum of a basal rate and a Hill function:
 
 $$\begin{pmatrix}\frac{dX}{dt}\end{pmatrix}_{produce} = s + \frac{\beta A^n}{K^n + A^n} \tag{1}$$
@@ -31,6 +33,10 @@ $$R = \frac{ln2}{\tau}\begin{pmatrix}s + \frac{\beta A^n}{K^n + A^n}\end{pmatrix
 In the case of the positive feedback loop, we assume that the autofeedback gene is activated identically by the sensor-derived activator and the autofeedback activator, so we can rewrite Equation $3$ as
 $$\frac{dA_A}{dt} = s + \frac{\beta(A_A + A_s)^n}{K^n + (A_A + A_s)^n} - \frac{ln2}{\tau}A_A \tag{5}$$
 where $A_A$ is the autoactivator concentration and $A_s$ is the sensor-derived activator concentration.
+
+##### Figures
+
+
 
 #### Pair bio with mathematics
 
