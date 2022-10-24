@@ -52,6 +52,10 @@ $$w_k' = \frac{(w_k + m_k)}{\lambda} \tag{2}$$
 
 $(2)$ shows that the movement of the buffalos is a function of the `/waaa/` ($w_k$) and the `/maaa/` ($m_k$) calls. It's moderated by the exploration driver, $\lambda$, which takes a value between $0$ and $1$.
 
+So, the movement of buffalo $k$ from $w_k$ (present exploration location) to other locations is influenced by $m_k$, the exploitation location, and adjusting its position appropriately in relation to the herd's best $(bg - w_k)$ as well as its personal best ($bp_k - w_k$) with the bias of the learning parameters.
+
+![[abo-visualization.excalidraw|700]]
+
 ### References
 
 [[@odiliStochasticProcessTutorial2022]]
