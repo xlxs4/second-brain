@@ -30,7 +30,7 @@ Advantages: fast, robust, effective, efficient, simple to implement/user-friendl
 5. Crosscheck stopping criteria. If reached, proceed to $6$. Else, proceed to $2$.
 6. Output best solution.
 
-Here, $w_k$ is the `/waaa/` call, which mobilizes the herd to move (explore) with reference to buffalo $k$. $m_k$ is the `/maaa/` call, which calls to exploit. $w'_k$ is a call for more exploration, while $m_k'$ a call for more exploitation, respectively. $bg$ is the buffalo with the best position in relation to the global optimum. $lp_1$ and $lp_2$ are the so-called learning parameters. $\lambda$ is a random number which takes any value between $0$ and $1$, depending on the problem being solved; the higher $\lambda$ is, we get more exploitation and less exploration, and vice-versa.
+Here, $w_k$ is the `/waaa/` call, which mobilizes the herd to move (explore) with reference to buffalo $k$. $m_k$ is the `/maaa/` call, which calls to exploit. $w'_k$ is a call for more exploration, while $m_k'$ a call for more exploitation, respectively. $bg$ is the buffalo with the best position in relation to the global optimum. $lp_1$ and $lp_2$ are the so-called learning parameters. $\lambda$ is a random number, called the exploration driver, which takes any value between $0$ and $1$, depending on the problem being solved; the higher $\lambda$ is, we get more exploitation and less exploration, and vice-versa.
 
 ### Math
 
@@ -42,9 +42,15 @@ $$m_k' = m_k + lp_1(bg - w_k) + lp_2(bp_k - w_k) \tag{1}$$
 
 Equation $(1)$ has three parts. First, the memory part ($m_k'$), which reminds the buffalos that they have relocated to a new location from the previous location ($m_k$). Second, the part which signals the cooperative behavior of the buffalos ($lp_1 (bg - w_k)$). Third, part which represents the buffalos capacity for communication across the entire herd ($lp_2(bp_k - w_k)$).
 
-The last (third) part of $(1)$, $lp_2(bp_k - w_k)$, underscores the buffalos intelligence. They can tell which their previous best location was, compared with their current location. This enables them to retrace their steps to the best, to their knowledge, location, which is extremely useful if they stray away towards a starving location.
+The last (third) part of $(1)$, $lp_2(bp_k - w_k)$, underscores the buffalos intelligence. They can tell which their previous best location was, compared with their current location. This enables them to retrace their steps to the best, to their knowledge, location, which is extremely useful if they stray away towards a starving location. To summarize, equation $(1)$ describes the buffalo memory, ability to harness collective intelligence, and intra-herd communication.
+
+$lp_1$ and $lp_2$ undergo parameter tuning, depending on the problem context. A higher value of $lp_1$ biases the algorithm toward global search while a higher $lp_2$ biases towards a local search.
+
+Equation $(2)$ is what moves the buffalos to the new location, following the decision taken through $(1)$:
 
 $$w_k' = \frac{(w_k + m_k)}{\lambda} \tag{2}$$
+
+$(2)$ shows that the movement of the buffalos is a function of the `/waaa/` ($w_k$) and the `/maaa/` ($m_k$) calls. It's moderated by the exploration driver, $\lambda$, which takes a value between $0$ and $1$.
 
 ### References
 
