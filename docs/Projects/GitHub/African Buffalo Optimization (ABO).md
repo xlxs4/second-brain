@@ -30,7 +30,7 @@ Advantages: fast, robust, effective, efficient, simple to implement/user-friendl
 5. Crosscheck stopping criteria. If reached, proceed to $6$. Else, proceed to $2$.
 6. Output best solution.
 
-Here, $w_k$ is the `/waaa/` call, which mobilizes the herd to move (explore) with reference to buffalo $k$. $m_k$ is the `/maaa/` call, which calls to exploit. $w'_k$ is a call for more exploration, while $m_k'$ a call for more exploitation, respectively. $bg$ is the buffalo with the best position in relation to the global optimum. $lp_1$ and $lp_2$ are the so-called learning parameters. $\lambda$ is a random number, called the exploration driver, which takes any value between $0$ and $1$, depending on the problem being solved; the higher $\lambda$ is, we get more exploitation and less exploration, and vice-versa.
+Here, $w_k$ is the `/waaa/` call, which mobilizes the herd to move (explore) with reference to buffalo $k$. $m_k$ is the `/maaa/` call, which calls to exploit. $w'_k$ is a call for more exploration, while $m_k'$ a call for more exploitation, respectively. $bg$ is the buffalo with the best position in relation to the global optimum. $bp_k$ is the buffalo's personal best position. $lp_1$ and $lp_2$ are the so-called learning parameters. $\lambda$ is a random number, called the exploration driver, which takes any value between $0$ and $1$, depending on the problem being solved; the higher $\lambda$ is, we get more exploitation and less exploration, and vice-versa.
 
 ### Math
 
