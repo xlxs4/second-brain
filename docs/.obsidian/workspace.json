@@ -1,0 +1,164 @@
+{
+  "main": {
+    "id": "6a68208d6e9ad82a",
+    "type": "split",
+    "children": [
+      {
+        "id": "aa6a720a40460358",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "05eb27ab56df17c1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/GitHub/African Buffalo Optimization (ABO).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fcb2f03f46505bd5",
+    "type": "split",
+    "children": [
+      {
+        "id": "5b3308669aa2aae6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9a352763e08653a7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "88f574b0359c201c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a2c97cca81efd24a",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 220.5
+  },
+  "right": {
+    "id": "84884291b19ff56e",
+    "type": "split",
+    "children": [
+      {
+        "id": "e560f88c0fb491ae",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3fb36c75e6394743",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Projects/GitHub/African Buffalo Optimization (ABO).md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a02ba503b7c11627",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Projects/GitHub/African Buffalo Optimization (ABO).md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d3f27ff6c9e1c149",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "6728f4b772558705",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Projects/GitHub/African Buffalo Optimization (ABO).md"
+              }
+            }
+          },
+          {
+            "id": "9605ff679a4aa105",
+            "type": "leaf",
+            "state": {
+              "type": "ReferenceListView",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "05eb27ab56df17c1",
+  "lastOpenFiles": [
+    "References/@odiliStochasticProcessTutorial2022.md",
+    "References/@ajo-franklinRationalDesignMemory2007.md",
+    "References/@alonIntroductionSystemsBiology2019.md",
+    "Projects/GitHub/African Buffalo Optimization (ABO).md",
+    "Projects/Thesis/Tsitsas Email.md",
+    "Assets/ajo2007-fig4.jpg",
+    "@ajo-franklinRationalDesignMemory2007.md",
+    "Assets/ajo2007-fig4-upscale.png",
+    "Assets/ajo2007-fig3-upscale.png",
+    "Assets/ajo2007-fig3.jpg"
+  ]
+}

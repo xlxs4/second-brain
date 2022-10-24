@@ -10,5 +10,6 @@
   "obsidian-citation-plugin",
   "oz-image-plugin",
   "obsidian-hover-editor",
-  "obsidian-emoji-toolbar"
+  "obsidian-emoji-toolbar",
+  "obsidian-pandoc-reference-list"
 ]

@@ -16,3 +16,7 @@ The ability to logically engineer novel cellular functions promises a deeper und
 
 ### Notes
 
+<h1>Annotations
+ (10/4/2022, 9:26:45 PM)</h1> 
+
+“The ability to logically engineer novel cellular functions promises a deeper understanding of biological systems.” (Ajo-Franklin et al., 2007, p. 2271)

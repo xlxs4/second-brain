@@ -1,0 +1,6 @@
+{
+  "pathToPandoc": "C:\\ProgramData\\chocolatey\\bin\\pandoc.EXE",
+  "tooltipDelay": 800,
+  "pathToBibliography": "C:\\Users\\orous\\OneDrive\\Documents\\GitHub\\second-brain\\docs\\Thesis.bib",
+  "showCitekeyTooltips": true
+}
