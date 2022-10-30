@@ -56,6 +56,10 @@ So, the movement of buffalo $k$ from $w_k$ (present exploration location) to oth
 
 ![[abo-visualization.excalidraw|700]]
 
+### Application in 2D
+
+
+
 ### References
 
 [[@odiliStochasticProcessTutorial2022]]
