@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "7be00acdf4ce5070",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/GitHub/Summation By Parts (SBP) Operators.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/GitHub/African Buffalo Optimization (ABO).md",
+                "file": "Projects/GitHub/Summation By Parts (SBP) Operators.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projects/GitHub/African Buffalo Optimization (ABO).md",
+                "file": "Projects/GitHub/Summation By Parts (SBP) Operators.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/GitHub/African Buffalo Optimization (ABO).md"
+                "file": "Projects/GitHub/Summation By Parts (SBP) Operators.md"
               }
             }
           },
@@ -145,13 +158,10 @@
     "width": 300,
     "collapsed": true
   },
-  "ribbon": {
-    "mostRecentAction": ""
-  },
-  "active": "16b7e8dc056f0046",
+  "active": "7be00acdf4ce5070",
   "lastOpenFiles": [
-    "Excalidraw/abo-visualization.excalidraw.md",
     "Projects/GitHub/African Buffalo Optimization (ABO).md",
+    "Excalidraw/abo-visualization.excalidraw.md",
     "Projects/Thesis/Tsitsas Email.md",
     "Excalidraw/abo-flowchart.excalidraw.png",
     "Excalidraw/abo-flowchart.excalidraw.md",
