@@ -52,3 +52,35 @@ elseif accuracy_order == 8
       T(7.3192851303204e+00),
     )
 ```
+
+There is a mention in [[@mattssonBoundaryOptimizedDiagonalnorm2018]] about the $Q$ matrix:
+
+> Definition 2.2: A difference operator $D_1 = H^{-1}Q$, approximating $\partial/\partial x$ using a repeated narrow-stencil in the interior, is said to be a diagonal-norm first-derivative SBP operator if $H$ is diagonal and positive definite, and $Q + Q^T = diag(-1, 0, \ldots, 0, 1)$.
+
+The interior stencil of $Q$ is in MATLAB:
+```Matlab
+switch order
+	case 2
+		d = [-1/2,0,1/2];
+	case 4
+		d = [1/12,-2/3,0,2/3,-1/12];
+	case 6
+		d = [-1/60,3/20,-3/4,0,3/4,-3/20,1/60];
+	case 8
+		d = [1/280,-4/105,1/5,-4/5,0,4/5,-1/5,4/105,-1/280];
+	case 10
+		d = [-1/1260,5/504,-5/84,5/21,-5/6,0,5/6,-5/21,5/84,-5/504,1/1260];
+	case 12
+		d = [1/5544,-1/385,1/56,-5/63,15/56,-6/7,0,6/7,-15/56,5/63,-1/56,1/385,-1/5544];
+end
+```
+For, e.g. order 8, the relevant part is
+```Matlab
+	case 8
+		d = [1/280,-4/105,1/5,-4/5,0,4/5,-1/5,4/105,-1/280];
+```
+which can be found in `src/`:
+```julia
+upper_coef = SVector(T(4//5), T(-1//5), T(4//105), T(-1//280))
+lower_coef = -upper_coef
+```
