@@ -109,6 +109,7 @@ h = [
   9.9992060631812e-01,
   1, 1, 1, 1]
 ```
+*question*: what about the trailing ones? TODO: how do I determine how many to add?
 
 The boundaries, $Q_k$ are:
 ```Matlab
