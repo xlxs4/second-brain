@@ -11,5 +11,6 @@
   "oz-image-plugin",
   "obsidian-hover-editor",
   "obsidian-emoji-toolbar",
-  "obsidian-pandoc-reference-list"
+  "obsidian-pandoc-reference-list",
+  "cm-editor-syntax-highlight-obsidian"
 ]

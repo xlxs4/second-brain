@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/GitHub/Summation By Parts (SBP) Operators.md",
+                "file": "Projects/GitHub/Summation By Parts (SBP).md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/GitHub/Summation By Parts (SBP) Operators.md",
+                "file": "Projects/GitHub/Summation By Parts (SBP).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projects/GitHub/Summation By Parts (SBP) Operators.md",
+                "file": "Projects/GitHub/Summation By Parts (SBP).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/GitHub/Summation By Parts (SBP) Operators.md"
+                "file": "Projects/GitHub/Summation By Parts (SBP).md"
               }
             }
           },
@@ -155,11 +155,12 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "active": "7be00acdf4ce5070",
   "lastOpenFiles": [
+    "References/@mattssonBoundaryOptimizedDiagonalnorm2018.md",
+    "Projects/GitHub/Summation By Parts (SBP).md",
     "Projects/GitHub/African Buffalo Optimization (ABO).md",
     "Excalidraw/abo-visualization.excalidraw.md",
     "Projects/Thesis/Tsitsas Email.md",
@@ -167,8 +168,6 @@
     "Excalidraw/abo-flowchart.excalidraw.md",
     "Excalidraw/playground.excalidraw.md",
     "Excalidraw/circuit-mutual-inhibition.excalidraw.md",
-    "Excalidraw/circuit-mem-original.excalidraw.md",
-    "Excalidraw/circuit-mem-original-autoreg.excalidraw.md",
-    "References/@odiliStochasticProcessTutorial2022.md"
+    "Excalidraw/circuit-mem-original.excalidraw.md"
   ]
 }
