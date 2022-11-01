@@ -22,9 +22,9 @@ function [D1,H,x,h] = D1_accurate_8th(N,L)
 
 ### Julia Implementation
 
-Split between `/dev/MattssonAlmquistVanDerWeide2018...` and `/src/MattssonAlmquistVanDerWeide2018...` .
+Split between [`/dev/MattssonAlmquistVanDerWeide2018...`](https://github.com/ranocha/SummationByPartsOperators.jl/tree/main/dev) and [`/src/MattssonAlmquistVanDerWeide2018...`](https://github.com/ranocha/SummationByPartsOperators.jl/tree/main/src/SBP_coefficients).
 
-$x_k$, the non-equidistant grid points in MATLAB (`D1_accurate_8th.m`):
+$x_k$, the non-equidistant grid points in MATLAB ([`D1_accurate_8th.m`](https://bitbucket.org/martinalmquist/optimized_sbp_operators/src/master/Accurate/D1_accurate_8th.m)):
 ```Matlab
 %%%% Non-equidistant grid points %%%%%
 x0 = 0.0000000000000e+00;
@@ -138,3 +138,4 @@ q1 = [0,
   4.9954552590464e-04,
   0, 0, 0, 0]'
   ```
+*question*: in this example, why is the original `Q0_0 = -5.0000000000000e-01;`, while it's `0` in the Julia implementation?
