@@ -142,3 +142,5 @@ q1 = [0,
 *question*: in this example, why is the original `Q0_0 = -5.0000000000000e-01;`, while it's `0` in the Julia implementation?
 
 *question*: why `D1 = H \ (Q - 1//2*e*e')` to construct the difference operator $D1$?
+
+*question*: I understand that `dev/` is used first to get the values used in `src/`, e.g. for the `DerivativeCoefficientRow`s. How?
