@@ -144,3 +144,9 @@ q1 = [0,
 *question*: why `D1 = H \ (Q - 1//2*e*e')` to construct the difference operator $D1$?
 
 *question*: I understand that `dev/` is used first to get the values used in `src/`, e.g. for the `DerivativeCoefficientRow`s. How?
+
+---
+
+-   `dev` is just the authors' set of notes while translating, the real coefficients live in `src`
+-   For the derivative operator, coefficients of `D1` are used, not of `Q`. Thus, the author usually translated `Q` coefficients from a paper to `D1` coefficients for this package
+-   The SBP property is `M * D1 + D1' * M' = eR * eR' - eL * eL'` with `eL = [1, 0, ..., 0]` and `eR = [0, ..., 0, 1]`. This allows to translate `Q` to `D1` and vice-versa
