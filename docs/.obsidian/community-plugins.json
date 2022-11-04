@@ -2,7 +2,6 @@
   "obsidian-excalidraw-plugin",
   "obsidian-git",
   "obsidian-admonition",
-  "sliding-panes-obsidian",
   "obsidian-kanban",
   "table-editor-obsidian",
   "obsidian-auto-link-title",
@@ -12,5 +11,6 @@
   "obsidian-hover-editor",
   "obsidian-emoji-toolbar",
   "obsidian-pandoc-reference-list",
-  "cm-editor-syntax-highlight-obsidian"
+  "cm-editor-syntax-highlight-obsidian",
+  "obsidian-icon-folder"
 ]

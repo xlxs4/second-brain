@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "16b7e8dc056f0046",
+            "id": "b248b5f0c09b80f2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/GitHub/African Buffalo Optimization (ABO).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7be00acdf4ce5070",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projects/GitHub/Summation By Parts (SBP).md",
+                "file": "Areas/Photography/Mamiya ZE-2 Quartz.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/GitHub/Summation By Parts (SBP).md",
+                "file": "Areas/Photography/Mamiya ZE-2 Quartz.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projects/GitHub/Summation By Parts (SBP).md",
+                "file": "Areas/Photography/Mamiya ZE-2 Quartz.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/GitHub/Summation By Parts (SBP).md"
+                "file": "Areas/Photography/Mamiya ZE-2 Quartz.md"
               }
             }
           },
@@ -157,17 +144,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "7be00acdf4ce5070",
+  "active": "b248b5f0c09b80f2",
   "lastOpenFiles": [
-    "References/@mattssonBoundaryOptimizedDiagonalnorm2018.md",
     "Projects/GitHub/Summation By Parts (SBP).md",
     "Projects/GitHub/African Buffalo Optimization (ABO).md",
+    "Areas/Photography/Mamiya ZE-2 Quartz.md",
+    "References/@mattssonBoundaryOptimizedDiagonalnorm2018.md",
     "Excalidraw/abo-visualization.excalidraw.md",
     "Projects/Thesis/Tsitsas Email.md",
     "Excalidraw/abo-flowchart.excalidraw.png",
     "Excalidraw/abo-flowchart.excalidraw.md",
     "Excalidraw/playground.excalidraw.md",
-    "Excalidraw/circuit-mutual-inhibition.excalidraw.md",
-    "Excalidraw/circuit-mem-original.excalidraw.md"
+    "Excalidraw/circuit-mutual-inhibition.excalidraw.md"
   ]
 }
