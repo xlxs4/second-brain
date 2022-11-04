@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "a7fa29fdedb8cbe7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Areas/Photography/Film.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Areas/Photography/Mamiya ZE-2 Quartz.md",
+                "file": "Areas/Photography/Film.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Areas/Photography/Mamiya ZE-2 Quartz.md",
+                "file": "Areas/Photography/Film.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Areas/Photography/Mamiya ZE-2 Quartz.md"
+                "file": "Areas/Photography/Film.md"
               }
             }
           },
@@ -144,11 +157,11 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "b248b5f0c09b80f2",
+  "active": "a7fa29fdedb8cbe7",
   "lastOpenFiles": [
+    "Areas/Photography/Mamiya ZE-2 Quartz.md",
     "Projects/GitHub/Summation By Parts (SBP).md",
     "Projects/GitHub/African Buffalo Optimization (ABO).md",
-    "Areas/Photography/Mamiya ZE-2 Quartz.md",
     "References/@mattssonBoundaryOptimizedDiagonalnorm2018.md",
     "Excalidraw/abo-visualization.excalidraw.md",
     "Projects/Thesis/Tsitsas Email.md",
