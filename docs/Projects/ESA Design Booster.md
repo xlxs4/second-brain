@@ -72,25 +72,25 @@
 
 "Participating in FYS! from the student perspective"
 
-- Introduction (`@xlxs4`, SpaceDot, AcubeSAT)
-- Context (things that might be different in our team's case from the norm)
-- Presentation scope
-- Presentation structure
-- Project management
-- People management
-- Examples
+- Introduction (`@xlxs4`, SpaceDot, AcubeSAT) - `TODO` mins
+- Context (things that might be different in our team's case from the norm) - `TODO` mins
+- Presentation scope - `TODO` mins
+- Presentation structure - `TODO` mins
+- Project management - `TODO` mins
+- People management - `TODO` mins
+- Examples - `TODO` mins
 	- EPS
 	- SU
 	- PL
-- Tips
+- Tips - `TODO` mins
 - Bio slides ("biological payload development challenges")
-	- Intro/scope
-	- Challenges
+	- Intro/scope - `TODO` mins
+	- Challenges - `TODO` mins
 		- Miniaturization
 		- Biocompatibility
 		- Cell survival
 		- Cell storage
 		- Autonomous measurements
 		- Automation
-- Outro
-- Q&A
+- Outro - `TODO` mins
+- Q&A - `15` mins
