@@ -94,3 +94,45 @@
 		- Automation
 - Outro - `TODO` mins
 - Q&A - `15` mins
+
+#### Introduction
+
+#### Context
+
+#### Presentation scope
+
+#### Presentation Structure
+
+#### Project management
+
+#### People management
+
+#### Examples
+
+##### EPS
+
+##### SU
+
+##### PL
+
+#### Tips
+
+#### Bio slides
+
+##### Intro/scope
+
+##### Challenges
+
+###### Miniaturization
+
+###### Biocompatibility
+
+###### Cell survival
+
+###### Cell storage
+
+###### Autonomous measurements
+
+###### Automation
+
+#### Outro

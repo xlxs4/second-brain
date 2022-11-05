@@ -167,9 +167,10 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
-  "active": "b1da90362de724bb",
+  "active": "9605ff679a4aa105",
   "lastOpenFiles": [
     "Areas/Photography/Film.md",
     "Areas/Photography/Mamiya ZE-2 Quartz.md",
