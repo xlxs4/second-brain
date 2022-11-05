@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b1da90362de724bb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/ESA Design Booster.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Areas/Photography/Film.md",
+                "file": "Projects/ESA Design Booster.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Areas/Photography/Film.md",
+                "file": "Projects/ESA Design Booster.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Areas/Photography/Film.md"
+                "file": "Projects/ESA Design Booster.md"
               }
             }
           },
@@ -157,8 +169,9 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "a7fa29fdedb8cbe7",
+  "active": "b1da90362de724bb",
   "lastOpenFiles": [
+    "Areas/Photography/Film.md",
     "Areas/Photography/Mamiya ZE-2 Quartz.md",
     "Projects/GitHub/Summation By Parts (SBP).md",
     "Projects/GitHub/African Buffalo Optimization (ABO).md",
@@ -167,7 +180,6 @@
     "Projects/Thesis/Tsitsas Email.md",
     "Excalidraw/abo-flowchart.excalidraw.png",
     "Excalidraw/abo-flowchart.excalidraw.md",
-    "Excalidraw/playground.excalidraw.md",
-    "Excalidraw/circuit-mutual-inhibition.excalidraw.md"
+    "Excalidraw/playground.excalidraw.md"
   ]
 }
