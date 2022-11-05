@@ -67,3 +67,24 @@
 - cross-team meetings are very important
 - other teams participate in FYS!
 - [Akin's Laws](https://spacecraft.ssl.umd.edu/akins_laws.html)
+
+### Structure
+
+"Participating in FYS! from the student perspective"
+
+- Introduction (`@xlxs4`, SpaceDot, AcubeSAT)
+- Context (things that might be different in our team's case from the norm)
+- Presentation scope
+- Presentation structure
+- Project management
+- People management
+- Examples
+	- EPS
+	- SU
+	- PL
+- Tips
+- Bio slides
+	- Intro/scope
+	- Challenges
+- Outro
+- Q&A
