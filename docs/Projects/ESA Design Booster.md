@@ -97,7 +97,14 @@
 
 #### Introduction
 
+Greetings! I'm Orestis, I come from Greece and I'm the co-science lead in the AcubeSAT project.
+AcubeSAT is a project of a student team called SpaceDot and is part of the Fly Your Satellite 3! program.
+TODO: Mission description, high-level timeline and current status overview.
+
 #### Context
+
+Before getting on with the actual presentation, I feel the need to give you some context regarding the team I've been and am a part of and the general environment in which we've been undertaking the FYS! journey.
+TODO: 1) no aerospace stuff/expertise in Greece 2) no expertise or degree in uni 3) no ECTS credits etc., purely volunteer work αρα no strong motives, people don't get to even work at something space-related afterwards, most enter the team, stay for ~1.5 year and then leave. Also no support
 
 #### Presentation scope
 
