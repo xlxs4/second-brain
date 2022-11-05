@@ -103,7 +103,7 @@ TODO: Mission description, high-level timeline and current status overview.
 
 #### Context
 
-Before getting on with the actual presentation, I feel the need to give you some context regarding the team I've been and am a part of and the general environment in which we've been undertaking the FYS! journey.
+Before getting on with the actual presentation, I feel the need to underline the overall context surrounding regarding the team I've been and am a part of and the general environment in which we've been undertaking the FYS! journey.
 TODO: 1) no aerospace stuff/expertise in Greece 2) no expertise or degree in uni 3) no ECTS credits etc., purely volunteer work αρα no strong motives, people don't get to even work at something space-related afterwards, most enter the team, stay for ~1.5 year and then leave. Also no support
 
 #### Presentation scope
@@ -112,11 +112,15 @@ The presentation is focused on discussing some of the programmatic aspects of th
 
 #### Presentation Structure
 
+The presentation is split into topics that fall mainly into two distinct categories, the first being project management, while the second follow a more people-centric narrative. There will be advice with an emphasis on the earlier stages of the project, and some good and... not that good decisions to make or avoid, respectively. I'll to cast a more personal light and share some hurdles we've faced and had to overcome, or that are still facing to this day. Following that tangent, I'll briefly go over some particular examples that greatly affected our team. Then, I'll mention some additional tips, and will close the presentation with an addendum on trying to realize a mission carrying a biological payload, since I've been informed there are some teams interested in working towards that. Because this is somewhat of a niche, please feel free to come have a chat after the Q&A session is over, in more detail. I'll share some handles and ways you can reach out to me, I and the whole team are very open and eager to discuss and chime in in whichever way possible.
+
 #### Project management
 
 #### People management
 
 #### Examples
+
+##### ASAT - SpaceDot split
 
 ##### EPS
 
