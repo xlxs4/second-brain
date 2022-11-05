@@ -108,6 +108,8 @@ TODO: 1) no aerospace stuff/expertise in Greece 2) no expertise or degree in uni
 
 #### Presentation scope
 
+The presentation is focused on discussing some of the programmatic aspects of the challenges you might come to face as FYS! progresses, rather than getting into the nitty gritty things on the technical side. TODO: more
+
 #### Presentation Structure
 
 #### Project management
