@@ -83,8 +83,14 @@
 	- SU
 	- PL
 - Tips
-- Bio slides
+- Bio slides ("biological payload development challenges")
 	- Intro/scope
 	- Challenges
+		- Miniaturization
+		- Biocompatibility
+		- Cell survival
+		- Cell storage
+		- Autonomous measurements
+		- Automation
 - Outro
 - Q&A
