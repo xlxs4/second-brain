@@ -109,7 +109,9 @@ Also, we aim to probe the way conditions in LEO (mainly microgravity and cosmic 
 To achieve that, the 2U payload is a pressurized vessel which hosts a container with the various compartments to run our experiments.
 We'll culture cells in-orbit and then see how their gene expression is altered through acquiring images via our DIY microscope-like imaging system.
 We aim to run the same experiment in three distinct timepoints across the duration of our mission, and to do this we've been using a small platform called a LoC to hold the cells and interface them with the various fluidics in a miniaturized version of a biology lab; but more on that at the end.
-TODO: high-level timeline and current status overview.
+
+In brief, we've submitted our proposal in October 2019, took part in the selection workshop hosted here in December 2019, got accepted in February 2020, submitted the TS-VCD (requirements) in April, submitted the first version of CDR in October and had it approved in September 2021, marking the end of the design phase and the beginning of the construction/testing phase.
+Right now we are getting ready to run a series of testing campaigns at the ESA facilities, then pass the MRR and be in-orbit by late 2023/early 2024.
 
 #### Context
 
