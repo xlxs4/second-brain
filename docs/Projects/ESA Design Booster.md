@@ -106,14 +106,16 @@ bridge: exploring a path that you might later on decide that you won't follow, p
 
 ---
 
--   be afraid of the [bus factor](https://www.wikiwand.com/en/Bus_factor). But also always remember: NO ONE is irreplaceable - (όσες φορές είπαμε να πάμε με τα νερά κάποιου δεν δούλεψε, you're capable)
--   this is a very long-term project, it therefore transcends individuals
+-   be afraid of the [bus factor](https://www.wikiwand.com/en/Bus_factor). But also always remember: NO ONE is irreplaceable - (όσες φορές είπαμε να πάμε με τα νερά κάποιου δεν δούλεψε, you're capable). Also trust your gut, same thing as in interviews. This is another reason why you want to have a "core" team of people to lead
+-   this is a very long-term project, it therefore transcends individuals - as we've already stressed, always always always think about the long-term
 -   have a plan B, C, D, ... (even about design, _even_ about people (just need it to work - Akin's Law)
+- it's a marathon, not a sprint
+    - (... but there will be sprints)
+
+bridge: TODO: long term and patterns and things you must keep in mind
 
 ---
 
--   it's a marathon, not a sprint
-    -   (... but there will be sprints)
 -   always find the next gen, preemptively
 -   more often than not, there's a bigger underlying problem, and it has to do with structure. People are usually not the source of the problem
     -   but people CAN be the source of the problem. Never underestimate that. Especially if they are in a position of power, either organizationally or due to technical expertise
@@ -130,7 +132,7 @@ bridge: exploring a path that you might later on decide that you won't follow, p
 -   taking initiatives is vital, how do you find someone to do the boring work? How do you get ordinary people to do the extraordinary?
 -   how do you ensure meeting participation?
 -   it's a demanding project without rewards (monetary, ECTS...) - how do you get people to do volunteering work?
--   HR
+-   HR - remember that you should think about how you approach these things too. A good example and place to start might be "Leadership That Gets Results" by Daniel Goleman in HBR
 -   physical presence is vital
 -   expand beyond the scope of the project, hang out, do cool things on the side
 -   the project requires heavy investment. This means it will overlap with other areas of the members' lives. You have to take that into account and learn about other areas of their life in order to effectively support them
