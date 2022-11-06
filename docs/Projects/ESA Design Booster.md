@@ -92,14 +92,17 @@ bridge: TODO: organization
 -  you need SYE, aka systems overview: for management, always see the forest, not the tree
 -   always be wary of cross-dependencies
 -   constantly track things, move deadlines appropriately, be on top of things
--   be agile, especially in the beginning. Find what's good for you. Understand _why_ it's good for you
+-   be agile, especially in the beginning. Find what's good for you. Understand _why_ it's good for you - purposely talking in a loose frame and giving general comments, self-reflection is the most important thing
+
+bridge: exploring a path that you might later on decide that you won't follow, playing with the design, the structure, being bold
 
 ---
 
--   remember, everything's gonna be alright
--   if it isn't, not to worry. It's an educational program
--   you'll fuck up, constantly. Relax and learn from it
--   try to build a momentum, then ride it, but guide it too; don't let it carry you
+- you'll fuck up, constantly. Relax and learn from it - it sounds very cliche, but it holds so so true. We've had so many situations where things almost derailed and came close to crumbling down because people were losing their minds. Relax, be calm, assess the situation, do your best, learn from any mistakes and move on. In the grand scheme of things, it probably doesn't matter that much
+- be calm, diffuse situations, avoid crowd mentality - we've had "critical" situations dozens of times, we're still here
+- remember, everything's gonna be alright
+- if it isn't, not to worry. It's an educational program - I'm not trying to set the bar low here, things are very challenging and you should strive for excellence, but you have to understand the nature of the program and that the ESA people are here to help and that they know you will commit a lot of mistakes
+- try to build a momentum, then ride it, but guide it too; don't let it carry you - you'll find it difficult at first with a lot of things, for example with the organizational structure. It will require a lot of effort in the beginning, it's like a slope where, if you're doing it right, little by little it will get easier with time. Our case happened after we delivered the first CDR version successfully, things somewhat got automated, everyone knew what to work, communication was frictionless, new members were seamlessly integrated, but you have to always keep things in check and revisit things
 
 ---
 
@@ -156,11 +159,6 @@ bridge: TODO: organization
 
 ---
 
--   try to build a momentum, then ride it, but guide it too; don't let it carry you
--   be calm, diffuse situations, avoid crowd mentality
-
----
-
 -   understand, mitigate but ultimately just be okay with the [Pareto principle](https://www.wikiwand.com/en/Pareto_principle)
 -   who gets credits? for what? is their work recognized?
 
@@ -183,7 +181,7 @@ bridge: TODO: organization
 -   recruitment is key. You'll also need to establish presence in the uni(s) to get people in REC
 -   [Akin's Laws](https://spacecraft.ssl.umd.edu/akins_laws.html) - HEH
 
-TODO: talk about the importance of having a vision, of having some pillars, of your work being multifaceted and extending past just some research topic, etc. Mention our mission as an example and explain why that's so so so important
+TODO: talk about the importance of having a vision, of having some pillars, of your work being multifaceted and extending past just some research topic, etc. Mention our mission as an example and explain why that's so so so important (e.g. to screenshot apo random)
 
 #### Examples
 
