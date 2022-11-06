@@ -1,63 +1,4 @@
 
--   taking initiatives is vital, how do you find someone to do the boring work? How do you get ordinary people to do the extraordinary? - PEOPLE
--   how do you ensure meeting participation? - PEOPLE
--   it's a demanding project without rewards (monetary, ECTS...) - how do you get people to do volunteering work? - PEOPLE
--   HR
--   physical presence is vital - PEOPLE
--   expand beyond the scope of the project, hang out, do cool things on the side - PEOPLE
--   the project requires heavy investment. This means it will overlap with other areas of the members' lives. You have to take that into account and learn about other areas of their life in order to effectively support them - PEOPLE
-
----
-
--   ALWAYS face your problems, always speak, always communicate - PEOPLE
--   so much miscommunication and misunderstandings - PEOPLE
--   communicate problems to ESA
-
----
-
--   set up a "core" team of people to serve as the backbone of the team at all times - PROJECT
--   who thinks about the team and not just technical work or events? - PEOPLE
--   decisions will always upset some people. The question is which - PEOPLE
--   invest in those you believe will carry the team forward, not from a technical viewpoint - PEOPLE
-    -   this might mean not going with the majority. The majority will also blindly follow whatever, it's a formless mass to give shape to - PEOPLE
--   don't shadow-government much
-
----
-
--   people won't do things they don't want to do forever - PEOPLE
--   there's always someone out there that wants to work on what you don't. Find them - PROJECT
-    -   newer members can find something more exciting, _resource allocation_
-    -   also talk about the chef tasks book ("Work Clean"), you should also include things in feedback on how to work more efficiently, etc.
-
----
-
--   try to build a momentum, then ride it, but guide it too; don't let it carry you - PROJECT
--   be calm, diffuse situations, avoid crowd mentality - PEOPLE
-
----
-
--   understand, mitigate but ultimately just be okay with the [Pareto principle](https://www.wikiwand.com/en/Pareto_principle) - PEOPLE
--   who gets credits? for what? is their work recognized? - PEOPLE
-
----
-
--   don't leave anyone on their own - PEOPLE
--   set group tasks - PEOPLE
--   set small, well-defined tasks. Make the members feel and visualize the progress - PROJECT
--   make sure everyone is on the same page regarding the high-level roadmap - PEOPLE
--   give people things they might not love but that are important, and things that aren't important but they love doing - PEOPLE
--   feedback is crucial, it's all about feedback cycles - PEOPLE
--   praise in public blame in private (not always) - PEOPLE
--   progress is seldom linear, or apparent. Try to make it apparent, but have that in mind - PROJECT
--   involve people and throw problems at them (but always be there when needed) - PEOPLE
-
-----
-
--   be calm, diffuse situations, avoid crowd mentality - PEOPLE
--   sometimes you have to be quick to arrive at a decision. That might mean you won't have time to get everyone to agree with said decision - PEOPLE
--   recruitment is key. You'll also need to establish presence in the uni(s) to get people in REC - PROJECT
--   [Akin's Laws](https://spacecraft.ssl.umd.edu/akins_laws.html) - HEH
-
 ### Structure
 
 "Participating in FYS! from the student perspective"
@@ -113,7 +54,7 @@ Maybe some of these will align with the environment and the challenges you are t
 
 #### Presentation scope
 
-The presentation is focused on discussing some of the programmatic aspects of the challenges you might come to face as FYS! progresses, rather than getting into the nitty gritty things on the technical side. TODO: more
+The presentation is focused on discussing some of the programmatic aspects of the challenges you might come to face as FYS! progresses, instead of getting into the nitty gritty things on the technical side. TODO: more
 
 #### Presentation Structure
 
@@ -121,69 +62,128 @@ The presentation is split into topics that fall mainly into two distinct categor
 
 #### Project management
 
-
--   there's always exceptions to rules. Understand the rules, then break them - PROJECT
-
----
-
--   you have to develop skillset from zero - PROJECT    
--   almost everything is behind closed doors, you don't even know what's out there, you have to learn but how? - PROJECT
--   you have to find support (e.g. from university) - PROJECT
--   you have to ensure infrastructure (e.g. machines) - PROJECT
--   invest in open-source and the community. There's people you can learn from, if not teach - PROJECT
--   you got help from ESA, experts (esp. the experts), reach out - PROJECT
--   other teams participate in FYS!; be in touch - PROJECT
+-   there's always exceptions to rules. Understand the rules, then break them - don't take what I say as a hard absolute to be followed. It's empirical data gathered through observation. Think about what I say and try to understand *why* I say it, throughout the talk
 
 ---
 
--   there's no leadership voice outside of the team, the organization has to be DIY - PROJECT
--   COVID hit, and it hit hard. Why? - PROJECT
--   you'll eventually have to scale up, time and time again. How? - PROJECT
--   find good infrastructure, platforms, esp. for organization - PROJECT
--   try maintain information transfer at all costs - PROJECT
+-   you have to develop skillset from zero - not just technical, but mostly the organizational
+-   almost everything is behind closed doors, you don't even know what's out there, you have to learn but how?
+-   you have to find support (e.g. from university)
+-   you have to ensure infrastructure (e.g. machines) - might be something very generic to get prototypes, might be something very specific related to your payload. Getting access to required infrastructure might be almost trivial in some cases, near impossible in others. You'll face this sooner or later, start thinking about it as early as possible
+-   invest in open-source and the community. There's people you can learn from, if not teach - talk a little bit about open-source and how it has helped us and others
+-   you got help from ESA, experts (esp. the experts), reach out - a lot of experience that you can't find elsewhere. Don't be afraid to ask; it's an educational program and they want you to succeed. Remember that they've went through the whole journey multiple times. This is very crucial to take advantage of early
+-   other teams participate in FYS!; be in touch - in other FYS! versions and other related projects, we've helped and received helped
+
+bridge: you can get help, and you will need help, because:
+
+---
+
+-   there's no leadership voice outside of the team, the organization has to be DIY - biggest factor towards your success, no one will help you, and you won't have expertise
+-   COVID hit, and it hit hard. Why? - a good segue, we had to rethink our organizational structure due to limited physical access. A hybrid scheme works best
+-   you'll eventually have to scale up, time and time again. How? - future proof organization
+-   find good infrastructure, platforms, esp. for organization - can't stress this enough. Communication, tracking and finding information, project planning and management. Don't be afraid to invest early, plant the seeds; they will bloom later.
+-   try maintain information transfer at all costs - our biggest problem
     -   documentation is always needed after completion (Akin's law), it almost never gets written post
--   GitLab is necessary - PROJECT
 
-
----
-
--   you need SYE, aka systems overview: for management, always see the forest, not the tree - PROJECT
--   always be wary of cross-dependencies - PROJECT
--   constantly track things, move deadlines appropriately, be on top of things - PROJECT
--   be agile, especially in the beginning. Find what's good for you. Understand _why_ it's good for you - PROJECT
-
+bridge: TODO: organization
 
 ---
 
--   remember, everything's gonna be alright - PROJECT
--   if it isn't, not to worry. It's an educational program - PROJECT
--   you'll fuck up, constantly. Relax and learn from it - PROJECT
--   try to build a momentum, then ride it, but guide it too; don't let it carry you - PROJECT
-
-
----
-
--   be afraid of the [bus factor](https://www.wikiwand.com/en/Bus_factor). But also always remember: NO ONE is irreplaceable - PROJECT (όσες φορές είπαμε να πάμε με τα νερά κάποιου δεν δούλεψε, you're capable)
--   this is a very long-term project, it therefore transcends individuals - PROJECT
--   have a plan B, C, D, ... - PROJECT (even about design, _even_ about people (just need it to work - Akin's Law)
+-  you need SYE, aka systems overview: for management, always see the forest, not the tree
+-   always be wary of cross-dependencies
+-   constantly track things, move deadlines appropriately, be on top of things
+-   be agile, especially in the beginning. Find what's good for you. Understand _why_ it's good for you
 
 ---
 
--   it's a marathon, not a sprint - PROJECT
-    -   (... but there will be sprints) - PROJECT
--   always find the next gen, preemptively - PROJECT
--   more often than not, there's a bigger underlying problem, and it has to do with structure. People are usually not the source of the problem - PROJECT
-    -   but people CAN be the source of the problem. Never underestimate that. Especially if they are in a position of power, either organizationally or due to technical expertise - PROJECT
-    -   don't make someone coo lightly (i.e. don't endow with power lightly) - PROJECT
-
+-   remember, everything's gonna be alright
+-   if it isn't, not to worry. It's an educational program
+-   you'll fuck up, constantly. Relax and learn from it
+-   try to build a momentum, then ride it, but guide it too; don't let it carry you
 
 ---
 
--   keep minutes, have agendas, don't recycle topics, end each topic with an action, make the most out of a meeting - PROJECT
--   cross-team meetings are very important - PROJECT
--   hold concurrent sessions, frequent meetings, be transparent always - PROJECT
+-   be afraid of the [bus factor](https://www.wikiwand.com/en/Bus_factor). But also always remember: NO ONE is irreplaceable - (όσες φορές είπαμε να πάμε με τα νερά κάποιου δεν δούλεψε, you're capable)
+-   this is a very long-term project, it therefore transcends individuals
+-   have a plan B, C, D, ... (even about design, _even_ about people (just need it to work - Akin's Law)
+
+---
+
+-   it's a marathon, not a sprint
+    -   (... but there will be sprints)
+-   always find the next gen, preemptively
+-   more often than not, there's a bigger underlying problem, and it has to do with structure. People are usually not the source of the problem
+    -   but people CAN be the source of the problem. Never underestimate that. Especially if they are in a position of power, either organizationally or due to technical expertise
+    -   don't make someone coo lightly (i.e. don't endow with power lightly)
+
+---
+
+-   keep minutes, have agendas, don't recycle topics, end each topic with an action, make the most out of a meeting
+-   cross-team meetings are very important
+-   hold concurrent sessions, frequent meetings, be transparent always
 
 #### People management
+
+-   taking initiatives is vital, how do you find someone to do the boring work? How do you get ordinary people to do the extraordinary?
+-   how do you ensure meeting participation?
+-   it's a demanding project without rewards (monetary, ECTS...) - how do you get people to do volunteering work?
+-   HR
+-   physical presence is vital
+-   expand beyond the scope of the project, hang out, do cool things on the side
+-   the project requires heavy investment. This means it will overlap with other areas of the members' lives. You have to take that into account and learn about other areas of their life in order to effectively support them
+
+---
+
+-   ALWAYS face your problems, always speak, always communicate
+-   so much miscommunication and misunderstandings
+-   communicate problems to ESA
+
+---
+
+-   set up a "core" team of people to serve as the backbone of the team at all times
+-   who thinks about the team and not just technical work or events?
+-   decisions will always upset some people. The question is which
+-   invest in those you believe will carry the team forward, not from a technical viewpoint
+    -   this might mean not going with the majority. The majority will also blindly follow whatever, it's a formless mass to give shape to
+-   don't shadow-government much
+
+---
+
+-   people won't do things they don't want to do forever
+-   there's always someone out there that wants to work on what you don't. Find them
+    -   newer members can find something more exciting, _resource allocation_
+    -   also talk about the chef tasks book ("Work Clean"), you should also include things in feedback on how to work more efficiently, etc.
+
+---
+
+-   try to build a momentum, then ride it, but guide it too; don't let it carry you
+-   be calm, diffuse situations, avoid crowd mentality
+
+---
+
+-   understand, mitigate but ultimately just be okay with the [Pareto principle](https://www.wikiwand.com/en/Pareto_principle)
+-   who gets credits? for what? is their work recognized?
+
+---
+
+-   don't leave anyone on their own
+-   set group tasks
+-   set small, well-defined tasks. Make the members feel and visualize the progress
+-   make sure everyone is on the same page regarding the high-level roadmap
+-   give people things they might not love but that are important, and things that aren't important but they love doing
+-   feedback is crucial, it's all about feedback cycles
+-   praise in public blame in private (not always)
+-   progress is seldom linear, or apparent. Try to make it apparent, but have that in mind
+-   involve people and throw problems at them (but always be there when needed)
+
+----
+
+-   be calm, diffuse situations, avoid crowd mentality
+-   sometimes you have to be quick to arrive at a decision. That might mean you won't have time to get everyone to agree with said decision
+-   recruitment is key. You'll also need to establish presence in the uni(s) to get people in REC
+-   [Akin's Laws](https://spacecraft.ssl.umd.edu/akins_laws.html) - HEH
+
+TODO: talk about the importance of having a vision, of having some pillars, of your work being multifaceted and extending past just some research topic, etc. Mention our mission as an example and explain why that's so so so important
 
 #### Examples
 
