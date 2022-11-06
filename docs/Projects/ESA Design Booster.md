@@ -162,7 +162,10 @@ Right now we are getting ready to run a series of testing campaigns at the ESA f
 #### Context
 
 Before getting on with the actual presentation, I feel the need to underline the overall surrounding context regarding the team I've been and am a part of and the general environment in which we've been undertaking the FYS! journey.
-TODO: 1) no aerospace stuff/expertise in Greece 2) no expertise or degree in uni 3) no ECTS credits etc., purely volunteer work αρα no strong motives, people don't get to even work at something space-related afterwards, most enter the team, stay for ~1.5 year and then leave. Also no support
+Maybe some of these will align with the environment and the challenges you are to face, maybe not.
+1) There's no significant activity in the Aerospace sector in Greece, with the exception of some little companies and organizations that are trying to kickstart things, but we're still at a very early stage
+2) On a similar manner, there's not much related expertise or a degree (e.g. in Aerospace engineering) to be offered in Greek universities. These mean it's difficult to get financial or technical support for the project
+3) Student's don't gain ECTS credits etc. for being involved in the project to count towards completing a degree. People usually don't get to work at something space-related afterwards, at least in Greece, most enter the team stay for 1 - 1.5 year and then leave
 
 #### Presentation scope
 
