@@ -70,56 +70,56 @@ The presentation is split into topics that fall mainly into two distinct categor
 -   almost everything is behind closed doors, you don't even know what's out there, you have to learn but how?
 -   you have to find support (e.g. from university)
 -   you have to ensure infrastructure (e.g. machines) - might be something very generic to get prototypes, might be something very specific related to your payload. Getting access to required infrastructure might be almost trivial in some cases, near impossible in others. You'll face this sooner or later, start thinking about it as early as possible
--   invest in open-source and the community. There's people you can learn from, if not teach - talk a little bit about open-source and how it has helped us and others
--   you got help from ESA, experts (esp. the experts), reach out - a lot of experience that you can't find elsewhere. Don't be afraid to ask; it's an educational program and they want you to succeed. Remember that they've went through the whole journey multiple times. This is very crucial to take advantage of early
+-   invest in open-source and the community. There's people you can learn from, if not teach - talk a little bit about open-source and how it has helped us and others. In any case, do some research for what's out there. FYS! is about CubeSats. CubeSats are very affordable and easy to build and verify, which means in turn that they are very approachable and that a lot of people who are somehow involved with a similar mission do not belong in the space industry, meaning there's a wealth of information that isn't as strictly regulated
+-   you got help from ESA, experts (esp. the experts), reach out - a lot of experience that you can't find elsewhere. Don't be afraid to ask because it might seem like you haven't done your research; it's an educational program and they want you to succeed. Remember that they've went through the whole journey multiple times. This is very crucial to take advantage of as early as possible
 -   other teams participate in FYS!; be in touch - in other FYS! versions and other related projects, we've helped and received helped
 
 bridge: you can get help, and you will need help, because:
 
 ---
 
--   there's no leadership voice outside of the team, the organization has to be DIY - biggest factor towards your success, no one will help you, and you won't have expertise
+-   there's no leadership voice outside of the team, the organization has to be DIY - biggest factor towards your success, no one will help you, and you won't have expertise. It's one thing to learn how to blink LEDs, and another to learn how to run a team of 40 people to meet strict deadlines in a very demanding project
 -   COVID hit, and it hit hard. Why? - a good segue, we had to rethink our organizational structure due to limited physical access. A hybrid scheme works best
 -   you'll eventually have to scale up, time and time again. How? - future proof organization
--   find good infrastructure, platforms, esp. for organization - can't stress this enough. Communication, tracking and finding information, project planning and management. Don't be afraid to invest early, plant the seeds; they will bloom later.
+-   find good infrastructure, platforms, esp. for organization - can't stress this enough. Communication, tracking and finding information, project planning and management. Don't be pushing things back because you have a deadline to meet. Don't be afraid to invest early, plant the seeds; they will bloom later.
 -   try maintain information transfer at all costs - our biggest problem
-    -   documentation is always needed after completion (Akin's law), it almost never gets written post
+    -   documentation is always needed after completion (Akin's law), it almost never gets written post. If you come to me after I announce that I'll leave and say hey, can you write documentation and/or train new members? It will never happen. It will be sub-optimal at best
 
 bridge: TODO: organization
 
 ---
 
--  you need SYE, aka systems overview: for management, always see the forest, not the tree
--   always be wary of cross-dependencies
+-  you need SYE, aka systems overview: for management, always see the forest, not the tree - how do all the pieces interact with all the other pieces?
+-   always be wary of cross-dependencies - some work that needs to be done needs other work to be done first; or I'm needed at A but I'm also needed at B
 -   constantly track things, move deadlines appropriately, be on top of things
 -   be agile, especially in the beginning. Find what's good for you. Understand _why_ it's good for you - purposely talking in a loose frame and giving general comments, self-reflection is the most important thing
 
-bridge: exploring a path that you might later on decide that you won't follow, playing with the design, the structure, being bold
+bridge: exploring a path that you might later on decide that you won't follow, playing with the design, the structure, being bold 
 
 ---
 
 - you'll fuck up, constantly. Relax and learn from it - it sounds very cliche, but it holds so so true. We've had so many situations where things almost derailed and came close to crumbling down because people were losing their minds. Relax, be calm, assess the situation, do your best, learn from any mistakes and move on. In the grand scheme of things, it probably doesn't matter that much
 - be calm, diffuse situations, avoid crowd mentality - we've had "critical" situations dozens of times, we're still here
 - remember, everything's gonna be alright
-- if it isn't, not to worry. It's an educational program - I'm not trying to set the bar low here, things are very challenging and you should strive for excellence, but you have to understand the nature of the program and that the ESA people are here to help and that they know you will commit a lot of mistakes
-- try to build a momentum, then ride it, but guide it too; don't let it carry you - you'll find it difficult at first with a lot of things, for example with the organizational structure. It will require a lot of effort in the beginning, it's like a slope where, if you're doing it right, little by little it will get easier with time. Our case happened after we delivered the first CDR version successfully, things somewhat got automated, everyone knew what to work, communication was frictionless, new members were seamlessly integrated, but you have to always keep things in check and revisit things
+- if it isn't, not to worry. It's an educational program - I'm not trying to set the bar low here, things are very challenging and you should strive for excellence, but you have to understand the nature of the program and that the ESA people are here to help and that they know you will commit a lot of mistakes. The thought that they expect you to make mistakes is very liberating, because you will make mistakes and you might think that the consequences will be way bigger than they actually will be. I've noticed that they even get anxious if time passes and you don't seem to be having any problems. Plus, having a problem is great because you know that something is wrong, you probably know what it is, and you will eventually figure out a way to fix things. That's way better than sitting awkwardly wondering whether there's a problem looming around the corner waiting to bite you when you're not looking 
+- try to build a momentum, then ride it, but guide it too; don't let it carry you - you'll find it difficult at first with a lot of things, for example with the organizational structure. It will require a lot of effort in the beginning, it's like a slope where, if you're doing it right, little by little it will get easier with time. Our case happened after we delivered the first CDR version successfully, things somewhat got automated, everyone knew what to work on, communication was frictionless, new members were seamlessly integrated, but you have to always keep things in check and revisit things. We did this mistake and cracks started to appear; it costs us a lot in the end.
 
 ---
 
--   be afraid of the [bus factor](https://www.wikiwand.com/en/Bus_factor). But also always remember: NO ONE is irreplaceable - (όσες φορές είπαμε να πάμε με τα νερά κάποιου δεν δούλεψε, you're capable). Also trust your gut, same thing as in interviews. This is another reason why you want to have a "core" team of people to lead
+-   be afraid of the [bus factor](https://www.wikiwand.com/en/Bus_factor). But also always remember: NO ONE is irreplaceable - (όσες φορές είπαμε να πάμε με τα νερά κάποιου δεν δούλεψε, you're capable). Also trust your gut, same thing as in interviews.
 -   this is a very long-term project, it therefore transcends individuals - as we've already stressed, always always always think about the long-term
--   have a plan B, C, D, ... (even about design, _even_ about people (just need it to work - Akin's Law)
-- it's a marathon, not a sprint
+-   have a plan B, C, D, ... (even about design, _even_ about people (just need it to work - Akin's Law))
+- it's a marathon, not a sprint - a phrase of a friend
     - (... but there will be sprints)
 
 bridge: TODO: long term and patterns and things you must keep in mind
 
 ---
 
--   always find the next gen, preemptively
--   more often than not, there's a bigger underlying problem, and it has to do with structure. People are usually not the source of the problem
+-   always find the next gen, preemptively. Otherwise it will be too late and you'll be patching holes. We've had that problem multiple times
+-   more often than not, there's a bigger underlying problem, and it has to do with structure. People are usually not the source of the problem - don't be too eager to blame something on an individual, dig deeper
     -   but people CAN be the source of the problem. Never underestimate that. Especially if they are in a position of power, either organizationally or due to technical expertise
-    -   don't make someone coo lightly (i.e. don't endow with power lightly)
+    -   don't make someone coo lightly (i.e. don't endow with power lightly). We've had that problem happen way too many times. It's better to leave a gap than to shoot yourself in the foot this way
 
 ---
 
