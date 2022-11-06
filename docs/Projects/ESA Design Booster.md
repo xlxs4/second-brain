@@ -21,6 +21,45 @@
     -   documentation is always needed after completion (Akin's law), it almost never gets written post
 -   GitLab is necessary - PROJECT
 
+
+---
+
+-   you need SYE, aka systems overview: for management, always see the forest, not the tree - PROJECT
+-   always be wary of cross-dependencies - PROJECT
+-   constantly track things, move deadlines appropriately, be on top of things - PROJECT
+-   be agile, especially in the beginning. Find what's good for you. Understand _why_ it's good for you - PROJECT
+
+
+---
+
+-   remember, everything's gonna be alright - PROJECT
+-   if it isn't, not to worry. It's an educational program - PROJECT
+-   you'll fuck up, constantly. Relax and learn from it - PROJECT
+-   try to build a momentum, then ride it, but guide it too; don't let it carry you - PROJECT
+
+
+---
+
+-   be afraid of the [bus factor](https://www.wikiwand.com/en/Bus_factor). But also always remember: NO ONE is irreplaceable - PROJECT (όσες φορές είπαμε να πάμε με τα νερά κάποιου δεν δούλεψε, you're capable)
+-   this is a very long-term project, it therefore transcends individuals - PROJECT
+-   have a plan B, C, D, ... - PROJECT (even about design, _even_ about people (just need it to work - Akin's Law)
+
+---
+
+-   it's a marathon, not a sprint - PROJECT
+    -   (... but there will be sprints) - PROJECT
+-   always find the next gen, preemptively - PROJECT
+-   more often than not, there's a bigger underlying problem, and it has to do with structure. People are usually not the source of the problem - PROJECT
+    -   but people CAN be the source of the problem. Never underestimate that. Especially if they are in a position of power, either organizationally or due to technical expertise - PROJECT
+    -   don't make someone coo lightly (i.e. don't endow with power lightly) - PROJECT
+
+
+---
+
+-   keep minutes, have agendas, don't recycle topics, end each topic with an action, make the most out of a meeting - PROJECT
+-   cross-team meetings are very important - PROJECT
+-   hold concurrent sessions, frequent meetings, be transparent always - PROJECT
+
 ---
 
 -   taking initiatives is vital, how do you find someone to do the boring work? How do you get ordinary people to do the extraordinary? - PEOPLE
@@ -33,35 +72,9 @@
 
 ---
 
--   you need SYE, aka systems overview: for management, always see the forest, not the tree - PROJECT
--   always be wary of cross-dependencies - PROJECT
--   constantly track things, move deadlines appropriately, be on top of things - PROJECT
--   be agile, especially in the beginning. Find what's good for you. Understand _why_ it's good for you - PROJECT
-
----
-
--   remember, everything's gonna be alright - PROJECT
--   if it isn't, not to worry. It's an educational program - PROJECT
--   you'll fuck up, constantly. Relax and learn from it - PROJECT
--   try to build a momentum, then ride it, but guide it too; don't let it carry you - PROJECT
-
----
-
--   be afraid of the [bus factor](https://www.wikiwand.com/en/Bus_factor). But also always remember: NO ONE is irreplaceable - PROJECT (όσες φορές είπαμε να πάμε με τα νερά κάποιου δεν δούλεψε, you're capable)
--   this is a very long-term project, it therefore transcends individuals - PROJECT
--   have a plan B, C, D, ... - PROJECT (even about design, _even_ about people (just need it to work - Akin's Law)
 -   ALWAYS face your problems, always speak, always communicate - PEOPLE
 -   so much miscommunication and misunderstandings - PEOPLE
 -   communicate problems to ESA
-
----
-
--   it's a marathon, not a sprint - PROJECT
-    -   (... but there will be sprints) - PROJECT
--   always find the next gen, preemptively - PROJECT
--   more often than not, there's a bigger underlying problem, and it has to do with structure. People are usually not the source of the problem - PROJECT
-    -   but people CAN be the source of the problem. Never underestimate that. Especially if they are in a position of power, either organizationally or due to technical expertise - PROJECT
-    -   don't make someone coo lightly (i.e. don't endow with power lightly) - PROJECT
 
 ---
 
@@ -100,12 +113,6 @@
 -   praise in public blame in private (not always) - PEOPLE
 -   progress is seldom linear, or apparent. Try to make it apparent, but have that in mind - PROJECT
 -   involve people and throw problems at them (but always be there when needed) - PEOPLE
-
----
-
--   keep minutes, have agendas, don't recycle topics, end each topic with an action, make the most out of a meeting - PROJECT
--   cross-team meetings are very important - PROJECT
--   hold concurrent sessions, frequent meetings, be transparent always - PROJECT
 
 ----
 
