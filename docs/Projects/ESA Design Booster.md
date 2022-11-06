@@ -1,67 +1,4 @@
 
--   there's always exceptions to rules. Understand the rules, then break them - PROJECT
-
----
-
--   you have to develop skillset from zero - PROJECT    
--   almost everything is behind closed doors, you don't even know what's out there, you have to learn but how? - PROJECT
--   you have to find support (e.g. from university) - PROJECT
--   you have to ensure infrastructure (e.g. machines) - PROJECT
--   invest in open-source and the community. There's people you can learn from, if not teach - PROJECT
--   you got help from ESA, experts (esp. the experts), reach out - PROJECT
--   other teams participate in FYS!; be in touch - PROJECT
-
----
-
--   there's no leadership voice outside of the team, the organization has to be DIY - PROJECT
--   COVID hit, and it hit hard. Why? - PROJECT
--   you'll eventually have to scale up, time and time again. How? - PROJECT
--   find good infrastructure, platforms, esp. for organization - PROJECT
--   try maintain information transfer at all costs - PROJECT
-    -   documentation is always needed after completion (Akin's law), it almost never gets written post
--   GitLab is necessary - PROJECT
-
-
----
-
--   you need SYE, aka systems overview: for management, always see the forest, not the tree - PROJECT
--   always be wary of cross-dependencies - PROJECT
--   constantly track things, move deadlines appropriately, be on top of things - PROJECT
--   be agile, especially in the beginning. Find what's good for you. Understand _why_ it's good for you - PROJECT
-
-
----
-
--   remember, everything's gonna be alright - PROJECT
--   if it isn't, not to worry. It's an educational program - PROJECT
--   you'll fuck up, constantly. Relax and learn from it - PROJECT
--   try to build a momentum, then ride it, but guide it too; don't let it carry you - PROJECT
-
-
----
-
--   be afraid of the [bus factor](https://www.wikiwand.com/en/Bus_factor). But also always remember: NO ONE is irreplaceable - PROJECT (όσες φορές είπαμε να πάμε με τα νερά κάποιου δεν δούλεψε, you're capable)
--   this is a very long-term project, it therefore transcends individuals - PROJECT
--   have a plan B, C, D, ... - PROJECT (even about design, _even_ about people (just need it to work - Akin's Law)
-
----
-
--   it's a marathon, not a sprint - PROJECT
-    -   (... but there will be sprints) - PROJECT
--   always find the next gen, preemptively - PROJECT
--   more often than not, there's a bigger underlying problem, and it has to do with structure. People are usually not the source of the problem - PROJECT
-    -   but people CAN be the source of the problem. Never underestimate that. Especially if they are in a position of power, either organizationally or due to technical expertise - PROJECT
-    -   don't make someone coo lightly (i.e. don't endow with power lightly) - PROJECT
-
-
----
-
--   keep minutes, have agendas, don't recycle topics, end each topic with an action, make the most out of a meeting - PROJECT
--   cross-team meetings are very important - PROJECT
--   hold concurrent sessions, frequent meetings, be transparent always - PROJECT
-
----
-
 -   taking initiatives is vital, how do you find someone to do the boring work? How do you get ordinary people to do the extraordinary? - PEOPLE
 -   how do you ensure meeting participation? - PEOPLE
 -   it's a demanding project without rewards (monetary, ECTS...) - how do you get people to do volunteering work? - PEOPLE
@@ -183,6 +120,68 @@ The presentation is focused on discussing some of the programmatic aspects of th
 The presentation is split into topics that fall mainly into two distinct categories, the first being project management, while the second follows a more people-centric narrative. There will be advice with an emphasis on the earlier stages of the project, and some good and... not that good decisions to make or avoid, respectively. I'll try cast a more personal light and share some hurdles we've faced and had to overcome, or that we are still facing to this day. Following that tangent, I'll briefly go over some particular examples that greatly affected our team. Then, I'll mention some additional tips, and will close the presentation with an addendum on trying to realize a mission carrying a biological payload, since I've been informed there are some teams interested in working towards that. Because this is somewhat of a niche, please feel free to come have a chat with me after the Q&A session is over, so that we can talk in more detail. I'll share some handles and ways you can reach out to me, I and the whole team are very open and eager to discuss and chime in in whichever way possible.
 
 #### Project management
+
+
+-   there's always exceptions to rules. Understand the rules, then break them - PROJECT
+
+---
+
+-   you have to develop skillset from zero - PROJECT    
+-   almost everything is behind closed doors, you don't even know what's out there, you have to learn but how? - PROJECT
+-   you have to find support (e.g. from university) - PROJECT
+-   you have to ensure infrastructure (e.g. machines) - PROJECT
+-   invest in open-source and the community. There's people you can learn from, if not teach - PROJECT
+-   you got help from ESA, experts (esp. the experts), reach out - PROJECT
+-   other teams participate in FYS!; be in touch - PROJECT
+
+---
+
+-   there's no leadership voice outside of the team, the organization has to be DIY - PROJECT
+-   COVID hit, and it hit hard. Why? - PROJECT
+-   you'll eventually have to scale up, time and time again. How? - PROJECT
+-   find good infrastructure, platforms, esp. for organization - PROJECT
+-   try maintain information transfer at all costs - PROJECT
+    -   documentation is always needed after completion (Akin's law), it almost never gets written post
+-   GitLab is necessary - PROJECT
+
+
+---
+
+-   you need SYE, aka systems overview: for management, always see the forest, not the tree - PROJECT
+-   always be wary of cross-dependencies - PROJECT
+-   constantly track things, move deadlines appropriately, be on top of things - PROJECT
+-   be agile, especially in the beginning. Find what's good for you. Understand _why_ it's good for you - PROJECT
+
+
+---
+
+-   remember, everything's gonna be alright - PROJECT
+-   if it isn't, not to worry. It's an educational program - PROJECT
+-   you'll fuck up, constantly. Relax and learn from it - PROJECT
+-   try to build a momentum, then ride it, but guide it too; don't let it carry you - PROJECT
+
+
+---
+
+-   be afraid of the [bus factor](https://www.wikiwand.com/en/Bus_factor). But also always remember: NO ONE is irreplaceable - PROJECT (όσες φορές είπαμε να πάμε με τα νερά κάποιου δεν δούλεψε, you're capable)
+-   this is a very long-term project, it therefore transcends individuals - PROJECT
+-   have a plan B, C, D, ... - PROJECT (even about design, _even_ about people (just need it to work - Akin's Law)
+
+---
+
+-   it's a marathon, not a sprint - PROJECT
+    -   (... but there will be sprints) - PROJECT
+-   always find the next gen, preemptively - PROJECT
+-   more often than not, there's a bigger underlying problem, and it has to do with structure. People are usually not the source of the problem - PROJECT
+    -   but people CAN be the source of the problem. Never underestimate that. Especially if they are in a position of power, either organizationally or due to technical expertise - PROJECT
+    -   don't make someone coo lightly (i.e. don't endow with power lightly) - PROJECT
+
+
+---
+
+-   keep minutes, have agendas, don't recycle topics, end each topic with an action, make the most out of a meeting - PROJECT
+-   cross-team meetings are very important - PROJECT
+-   hold concurrent sessions, frequent meetings, be transparent always - PROJECT
 
 #### People management
 
