@@ -54,7 +54,7 @@ Maybe some of these will align with the environment and the challenges you are t
 
 #### Presentation scope
 
-The presentation is focused on discussing some of the programmatic aspects of the challenges you might come to face as FYS! progresses, instead of getting into the nitty gritty things on the technical side. TODO: more
+The presentation is focused on discussing some of the programmatic aspects of the challenges you might come to face as FYS! progresses, instead of getting into the nitty gritty things on the technical side. Because I wanted to cover a lot of different topics in a short amount of time, it will be a little free flowing.
 
 #### Presentation Structure
 
@@ -65,6 +65,7 @@ The presentation is split into topics that fall mainly into two distinct categor
 -   there's always exceptions to rules. Understand the rules, then break them - don't take what I say as a hard absolute to be followed. It's empirical data gathered through observation. Think about what I say and try to understand *why* I say it, throughout the talk
 
 ---
+**Things are tough**
 
 -   you have to develop skillset from zero - not just technical, but mostly the organizational
 -   almost everything is behind closed doors, you don't even know what's out there, you have to learn but how?
@@ -77,17 +78,31 @@ The presentation is split into topics that fall mainly into two distinct categor
 bridge: you can get help, and you will need help, because:
 
 ---
+**Scale up**
 
 -   there's no leadership voice outside of the team, the organization has to be DIY - biggest factor towards your success, no one will help you, and you won't have expertise. It's one thing to learn how to blink LEDs, and another to learn how to run a team of 40 people to meet strict deadlines in a very demanding project
 -   COVID hit, and it hit hard. Why? - a good segue, we had to rethink our organizational structure due to limited physical access. A hybrid scheme works best
 -   you'll eventually have to scale up, time and time again. How? - your organization must not only stand the test of "now", but also be future proof
 -   find good infrastructure, platforms, esp. for organization - can't stress this enough. Communication, tracking and finding information, project planning and management. Don't be pushing things back because you have a deadline to meet. Don't be afraid to invest early, plant the seeds; they will bloom later.
+
+**Information transfer**
+
 -   try maintain information transfer at all costs - our biggest problem
     -   documentation is always needed after completion (Akin's law), it almost never gets written post. If you come to me after I announce that I'll leave and say hey, can you write documentation and/or train new members? It will never happen. It will be sub-optimal at best
 
 bridge: TODO: organization
 
 ---
+**Organization: the small**
+
+-   keep minutes, have agendas, don't recycle topics, end each topic with an action, make the most out of a meeting
+-   cross-team meetings are very important
+-   hold concurrent sessions, frequent meetings, be transparent always
+
+bridge: on a more general note, ...
+
+---
+**... and the big**
 
 -  you need SYE, aka systems overview: for management, always see the forest, not the tree - how do all the pieces interact with all the other pieces?
 -   always be wary of cross-dependencies - some work that needs to be done needs other work to be done first; or I'm needed at A but I'm also needed at B
@@ -97,14 +112,16 @@ bridge: TODO: organization
 bridge: exploring a path that you might later on decide that you won't follow, playing with the design, the structure, being bold 
 
 ---
+**Calm down**
 
-- you'll fuck up, constantly. Relax and learn from it - it sounds very cliche, but it holds so so true. We've had so many situations where things almost derailed and came close to crumbling down because people were losing their minds. Relax, be calm, assess the situation, do your best, learn from any mistakes and move on. In the grand scheme of things, it probably doesn't matter that much
+- you'll screw up, constantly. Relax and learn from it - it sounds very cliche, but it holds so so true. We've had so many situations where things almost derailed and came close to crumbling down because people were losing their minds. Relax, be calm, assess the situation, do your best, learn from any mistakes and move on. In the grand scheme of things, it probably doesn't matter that much
 - diffuse situations, avoid crowd mentality - we've had "critical" situations dozens of times, we're still here
 - remember, everything's gonna be alright
 - if it isn't, not to worry. It's an educational program - I'm not trying to set the bar low here, things are very challenging and you should strive for excellence, but you have to understand the nature of the program and that the ESA people are here to help and that they know you will commit a lot of mistakes. The thought that they expect you to make mistakes is very liberating, because you will make mistakes and you might think that the consequences will be way bigger than they actually will be. I've noticed that they even get anxious if time passes and you don't seem to be having any problems. Plus, having a problem is great because you know that something is wrong, you probably know what it is, and you will eventually figure out a way to fix things. That's way better than sitting awkwardly wondering whether there's a problem looming around the corner waiting to bite you when you're not looking 
 - try to build a momentum, expect a momentum to be built, then ride it, but guide it too; don't let it carry you - I keep saying that things are difficult; you'll find it difficult at first with a lot of things, for example with the organizational structure. It will require a lot of effort in the beginning, it's like a slope where, if you're doing it right, little by little it will get easier with time. Our case happened after we delivered the first CDR version successfully, things somewhat got automated, everyone knew what to work on, communication was frictionless, new members were seamlessly integrated, but you have to always keep things in check and revisit things. We did this mistake and cracks started to appear; it costs us a lot in the end.
 
 ---
+**The bus factor**
 
 -   be afraid of the [bus factor](https://www.wikiwand.com/en/Bus_factor). The bus factor is when ... and you will come across it and some times there won't be a lot of things you'll be able to do to mitigate it. But also always remember: NO ONE is irreplaceable - (όσες φορές είπαμε να πάμε με τα νερά κάποιου δεν δούλεψε, you're capable). Also trust your gut, same thing as in interviews.
 -   this is a very long-term project, it therefore transcends individuals - as we've already stressed, always always always think about the long-term
@@ -115,77 +132,76 @@ bridge: exploring a path that you might later on decide that you won't follow, p
 bridge: TODO: long term and patterns and things you must keep in mind
 
 ---
+**People and problems :(**
 
 -   always find the next gen, preemptively. Otherwise it will be too late and you'll be patching holes. We've had that problem multiple times
 -   more often than not, there's a bigger underlying problem, and it has to do with structure. People are usually not the source of the problem - don't be too eager to blame something on an individual, dig deeper
     -   but people CAN be the source of the problem. Never underestimate that. Especially if they are in a position of power, either organizationally or due to technical expertise
     -   don't make someone coo lightly (i.e. don't endow with power lightly). We've had that problem happen way too many times. It's better to leave a gap than to shoot yourself in the foot this way
 
----
-
--   keep minutes, have agendas, don't recycle topics, end each topic with an action, make the most out of a meeting
--   cross-team meetings are very important
--   hold concurrent sessions, frequent meetings, be transparent always
-
 #### People management
 
--   taking initiatives is vital, how do you find someone to do the boring work? How do you get ordinary people to do the extraordinary?
--   how do you ensure meeting participation?
--   it's a demanding project without rewards (monetary, ECTS...) - how do you get people to do volunteering work?
--   HR - remember that you should think about how you approach these things too. A good example and place to start might be "Leadership That Gets Results" by Daniel Goleman in HBR
+**People can also be tough**
+
+-   Again, there are a lot of difficulties you'll face when you're trying to get people to collaborate to see this through. There's some similar questions to ask yourselves. The first is how do you find someone to do the boring work? There will be a lot of it, filling spreadsheets, searching for manuals... Especially if you have to hold events and have a social presence too 
+-   it's a demanding project without rewards (monetary, ECTS...) - how do you get people to do volunteering work? Because they want to do it. Therefore, you have to make sure they want to do it *a lot*
+- How do you get ordinary people to do the extraordinary? You'll have to face great technical challenges while at the same time, constantly support and get the others pumped, be there to mediate in case any conflicts occur, etc.
+- taking initiatives is vital - that has been one of our biggest complaints about members. There's new ideas someone has to think, and there's work that no one will do unless someone decides to take it up by themselves. It also helps tremendously in fostering an environment where people feel their peers are motivated
+- how do you ensure meeting participation?
+
+-   HR - remember that you should think about how you approach these things too. A good example and place to start might be "Leadership That Gets Results" by Daniel Goleman in HBR. This is recommended for you to see that there's a lot of thought that can go behind things (TODO the report about collective meetings) and a lot of different ways you can approach someone
 -   physical presence is vital
--   expand beyond the scope of the project, hang out, do cool things on the side
--   the project requires heavy investment. This means it will overlap with other areas of the members' lives. You have to take that into account and learn about other areas of their life in order to effectively support them
+-   expand beyond the scope of the project, hang out, do cool things on the side - This team was to me something way way more than just the project. I've learned a ton, met cool people, made friends, found out what I want to do academically, etc. And this is what's kept me working in the project for so long ;)
+-   the project requires heavy investment. This means it will overlap with other areas of the member's lives. You have to take that into account and learn about other areas of their life in order to effectively support them. This goes hand in hand with forming groups and being part of a gang
 
 ---
+**Talk!**
 
--   ALWAYS face your problems, always speak, always communicate
--   so much miscommunication and misunderstandings
--   communicate problems to ESA
+-   ALWAYS face your problems, always speak, always communicate - hoarding problems under the rag instead of facing them is a very well known human tendency. I find that the more long term the thing you're not doing is, the more catastrophic the consequences will be when the time comes to face them. Again, this sounds like a cliche, "just do everything in time" so I will give you an example (TODO: mention EPS)
+-   communicate problems to ESA - again, they're hear to help. The sooner the learn about something the better. They'll always appreciate you being upfront, trust me. Don't put yourselves into rabbit holes you'll then have to dig out of
+-  feedback is crucial, it's all about feedback cycles - This is by far the most important think to take out of this talk. Feedback requires good communication channels, so first build these. Then learn to give feedback. Learn to receive feedback. Provide people with a lot of different ways they can give feedback. Make sure that there's always more than one person (that hopefully occupies a different position in the team) for someone to speak to. Feedback cycles is the way we get better. Again, make sure to do everything you can to have people a) giving feedback and b) receiving feedback and acting on it
+-  praise in public blame in private (not always) - a good reminder to keep in mind
 
 ---
+**The leadership behind the leadership**
 
--   set up a "core" team of people to serve as the backbone of the team at all times
--   who thinks about the team and not just technical work or events?
--   decisions will always upset some people. The question is which
+-   set up a "core" team of people to serve as the backbone of the team at all times - This is, organizationally, what helped us make it. It also affected our progress severely when we lacked it
+-   who thinks about the team and not just technical work or events? - That's how you can find the people you'll rely upon
+-   decisions will always upset some people. The question is which - If all goes south, side with the ones that will carry the team on their shoulders. They're your most important asset. Always consider how a decision might affect them and their motivation
 -   invest in those you believe will carry the team forward, not from a technical viewpoint
-    -   this might mean not going with the majority. The majority will also blindly follow whatever, it's a formless mass to give shape to
--   don't shadow-government much
+    -   this might mean not going with the majority. The majority will also blindly follow whatever, it's a formless mass to give shape to (oops)
+-   don't shadow-government much - this all might go against transparency and people will eventually catch up to that. Be transparent almost always
 
 ---
+**Help them help you**
 
--   people won't do things they don't want to do forever
+-   people won't do things they don't want to do forever - never forget that, try to find an alternative
 -   there's always someone out there that wants to work on what you don't. Find them
     -   newer members can find something more exciting, _resource allocation_
     -   also talk about the chef tasks book ("Work Clean"), you should also include things in feedback on how to work more efficiently, etc.
 
----
-
--   understand, mitigate but ultimately just be okay with the [Pareto principle](https://www.wikiwand.com/en/Pareto_principle)
--   who gets credits? for what? is their work recognized?
-
----
+**Help them help you: Vol 2**
 
 -   don't leave anyone on their own
 -   set group tasks
 -   set small, well-defined tasks. Make the members feel and visualize the progress
 -   make sure everyone is on the same page regarding the high-level roadmap
--   give people things they might not love but that are important, and things that aren't important but they love doing
--   feedback is crucial, it's all about feedback cycles
--   praise in public blame in private (not always)
+-   give people things they might not love but that are important, and things that aren't important but they love doing - try to find asteris top model
 -   progress is seldom linear, or apparent. Try to make it apparent, but have that in mind
--   involve people and throw problems at them (but always be there when needed)
+-   involve people and throw problems at them (but always be there when needed) - don't be afraid to throw problems at them, that's how they grow
 
-----
+---
+**Fluff**
 
--   be calm, diffuse situations, avoid crowd mentality
+Some other things I wanted to make time to mention but couldn't group with the rest of the topics
+
 -   sometimes you have to be quick to arrive at a decision. That might mean you won't have time to get everyone to agree with said decision
 -   recruitment is key. You'll also need to establish presence in the uni(s) to get people in REC
 -   [Akin's Laws](https://spacecraft.ssl.umd.edu/akins_laws.html) - HEH
 
 TODO: talk about the importance of having a vision, of having some pillars, of your work being multifaceted and extending past just some research topic, etc. Mention our mission as an example and explain why that's so so so important (e.g. to screenshot apo random)
 
-#### Examples
+#### Examples 
 
 ##### ASAT - SpaceDot split
 
@@ -195,24 +211,26 @@ TODO: talk about the importance of having a vision, of having some pillars, of y
 
 ##### PL
 
-#### Tips
-
 #### Bio slides
 
 ##### Intro/scope
 
 ##### Challenges
 
-###### Miniaturization
+###### Miniaturization of cell culturing instrumentation
 
-###### Biocompatibility
+###### Ensuring biocompatibility of payload materials
 
-###### Cell survival
+###### Regulating temperature and pressure to decouple cell survival-behavior from other space stressors (e.g. radiation)
 
-###### Cell storage
+###### Using methods for autonomous measurements (e.g. spectroscopy, microscopy)
 
-###### Autonomous measurements
+###### Preparing predictable long-term biological sample storage methods before launch
 
-###### Automation
+###### Engineering reliable readouts for cell viability/metabolism
+
+###### Standardization of common wet lab methods to meet space engineering requirements/procedures
 
 #### Outro
+
+FYS! is awesome, talk about my experience
