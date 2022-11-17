@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "0d1f2d8016eeaafd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/Model Calibration and Parameter Estimation with JuliaSim Model Optimizer.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/ESA Design Booster.md",
+                "file": "Areas/Photography/Mamiya ZE-2 Quartz.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projects/ESA Design Booster.md",
+                "file": "Areas/Photography/Mamiya ZE-2 Quartz.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/ESA Design Booster.md"
+                "file": "Areas/Photography/Mamiya ZE-2 Quartz.md"
               }
             }
           },
@@ -170,17 +182,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "b1da90362de724bb",
+  "active": "9a352763e08653a7",
   "lastOpenFiles": [
-    "Excalidraw/circuit-mem-original.excalidraw.md",
+    "Projects/Model Calibration and Parameter Estimation with JuliaSim Model Optimizer.md",
     "Projects/ESA Design Booster.md",
+    "Excalidraw/circuit-mem-original.excalidraw.md",
     "Areas/Photography/Mamiya ZE-2 Quartz.md",
     "Areas/Photography/Film.md",
     "Projects/GitHub/Summation By Parts (SBP).md",
     "Projects/GitHub/African Buffalo Optimization (ABO).md",
     "References/@mattssonBoundaryOptimizedDiagonalnorm2018.md",
     "Excalidraw/abo-visualization.excalidraw.md",
-    "Projects/Thesis/Tsitsas Email.md",
-    "Excalidraw/abo-flowchart.excalidraw.png"
+    "Projects/Thesis/Tsitsas Email.md"
   ]
 }
