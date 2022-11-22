@@ -56,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Areas/Photography/Mamiya ZE-2 Quartz.md",
+                "file": "Projects/ESA Design Booster.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Areas/Photography/Mamiya ZE-2 Quartz.md",
+                "file": "Projects/ESA Design Booster.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Areas/Photography/Mamiya ZE-2 Quartz.md"
+                "file": "Projects/ESA Design Booster.md"
               }
             }
           },
@@ -182,12 +182,12 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "9a352763e08653a7",
+  "active": "b1da90362de724bb",
   "lastOpenFiles": [
+    "Areas/Photography/Mamiya ZE-2 Quartz.md",
     "Projects/Model Calibration and Parameter Estimation with JuliaSim Model Optimizer.md",
     "Projects/ESA Design Booster.md",
     "Excalidraw/circuit-mem-original.excalidraw.md",
-    "Areas/Photography/Mamiya ZE-2 Quartz.md",
     "Areas/Photography/Film.md",
     "Projects/GitHub/Summation By Parts (SBP).md",
     "Projects/GitHub/African Buffalo Optimization (ABO).md",

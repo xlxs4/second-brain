@@ -1,31 +1,4 @@
-
-### Structure
-
-"Participating in FYS! from the student perspective"
-
-- Introduction (`@xlxs4`, SpaceDot, AcubeSAT) - `TODO` mins
-- Context (things that might be different in our team's case from the norm) - `TODO` mins
-- Presentation scope - `TODO` mins
-- Presentation structure - `TODO` mins
-- Project management - `TODO` mins
-- People management - `TODO` mins
-- Examples - `TODO` mins
-	- EPS
-	- SU
-	- PL
-- Tips - `TODO` mins
-- Bio slides ("biological payload development challenges")
-	- Intro/scope - `TODO` mins
-	- Challenges - `TODO` mins
-		- Miniaturization
-		- Biocompatibility
-		- Cell survival
-		- Cell storage
-		- Autonomous measurements
-		- Automation
-- Outro - `TODO` mins
-- Q&A - `15` mins
-
+ESA Design Booster
 #### Introduction
 
 Greetings! I'm Orestis, I come from Greece and I'm the co-science lead in the AcubeSAT project.
@@ -109,7 +82,7 @@ bridge: on a more general note, ...
 -   constantly track things, move deadlines appropriately, be on top of things - you'll come to find out that you'll be setting a deadline and it will be way overdue and then you'll have to set a deadline anew and do that because it helps you know where you are and where you need to at all times
 -   be agile, especially in the beginning. Find what's good for you. Understand _why_ it's good for you - purposely talking in a loose frame and giving general comments, self-reflection is the most important thing
 
-bridge: exploring a path that you might later on decide that you won't follow, playing with the design, the structure, being bold 
+bridge: exploring a path that you might later on decide that you won't follow, playing with the design, the structure, being bold. You have time, you can afford to make mistakes
 
 ---
 **Calm down**
@@ -137,7 +110,8 @@ bridge: TODO: long term and patterns and things you must keep in mind
 -   always find the next gen, preemptively. Otherwise it will be too late and you'll be patching holes. We've had that problem multiple times
 -   more often than not, there's a bigger underlying problem, and it has to do with structure. People are usually not the source of the problem - don't be too eager to blame something on an individual, dig deeper
     -   but people CAN be the source of the problem. Never underestimate that. Especially if they are in a position of power, either organizationally or due to technical expertise
-    -   don't make someone coo lightly (i.e. don't endow with power lightly). We've had that problem happen way too many times. It's better to leave a gap than to shoot yourself in the foot this way
+    -   don't make someone coo lightly (i.e. don't endow with power lightly). We've had that problem happen way too many times. It's better to leave a gap than to shoot yourself in the foot this way 
+
 
 #### People management
 
@@ -160,7 +134,7 @@ bridge: TODO: long term and patterns and things you must keep in mind
 -   ALWAYS face your problems, always speak, always communicate - hoarding problems under the rag instead of facing them is a very well known human tendency. I find that the more long term the thing you're not doing is, the more catastrophic the consequences will be when the time comes to face them. Again, this sounds like a cliche, "just do everything in time" so I will give you an example (TODO: mention EPS)
 -   communicate problems to ESA - again, they're hear to help. The sooner the learn about something the better. They'll always appreciate you being upfront, trust me. Don't put yourselves into rabbit holes you'll then have to dig out of
 -  feedback is crucial, it's all about feedback cycles - This is by far the most important think to take out of this talk. Feedback requires good communication channels, so first build these. Then learn to give feedback. Learn to receive feedback. Provide people with a lot of different ways they can give feedback. Make sure that there's always more than one person (that hopefully occupies a different position in the team) for someone to speak to. Feedback cycles is the way we get better. Again, make sure to do everything you can to have people a) giving feedback and b) receiving feedback and acting on it
--  praise in public blame in private (not always) - a good reminder to keep in mind
+-  praise in public blame in private (not always) - a good reminder to keep in mind mostly the praising 
 
 ---
 **The leadership behind the leadership**
@@ -201,36 +175,10 @@ Some other things I wanted to make time to mention but couldn't group with the r
 
 TODO: talk about the importance of having a vision, of having some pillars, of your work being multifaceted and extending past just some research topic, etc. Mention our mission as an example and explain why that's so so so important (e.g. to screenshot apo random)
 
-#### Examples 
-
-##### ASAT - SpaceDot split
-
-##### EPS
-
-##### SU
-
-##### PL
-
-#### Bio slides
-
-##### Intro/scope
-
-##### Challenges
-
 ###### Miniaturization of cell culturing instrumentation
-
 ###### Ensuring biocompatibility of payload materials
-
 ###### Regulating temperature and pressure to decouple cell survival-behavior from other space stressors (e.g. radiation)
-
 ###### Using methods for autonomous measurements (e.g. spectroscopy, microscopy)
-
 ###### Preparing predictable long-term biological sample storage methods before launch
-
 ###### Engineering reliable readouts for cell viability/metabolism
-
 ###### Standardization of common wet lab methods to meet space engineering requirements/procedures
-
-#### Outro
-
-FYS! is awesome, talk about my experience
