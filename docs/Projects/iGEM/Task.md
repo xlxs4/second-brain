@@ -3,7 +3,7 @@
 
 ### Fishing nets pose a great threat on many levels
 
-More than **25 000 nets are** lost each year in the North-East Atlantic Ocean alone. These lost nets are known as **ghost nets** as they can haunt the oceans by continuing to catch fish when lost by the fishermen. Studies show that they are among the most harmful marine debris and it is estimated that they cause the **deaths of hundreds of thousands of marine animals** each year, including protected species, such as dolphins, whales and turtles. Currently, **46%** of the Great Pacific Garbage Patch by weight consists of ghost nets which accounts for an area **three times the size of France**.
+More than **25 000 nets** are lost each year in the North-East Atlantic Ocean alone. These lost nets are known as **ghost nets** as they can haunt the oceans by continuing to catch fish when lost by the fishermen. Studies show that they are among the most harmful marine debris and it is estimated that they cause the **deaths of hundreds of thousands of marine animals** each year, including protected species, such as dolphins, whales and turtles. Currently, **46%** of the Great Pacific Garbage Patch by weight consists of ghost nets which accounts for an area **three times the size of France**.
 
 Read more in [https://2022.igem.wiki/ucopenhagen/description](https://2022.igem.wiki/ucopenhagen/description)
 
@@ -32,6 +32,19 @@ Herein, our synthetic biology approach allows us to come up with a novel solutio
 Read more in [https://2022.igem.wiki/ucopenhagen/description](https://2022.igem.wiki/ucopenhagen/description)
 
 ### Describe the problem the team decided to solve and the solution the team suggested (max 2000 characters).
+
+#### Structure
+
+- Problem: ~600 characters, can be split into a major paragraph describing the problem at hand and a minor one on why it's important
+- Solution ~800 characters, can be split into a paragraph for wet lab, one for dry, and maybe an addendum on the integrated/final solution
+- \[Optional\] a small section on either how they plan to get the idea implemented, or comments on the overall problem/solution
+
+---
+
+Problem: nets get lost -> nets kill marine animals, damage coral reefs
+-> also microplastics, big problem because there's a ton of nets, will persist long-term
+
+![[igem-ucopenhagen-problem.excalidraw|700]]
 
 ### Give one example on how this team reached out to the general public and one example on how they got feedback from the scientific community.
 

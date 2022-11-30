@@ -45,11 +45,9 @@
             "id": "2cd56293f3fae671",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Projects/iGEM/Task.md",
-                "mode": "source",
-                "source": false
+                "file": "Excalidraw/igem-ucopenhagen-problem.excalidraw.md"
               }
             }
           },
@@ -59,14 +57,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/iGEM/iGEM UCopenhagen 2022.md",
+                "file": "Projects/iGEM/Task.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -192,9 +190,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "2cd56293f3fae671",
+  "active": "c0dbe285f52c6eed",
   "lastOpenFiles": [
     "Projects/iGEM/iGEM UCopenhagen 2022.md",
+    "Excalidraw/igem-ucopenhagen-problem.excalidraw.md",
     "Projects/iGEM/Task.md",
     "Kanban/Kanban.md",
     "References/@ajo-franklinRationalDesignMemory2007.md",
@@ -202,7 +201,6 @@
     "Areas/Photography/Film.md",
     "Projects/ESA Design Booster.md",
     "Areas/Photography/Mamiya ZE-2 Quartz.md",
-    "Excalidraw/circuit-mem-original.excalidraw.md",
-    "Projects/GitHub/Summation By Parts (SBP).md"
+    "Excalidraw/circuit-mem-original.excalidraw.md"
   ]
 }
