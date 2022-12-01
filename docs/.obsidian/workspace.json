@@ -32,7 +32,7 @@
             }
           },
           {
-            "id": "f260286e0f988793",
+            "id": "268267c7c683f96b",
             "type": "leaf",
             "state": {
               "type": "kanban",
@@ -42,17 +42,7 @@
             }
           },
           {
-            "id": "2cd56293f3fae671",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/igem-ucopenhagen-problem.excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "c0dbe285f52c6eed",
+            "id": "f260286e0f988793",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -64,7 +54,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -190,12 +180,12 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c0dbe285f52c6eed",
+  "active": "f260286e0f988793",
   "lastOpenFiles": [
     "Projects/iGEM/iGEM UCopenhagen 2022.md",
+    "Kanban/Kanban.md",
     "Excalidraw/igem-ucopenhagen-problem.excalidraw.md",
     "Projects/iGEM/Task.md",
-    "Kanban/Kanban.md",
     "References/@ajo-franklinRationalDesignMemory2007.md",
     "Projects/Model Calibration and Parameter Estimation with JuliaSim Model Optimizer.md",
     "Areas/Photography/Film.md",
