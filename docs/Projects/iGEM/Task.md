@@ -1,24 +1,3 @@
-
-## Problem
-
-### Fishing nets pose a great threat on many levels
-
-More than **25 000 nets** are lost each year in the North-East Atlantic Ocean alone. These lost nets are known as **ghost nets** as they can haunt the oceans by continuing to catch fish when lost by the fishermen. Studies show that they are among the most harmful marine debris and it is estimated that they cause the **deaths of hundreds of thousands of marine animals** each year, including protected species, such as dolphins, whales and turtles. Currently, **46%** of the Great Pacific Garbage Patch by weight consists of ghost nets which accounts for an area **three times the size of France**.
-
-Read more in [https://2022.igem.wiki/ucopenhagen/description](https://2022.igem.wiki/ucopenhagen/description)
-
-### What will happen if we do not act?
-
-If left unresolved, the plastic pollution in the oceans will keep contributing to the accumulation of plastics such as that observed in the Great Pacific Garbage Patch will keep growing. It takes **600-800** years to fully degrade a nylon net, this means that the current lost nets will keep affecting the ocean for many more years. **Thus immediate action is essential!** Additionally, a huge unspoken danger is posed by the fragmentation of the nets in the ocean, which results in the release of **microplastics** and contributes to its accumulation in the food chains. This includes ourselves. Microplastics have been recently shown to accumulate in our blood and also in animals’ brains. Therefore, the threat posed by non-biodegradable fishing nets to the environment is multifaceted, urgent and perilous.
-
-Read more in [https://2022.igem.wiki/ucopenhagen/sustainable](https://2022.igem.wiki/ucopenhagen/sustainable)
-
-"Current fishing nets are a huge source of pollution and damage to marine environments. Nets are frequently lost and yet continue to roam the oceans, endangering many species and ecosystems in its way. Furthermore, they also serve as a major contributor to microplastic emission in the oceans. Therefore, there is an urgent need to find an alternative for plastic-based fishing nets to overcome this global issue."
-
-"Up until the early 1960s, cotton and Manila hemp, were commonly used as natural materials for fishing nets. Synthetic fibers, such as nylon made of polyamide (PA), replaced these materials after World War II, given that these materials were not only of high strength and flexibility, which resulted in good fishing performance and durability, but also of low price and good processability. However, it would be found later that nylon takes 600-800 years to degrade."
-
-"Biodegradable alternatives to such nets have appeared recently. For instance, nets using biodegradable resins which are degraded by bacteria or fungi in sea water. However, these nets cannot compete with the plastic-based ones. Other alternatives such as the ones proposed by SEALIVE, which used green materials like micro-algae or other biobased materials are under development. This means that more work is still required in the field in order to obtain biodegradable nets with the same, or better, fishing properties than the ones that are currently in use."
-
 ### Solution
 
 Developing a biodegradable alternative to plastic-based fishing nets by **creating a protein-based fiber** that is designed to be adapted for marine environments. Designs are based on the strongest fibers found in nature, through optimizing and producing different **silk proteins** as well as a fiber protein found in **sea anemone**. Also produced a marine spider silk protein. To further improve the strength of the fiber and make it water-resistant, we are coating them with a protective layer of mussel foot proteins, a protective protein found in the outer layer of the marine fiber byssus, which is produced in clams. This coating is achieved through the SnoopTag/Catcher system, which enables linkage between proteins.

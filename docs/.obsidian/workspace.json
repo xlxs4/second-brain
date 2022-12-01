@@ -42,6 +42,18 @@
             }
           },
           {
+            "id": "01387aa42175f414",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "seminar 2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "f260286e0f988793",
             "type": "leaf",
             "state": {
@@ -54,7 +66,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -182,15 +194,15 @@
   },
   "active": "f260286e0f988793",
   "lastOpenFiles": [
+    "seminar 2.md",
+    "Projects/iGEM/Task.md",
     "Projects/iGEM/iGEM UCopenhagen 2022.md",
     "Kanban/Kanban.md",
     "Excalidraw/igem-ucopenhagen-problem.excalidraw.md",
-    "Projects/iGEM/Task.md",
     "References/@ajo-franklinRationalDesignMemory2007.md",
     "Projects/Model Calibration and Parameter Estimation with JuliaSim Model Optimizer.md",
     "Areas/Photography/Film.md",
     "Projects/ESA Design Booster.md",
-    "Areas/Photography/Mamiya ZE-2 Quartz.md",
-    "Excalidraw/circuit-mem-original.excalidraw.md"
+    "Areas/Photography/Mamiya ZE-2 Quartz.md"
   ]
 }
