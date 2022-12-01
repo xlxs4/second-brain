@@ -18,6 +18,10 @@ Read more in [https://2022.igem.wiki/ucopenhagen/design](https://2022.igem.wiki/
 
 ### Describe the problem the team decided to solve and the solution the team suggested (max 2000 characters).
 
+The UCopenhagen iGEM team designed to tackle the accumulation of what's termed ghost nets — fishing nets that end up lost drifting in the waters. Ghost nets are lethal to a variety of marine animals, including organisms close to the sediments. Nets are assembled from synthetic fibers which have a lifespan of several hundred years. Additionally, they break up into little bits — microplastics, which can be ingested by both wildlife and humans and are detrimental to health. Microplastics also intensify the greenhouse effect as they release gases during breakage and render microorganisms less effective in capturing CO2. All of the above constitute a pressing issue: to better contextualize the scale of this phenomenon, the ghost nets in the North Pacific Ocean total an area that's three times the area of France.
+
+
+
 #### Structure
 
 - Problem: ~600 characters, can be split into a major paragraph describing the problem at hand and a minor one on why it's important
