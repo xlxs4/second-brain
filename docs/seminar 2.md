@@ -1,3 +1,5 @@
+[Using Large Datasets in JuliaHub - YouTube](https://www.youtube.com/watch?v=7oOrLRk0_0Q)
+
 ![[Pasted image 20221201200633.png]]
 
 Interactive drive - persistent directory shared across all juliahub stuff, you can play with things you would. Limited in size and rigor

@@ -1,4 +1,4 @@
-
+[Model Calibration and Parameter Estimation with JuliaSim Model Optimizer - YouTube](https://www.youtube.com/watch?v=TkmpICaFDrM&list=PLC0QOsNQS8hZ3JXKzx32BidNxyIdYoPeY&index=21)
 JuliaSim: a modern SciML suite
 
 ![[sim1.png]]

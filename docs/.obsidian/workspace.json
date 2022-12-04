@@ -47,7 +47,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "seminar 2.md",
+                "file": "Projects/Model Calibration and Parameter Estimation with JuliaSim Model Optimizer.md",
                 "mode": "source",
                 "source": false
               }
@@ -64,9 +64,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "71bfe5a670b513f1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Areas/BJJ/Flexibility.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -132,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/iGEM/Task.md",
+                "file": "Areas/BJJ/Flexibility.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projects/iGEM/Task.md",
+                "file": "Areas/BJJ/Flexibility.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +184,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/iGEM/Task.md"
+                "file": "Areas/BJJ/Flexibility.md"
               }
             }
           },
@@ -192,17 +204,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "f260286e0f988793",
+  "active": "71bfe5a670b513f1",
   "lastOpenFiles": [
+    "Projects/Model Calibration and Parameter Estimation with JuliaSim Model Optimizer.md",
     "seminar 2.md",
+    "Areas/BJJ/Flexibility.md",
     "Projects/iGEM/Task.md",
     "Projects/iGEM/iGEM UCopenhagen 2022.md",
     "Kanban/Kanban.md",
     "Excalidraw/igem-ucopenhagen-problem.excalidraw.md",
     "References/@ajo-franklinRationalDesignMemory2007.md",
-    "Projects/Model Calibration and Parameter Estimation with JuliaSim Model Optimizer.md",
     "Areas/Photography/Film.md",
-    "Projects/ESA Design Booster.md",
-    "Areas/Photography/Mamiya ZE-2 Quartz.md"
+    "Projects/ESA Design Booster.md"
   ]
 }
