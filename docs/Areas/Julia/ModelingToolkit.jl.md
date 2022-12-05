@@ -55,7 +55,7 @@ See [[ModelingToolkitStandardLibrary.jl]]
 - Signal Transduction
 - **Synthetic Biology**
 
-CellMLToolkit.jl imports a CellML model in XML and outputs a ModelingToolkit.jl IR (Intermediate Representation) to work with using the general SciML ecosystem.
+CellMLToolkit.jl imports a CellML model in XML and outputs a ModelingToolkit.jl IR (Intermediate Representation) to work with using the general SciML ecosystem. 
 
 ### SBML
 
