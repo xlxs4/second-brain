@@ -62,3 +62,12 @@ CellMLToolkit.jl imports a CellML model in XML and outputs a ModelingToolkit.jl 
 [SBMLToolkit.jl](https://docs.sciml.ai/SBMLToolkit/stable/) can be used to import SBML (Systems Biology Markup Language) models into ModelingToolkit and the general SciML ecosystem. It uses [SBML.jl](https://github.com/LCSB-BioCore/SBML.jl) which in turn provides a Julia wrapper to [libSBML](https://sbml.org/software/libsbml/).
 
 ### BioNetGen
+
+You can use SBMLToolkit — more specifically, the `writeSBML()` export function.
+
+BioNetGen is for biochemical reaction networks modeling. Thus, you can use [ReactionNetworkImporters.jl](https://docs.sciml.ai/ReactionNetworkImporters/stable/). You can also use ReactionNetworkImporters.jl to import:
+- networks represented by dense or sparse substrate and product stoichiometric matrices
+- networks represented by dense or sparse complex stoichiometric and incidence matrices
+
+Notice that you can still use SBMLToolkit.jl, since you can export a model in SBML through BioNetGen (and [COPASI](https://copasi.org/), and [Virtual Cell](https://vcell.org/), etc.).
+
