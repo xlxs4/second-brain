@@ -19,12 +19,12 @@ kanban-plugin: basic
 
 ## in progress
 
-- [ ] igem: Prelim task
 
 
 ## done
 
 **Complete**
+- [x] igem: Prelim task
 
 
 
