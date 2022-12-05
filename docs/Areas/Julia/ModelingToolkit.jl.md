@@ -15,8 +15,19 @@ It mixes symbolic computing packages like [SymPy](https://www.sympy.org/en/index
 - Composition of models through the components, a lazy connection system, and tools for expanding/flattening
 - Pervasive parallelism in symbolic computations and generated functions
 - Transformations like alias elimination and tearing of nonlinear systems for efficiently numerically handling large-scale systems of equations
-- The ability to use the entire Symbolics.jl Computer Algebra System (CAS) as part of the modeling process.
-- Import models from common formats like SBML, CellML, BioNetGen, and more.
-- Extendability: the whole system is written in pure Julia, so adding new functions, simplification rules, and model transformations has no barrier.
+- The ability to use the entire [Symbolics.jl](https://github.com/JuliaSymbolics/Symbolics.jl) CAS as part of the modeling process.
+- Import models from common formats like [SBML](https://sbml.org/), [CellML](https://www.cellml.org/), [BioNetGen](https://bionetgen.org/), and more.
+- Extendability: the whole system is written in pure [Julia](https://julialang.org/), so adding new functions, simplification rules, and model transformations has no barrier.
 
-[Home · ModelingToolkit.jl](https://docs.sciml.ai/ModelingToolkit/dev/#Feature-List)
+[Feature List · ModelingToolkit.jl](https://docs.sciml.ai/ModelingToolkit/dev/#Feature-List)
+
+### Equation Types
+
+- [Ordinary differential equations](https://www.wikiwand.com/en/Ordinary_differential_equation)
+- [Stochastic differential equations](https://www.wikiwand.com/en/Stochastic_differential_equation)
+- [Partial differential equations](https://www.wikiwand.com/en/Partial_differential_equation)
+- [Nonlinear systems](https://www.wikiwand.com/en/Nonlinear_system)
+- [Optimization problems](https://www.wikiwand.com/en/Optimization_problem)
+- [Continuous-Time Markov Chains](https://www.wikiwand.com/en/Continuous-time_Markov_chain)
+- [Chemical Reactions](https://www.wikiwand.com/en/Chemical_reaction_network_theory) (via [Catalyst.jl](https://docs.sciml.ai/Catalyst/stable/))
+- [Nonlinear Optimal Control](https://www.wikiwand.com/en/Optimal_control)
