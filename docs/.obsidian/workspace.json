@@ -11,8 +11,12 @@
             "id": "e33c25859c610cd2",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Areas/Julia/ModelingToolkit.jl.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Areas/Julia/ModelingToolkit.jl.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Areas/Julia/ModelingToolkit.jl.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Areas/Julia/ModelingToolkit.jl.md"
+              }
             }
           },
           {
@@ -141,13 +149,13 @@
   "lastOpenFiles": [
     "Areas/Photography/Mamiya ZE-2 Quartz.md",
     "Areas/Photography/Film.md",
-    "Projects/iGEM/Task.md",
+    "Areas/iGEM/Task.md",
     "Areas/BJJ/Flexibility.md",
     "Areas/BJJ/Explosiveness.md",
-    "Projects/JuliaHub/Model Calibration and Parameter Estimation with JuliaSim Model Optimizer.md",
+    "Areas/Julia/JuliaHub/Model Calibration and Parameter Estimation with JuliaSim Model Optimizer.md",
     "Using Large Datasets in JuliaHub.md",
     "Kanban/Kanban.md",
-    "Projects/iGEM/iGEM UCopenhagen 2022.md",
+    "Areas/iGEM/iGEM UCopenhagen 2022.md",
     "Excalidraw/igem-ucopenhagen-problem.excalidraw.md"
   ]
 }
