@@ -4,83 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "8ff71551e0406ee0",
+        "id": "a9ade869e8d7334d",
         "type": "tabs",
         "children": [
           {
-            "id": "b248b5f0c09b80f2",
+            "id": "e33c25859c610cd2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Areas/Photography/Mamiya ZE-2 Quartz.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a7fa29fdedb8cbe7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Areas/Photography/Film.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "268267c7c683f96b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Using Large Datasets in JuliaHub.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "01387aa42175f414",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projects/Model Calibration and Parameter Estimation with JuliaSim Model Optimizer.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f260286e0f988793",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projects/iGEM/Task.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "71bfe5a670b513f1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Areas/BJJ/Flexibility.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -146,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/Model Calibration and Parameter Estimation with JuliaSim Model Optimizer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projects/Model Calibration and Parameter Estimation with JuliaSim Model Optimizer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Projects/Model Calibration and Parameter Estimation with JuliaSim Model Optimizer.md"
-              }
+              "state": {}
             }
           },
           {
@@ -206,17 +137,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "01387aa42175f414",
+  "active": "e33c25859c610cd2",
   "lastOpenFiles": [
+    "Areas/Photography/Mamiya ZE-2 Quartz.md",
+    "Areas/Photography/Film.md",
+    "Projects/iGEM/Task.md",
+    "Areas/BJJ/Flexibility.md",
+    "Areas/BJJ/Explosiveness.md",
+    "Projects/JuliaHub/Model Calibration and Parameter Estimation with JuliaSim Model Optimizer.md",
     "Using Large Datasets in JuliaHub.md",
     "Kanban/Kanban.md",
-    "Projects/Model Calibration and Parameter Estimation with JuliaSim Model Optimizer.md",
-    "Areas/BJJ/Flexibility.md",
-    "Projects/iGEM/Task.md",
     "Projects/iGEM/iGEM UCopenhagen 2022.md",
-    "Excalidraw/igem-ucopenhagen-problem.excalidraw.md",
-    "References/@ajo-franklinRationalDesignMemory2007.md",
-    "Areas/Photography/Film.md",
-    "Projects/ESA Design Booster.md"
+    "Excalidraw/igem-ucopenhagen-problem.excalidraw.md"
   ]
 }
