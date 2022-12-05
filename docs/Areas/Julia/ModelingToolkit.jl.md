@@ -21,7 +21,7 @@ It mixes symbolic computing packages like [SymPy](https://www.sympy.org/en/index
 
 [Feature List · ModelingToolkit.jl](https://docs.sciml.ai/ModelingToolkit/dev/#Feature-List)
 
-### Equation Types
+## Equation Types
 
 - [Ordinary differential equations](https://www.wikiwand.com/en/Ordinary_differential_equation)
 - [Stochastic differential equations](https://www.wikiwand.com/en/Stochastic_differential_equation)
@@ -32,6 +32,31 @@ It mixes symbolic computing packages like [SymPy](https://www.sympy.org/en/index
 - [Chemical Reactions](https://www.wikiwand.com/en/Chemical_reaction_network_theory) (via [Catalyst.jl](https://docs.sciml.ai/Catalyst/stable/))
 - [Nonlinear Optimal Control](https://www.wikiwand.com/en/Optimal_control)
 
-### Standard Library
+## Standard Library
 
 See [[ModelingToolkitStandardLibrary.jl]]
+
+## Model Import Formats
+
+### CellML
+
+[CellMLToolkit.jl](https://docs.sciml.ai/CellMLToolkit/stable/) can be used to import CellML models into ModelingToolkit. CellML is an XML-based open standard for mathematical models. It has a repository of more than a thousand models. While it's domain-agnostic, there's a focus on biomedical models. Currently, *some* of its active categories include:
+- Cell Cycle
+- Cell Migration
+- Circadian Rhythms
+- Gene Regulation
+- Immunology
+- Ion Transport
+- Mechanical Constitutive Laws
+- Metabolism
+- Neurobiology
+- PK/PD (pharmacokinetic/pharmacodynamic)
+- Protein Modules
+- Signal Transduction
+- **Synthetic Biology**
+
+CellMLToolkit.jl imports a CellML model in XML and outputs a ModelingToolkit.jl IR (Intermediate Representation) to work with using the general SciML ecosystem.
+
+### SBML
+
+### BioNetGen
