@@ -31,3 +31,7 @@ It mixes symbolic computing packages like [SymPy](https://www.sympy.org/en/index
 - [Continuous-Time Markov Chains](https://www.wikiwand.com/en/Continuous-time_Markov_chain)
 - [Chemical Reactions](https://www.wikiwand.com/en/Chemical_reaction_network_theory) (via [Catalyst.jl](https://docs.sciml.ai/Catalyst/stable/))
 - [Nonlinear Optimal Control](https://www.wikiwand.com/en/Optimal_control)
+
+### Standard Library
+
+See [[ModelingToolkitStandardLibrary.jl]]
