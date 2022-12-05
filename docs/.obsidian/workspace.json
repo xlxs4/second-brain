@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 220.5
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "84884291b19ff56e",
@@ -145,7 +146,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e33c25859c610cd2",
+  "active": "9a352763e08653a7",
   "lastOpenFiles": [
     "Areas/Julia/ModelingToolkitStandardLibrary.jl.md",
     "Areas/Julia/ModelingToolkit.jl.md",

@@ -3,7 +3,7 @@
 
 ModelingToolkit.jl is a modeling language. It can do both symbolic and numeric computation. It is highly performant and parallel. It is extendable because it brings ideas from symbolic CAS and causal/acausal equation-based modeling frameworks. The model can be input as a high-level description. Then, the model is analyzed and enhanced through symbolic preprocessing. It allows for automatic transformations, such as index reduction, to be applied before solving in order to easily handle equations that could not have been solved without symbolic intervention.
 
-It mixes symbolic computing packages like [SymPy](https://www.sympy.org/en/index.html) or [Mathematica](https://www.wolfram.com/mathematica/) with equation-based modeling systems like the causal [Simulink](https://www.mathworks.com/products/simulink.html) and the acausal [Modelica](https://modelica.org/modelicalanguage.html). It can easily transform to and from different kinds of equations like DAEs into optimization problems and vice-versa. Before producing code, it simplifies and parallelizes the model.
+It mixes symbolic computing packages like [SymPy](https://www.sympy.org/en/index.html) or [Mathematica](https://www.wolfram.com/mathematica/) with equation-based modeling systems like the causal [Simulink](https://www.mathworks.com/products/simulink.html) and the acausal [Modelica](https://modelica.org/modelicalanguage.html). It can easily transform to and from different kinds of equations like DAEs into optimization problems and vice-versa. All the symbolic systems have a direct conversion to a numerical system which can then be handled through the [SciML](https://sciml.ai/) interfaces. Before producing code, it simplifies and parallelizes the model.
 
 [Home · ModelingToolkit.jl](https://docs.sciml.ai/ModelingToolkit/dev/)
 
@@ -83,3 +83,13 @@ There's a lot of libraries that add features to the general equation-based model
 - [ReactionMechanismSimulator.jl](https://docs.sciml.ai/ReactionMechanismSimulator/stable): Simulating and analyzing large chemical reaction mechanisms
 - [NumCME.jl](https://github.com/voduchuy/NumCME.jl): High-performance simulation of [chemical master equations](https://www.wikiwand.com/en/Master_equation) (CME)
 - [FiniteStateProjection.jl](https://github.com/kaandocal/FiniteStateProjection.jl): High-performance simulation of CMEs via finite state projections
+
+### Compatible Numerical Solvers
+
+Again, all of the symbolic systems have a direct conversion to a numerical system which can then be handled through the SciML interfaces. For example, after building a model and performing symbolic manipulations, an `ODESystem` can be converted into an `ODEProblem` to then be solved by a numerical ODE solver. Below is a list of the solver libraries which are the numerical targets of the ModelingToolkit system:
+
+- [DifferentialEquations.jl](https://docs.sciml.ai/DiffEqDocs/stable/): Multi-package interface of high performance numerical solvers for `ODESystem`, `SDESystem`, and `JumpSystem`
+-   [NonlinearSolve.jl](https://docs.sciml.ai/NonlinearSolve/stable/): High performance numerical solving of `NonlinearSystem`
+-   [Optimization.jl](https://docs.sciml.ai/Optimization/stable/): Multi-package interface for numerical solving `OptimizationSystem`
+-   [NeuralPDE.jl](https://docs.sciml.ai/NeuralPDE/stable/): [Physics-Informed Neural Network](https://www.wikiwand.com/en/Physics-informed_neural_networks) (PINN) training on `PDESystem`
+-   [MethodOfLines.jl](https://docs.sciml.ai/MethodOfLines/stable/): [Automated finite difference method](https://www.wikiwand.com/en/Finite_difference_method) (FDM) discretization of `PDESystem`
