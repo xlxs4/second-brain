@@ -41,6 +41,7 @@ See [[ModelingToolkitStandardLibrary.jl]]
 ### CellML
 
 [CellMLToolkit.jl](https://docs.sciml.ai/CellMLToolkit/stable/) can be used to import CellML models into ModelingToolkit. CellML is an XML-based open standard for mathematical models. It has a repository of more than a thousand models. While it's domain-agnostic, there's a focus on biomedical models. Currently, *some* of its active categories include:
+
 - Cell Cycle
 - Cell Migration
 - Circadian Rhythms
@@ -66,8 +67,19 @@ CellMLToolkit.jl imports a CellML model in XML and outputs a ModelingToolkit.jl 
 You can use SBMLToolkit — more specifically, the `writeSBML()` export function.
 
 BioNetGen is for biochemical reaction networks modeling. Thus, you can use [ReactionNetworkImporters.jl](https://docs.sciml.ai/ReactionNetworkImporters/stable/). You can also use ReactionNetworkImporters.jl to import:
+
 - networks represented by dense or sparse substrate and product stoichiometric matrices
 - networks represented by dense or sparse complex stoichiometric and incidence matrices
 
 Notice that you can still use SBMLToolkit.jl, since you can export a model in SBML through BioNetGen (and [COPASI](https://copasi.org/), and [Virtual Cell](https://vcell.org/), etc.).
 
+### Extension Libraries
+
+There's a lot of libraries that add features to the general equation-based modeling ecosystem that has ModelingToolkit as its core. Some are:
+
+- [Catalyst.jl](https://docs.sciml.ai/Catalyst/stable/): Symbolic representations of chemical reactions
+- [DataDrivenDiffEq.jl](https://docs.sciml.ai/DataDrivenDiffEq/stable/): Automatic identification of equations from data
+- [MomentClosure.jl](https://docs.sciml.ai/MomentClosure/dev/): Automatic transformation of `ReactionSystems` into deterministic systems
+- [ReactionMechanismSimulator.jl](https://docs.sciml.ai/ReactionMechanismSimulator/stable): Simulating and analyzing large chemical reaction mechanisms
+- [NumCME.jl](https://github.com/voduchuy/NumCME.jl): High-performance simulation of [chemical master equations](https://www.wikiwand.com/en/Master_equation) (CME)
+- [FiniteStateProjection.jl](https://github.com/kaandocal/FiniteStateProjection.jl): High-performance simulation of CMEs via finite state projections
