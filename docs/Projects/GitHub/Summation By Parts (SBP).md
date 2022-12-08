@@ -1,5 +1,4 @@
 
-
 From [[@mattssonBoundaryOptimizedDiagonalnorm2018]]: 
 
 > The Matlab functions return the differentiation matrix D1, the norm matrix H , the grid point vector x, and the interior grid spacing h. Input to the functions are the grid size m and the width L of the domain.

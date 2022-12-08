@@ -11,8 +11,12 @@
             "id": "c89f8afe7ba586d5",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Projects/GitHub/Summation By Parts (SBP).md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Projects/GitHub/Summation By Parts (SBP).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Projects/GitHub/Summation By Parts (SBP).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Projects/GitHub/Summation By Parts (SBP).md"
+              }
             }
           },
           {
@@ -139,15 +147,15 @@
   },
   "active": "c89f8afe7ba586d5",
   "lastOpenFiles": [
+    "Areas/iGEM/iGEM UCopenhagen 2022.md",
+    "Areas/iGEM/Task.md",
+    "Areas/School/Numerical Analysis/Intro.md",
+    "Areas/Untitled.md",
     "Areas/Julia/ModelingToolkit.jl.md",
     "Areas/Julia/ModelingToolkitStandardLibrary.jl.md",
     "Areas/Photography/Mamiya ZE-2 Quartz.md",
     "Areas/Photography/Film.md",
-    "Areas/iGEM/Task.md",
     "Areas/BJJ/Flexibility.md",
-    "Areas/BJJ/Explosiveness.md",
-    "Areas/Julia/JuliaHub/Model Calibration and Parameter Estimation with JuliaSim Model Optimizer.md",
-    "Using Large Datasets in JuliaHub.md",
-    "Kanban/Kanban.md"
+    "Areas/BJJ/Explosiveness.md"
   ]
 }
