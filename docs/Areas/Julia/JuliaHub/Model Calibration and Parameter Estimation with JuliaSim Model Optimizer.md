@@ -1,7 +1,9 @@
-[Model Calibration and Parameter Estimation with JuliaSim Model Optimizer - YouTube](https://www.youtube.com/watch?v=TkmpICaFDrM&list=PLC0QOsNQS8hZ3JXKzx32BidNxyIdYoPeY&index=21)
+[JuliaSim](https://juliahub.com/products/juliasim/) is a cloud-hosted platform for physical simulation. It combines a vast array of bleeding edge [SciML](https://sciml.ai/) techniques, acausal equation-based digital twin modeling and simulation and is powered by the [Julia](https://julialang.org/) programming language. It is preview-only software in the time of writing this post (December 2022).
 
-JuliaSim: a modern SciML suite
-TODO: add stuff for JuliaSim
+JuliaSim produces surrogates of blackbox (and regular) dynamical systems using [Continuous Time Echo State Networks](https://arxiv.org/pdf/2010.04004.pdf) (CTESNs). This technique allows, amongst other features, for implicit training in parameter space to stabilize the ill-conditioning present in stiff systems.
+
+You can leverage the surrogates to accelerate the process, there's a variety of techniques for quantifying uncertainty and noise (see the virtual populations below). You can use JuliaSim for parameter estimation and optimal control, which is what this post is about. There's the so-called [Model Library](https://help.juliahub.com/juliasim/stable/ModelLibrary/), a collection of acausal (equation-based) components with pre-trained surrogates of models that are ready to use. You can thus discover and import/exchange various models, and combine yours with pre-built models and digital twins. Lastly, there's specialized numerical environments available for use upon demand. Everything can happen on the JuliaHub cloud-based IDE.
+
 ![[Pasted image 20221211223759.png]]
 
 ModelOptimizer: package methodology to perform model calibration, analysis, HPC environment, user-friendly manner. Robust and automated framework to scale large and complex models
