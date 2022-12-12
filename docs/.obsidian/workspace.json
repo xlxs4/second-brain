@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "8f6633f9d25d9b03",
+        "id": "97f4b92f6cbc16ae",
         "type": "tabs",
         "children": [
           {
-            "id": "c89f8afe7ba586d5",
+            "id": "16467fa692bec914",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/GitHub/Summation By Parts (SBP).md",
+                "file": "Areas/Julia/JuliaHub/Model Calibration and Parameter Estimation with JuliaSim Model Optimizer.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 257.5,
+    "collapsed": true
   },
   "right": {
     "id": "84884291b19ff56e",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/GitHub/Summation By Parts (SBP).md",
+                "file": "Areas/Julia/JuliaHub/Model Calibration and Parameter Estimation with JuliaSim Model Optimizer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projects/GitHub/Summation By Parts (SBP).md",
+                "file": "Areas/Julia/JuliaHub/Model Calibration and Parameter Estimation with JuliaSim Model Optimizer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/GitHub/Summation By Parts (SBP).md"
+                "file": "Areas/Julia/JuliaHub/Model Calibration and Parameter Estimation with JuliaSim Model Optimizer.md"
               }
             }
           },
@@ -145,17 +146,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c89f8afe7ba586d5",
+  "active": "16467fa692bec914",
   "lastOpenFiles": [
+    "Areas/Julia/JuliaHub/Using Large Datasets in JuliaHub.md",
+    "Assets/large-datasets5.png",
+    "Assets/large-datasets4.png",
+    "Areas/Math/Markov Process.md",
+    "Projects/GitHub/Summation By Parts (SBP).md",
     "Areas/iGEM/iGEM UCopenhagen 2022.md",
     "Areas/iGEM/Task.md",
     "Areas/School/Numerical Analysis/Intro.md",
     "Areas/Untitled.md",
-    "Areas/Julia/ModelingToolkit.jl.md",
-    "Areas/Julia/ModelingToolkitStandardLibrary.jl.md",
-    "Areas/Photography/Mamiya ZE-2 Quartz.md",
-    "Areas/Photography/Film.md",
-    "Areas/BJJ/Flexibility.md",
-    "Areas/BJJ/Explosiveness.md"
+    "Areas/Julia/ModelingToolkit.jl.md"
   ]
 }
