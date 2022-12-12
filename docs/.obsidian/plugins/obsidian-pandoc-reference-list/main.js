@@ -2904,7 +2904,7 @@ var citeMark = (citekey, sourceFile, isPrefix, isResolved, isUnresolved) => {
     class: cls.join(" "),
     attributes: {
       "data-citekey": citekey,
-      "data-source": sourceFile
+      "data-source": sourceFile || ""
     }
   });
 };
@@ -2948,9 +2948,9 @@ var citeKeyPlugin = import_view.ViewPlugin.fromClass(class {
                 while (m2 = multiCiteRegExp.exec(multiCite)) {
                   const isUnresolved = !(nodeProps == null ? void 0 : nodeProps.includes("link")) && (citekeyCache == null ? void 0 : citekeyCache.unresolvedKeys.has(m2[1]));
                   const isResolved = citekeyCache == null ? void 0 : citekeyCache.resolvedKeys.has(m2[1]);
-                  b.add(pos, pos + 1, citeMark(m2[1], obsView.file.path, true, isResolved, isUnresolved));
+                  b.add(pos, pos + 1, citeMark(m2[1], obsView == null ? void 0 : obsView.file.path, true, isResolved, isUnresolved));
                   const withoutPrefix = m2[1].slice(1);
-                  b.add(pos + 1, pos + 1 + withoutPrefix.length, citeMark(m2[1], obsView.file.path, false, isResolved, isUnresolved));
+                  b.add(pos + 1, pos + 1 + withoutPrefix.length, citeMark(m2[1], obsView == null ? void 0 : obsView.file.path, false, isResolved, isUnresolved));
                   pos += m2[1].length;
                   if (m2[2]) {
                     b.add(pos, pos + m2[2].length, citeMarkFormatting);
@@ -2963,9 +2963,9 @@ var citeKeyPlugin = import_view.ViewPlugin.fromClass(class {
               if (match[i]) {
                 const isUnresolved = citekeyCache == null ? void 0 : citekeyCache.unresolvedKeys.has(match[i]);
                 const isResolved = citekeyCache == null ? void 0 : citekeyCache.resolvedKeys.has(match[i]);
-                b.add(pos, pos + 1, citeMark(match[i], obsView.file.path, true, isResolved, isUnresolved));
+                b.add(pos, pos + 1, citeMark(match[i], obsView == null ? void 0 : obsView.file.path, true, isResolved, isUnresolved));
                 const withoutPrefix = match[i].slice(1);
-                b.add(pos + 1, pos + 1 + withoutPrefix.length, citeMark(match[i], obsView.file.path, false, isResolved, isUnresolved));
+                b.add(pos + 1, pos + 1 + withoutPrefix.length, citeMark(match[i], obsView == null ? void 0 : obsView.file.path, false, isResolved, isUnresolved));
                 pos += match[i].length;
               }
               continue;
@@ -3001,7 +3001,7 @@ var citeKeyCacheField = import_state.StateField.define({
   create(state) {
     const obsView = state.field(import_obsidian.editorViewField);
     const viewManager = state.field(viewManagerField);
-    if (viewManager == null ? void 0 : viewManager.cache.has(obsView.file)) {
+    if ((obsView == null ? void 0 : obsView.file) && (viewManager == null ? void 0 : viewManager.cache.has(obsView.file))) {
       return viewManager.cache.get(obsView.file);
     }
     return null;
@@ -4432,6 +4432,8 @@ var TooltipManager = class {
     if (this.tooltip) {
       this.hideTooltip();
     }
+    if (!el.dataset.source)
+      return;
     const file = app.vault.getAbstractFileByPath(el.dataset.source);
     if (!file && !(file instanceof import_obsidian3.TFile)) {
       return;
