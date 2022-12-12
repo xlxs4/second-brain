@@ -1,0 +1,1415 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://xlxs4.github.io/second-brain/Projects/GitHub/Summation%20By%20Parts%20%28SBP%29/">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>Summation By Parts (SBP) - xlxs4 second brain</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.975780f9.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.2505c338.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#julia-implementation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="xlxs4 second brain" class="md-header__button md-logo" aria-label="xlxs4 second brain" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            xlxs4 second brain
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Summation By Parts (SBP)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../3D-printing-101/" class="md-tabs__link">
+      FDM 3D printers 101
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../Playground/" class="md-tabs__link">
+      Playground
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../Areas/BJJ/Explosiveness/" class="md-tabs__link">
+        Areas
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../ESA%20Design%20Booster/" class="md-tabs__link md-tabs__link--active">
+        Projects
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../References/%40ajo-franklinRationalDesignMemory2007/" class="md-tabs__link">
+        References
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="xlxs4 second brain" class="md-nav__button md-logo" aria-label="xlxs4 second brain" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    xlxs4 second brain
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../3D-printing-101/" class="md-nav__link">
+        FDM 3D printers 101
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Playground/" class="md-nav__link">
+        Playground
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Areas
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Areas" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Areas
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_1">
+          BJJ
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="BJJ" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          BJJ
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Areas/BJJ/Explosiveness/" class="md-nav__link">
+        Explosiveness
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Areas/BJJ/Flexibility/" class="md-nav__link">
+        Flexibility
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_2">
+          Julia
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Julia" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Julia
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Areas/Julia/ModelingToolkit.jl/" class="md-nav__link">
+        ModelingToolkit.jl
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Areas/Julia/ModelingToolkitStandardLibrary.jl/" class="md-nav__link">
+        ModelingToolkitStandardLibrary.jl
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2_3" type="checkbox" id="__nav_4_2_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_2_3">
+          JuliaHub
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="JuliaHub" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          JuliaHub
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Areas/Julia/JuliaHub/Model%20Calibration%20and%20Parameter%20Estimation%20with%20JuliaSim%20Model%20Optimizer/" class="md-nav__link">
+        Model Calibration and Parameter Estimation with JuliaSim Model Optimizer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Areas/Julia/JuliaHub/Using%20Large%20Datasets%20in%20JuliaHub/" class="md-nav__link">
+        Using Large Datasets in JuliaHub
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_3">
+          Math
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Math" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Math
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Areas/Math/Markov%20Process/" class="md-nav__link">
+        Markov Process
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_4">
+          Photography
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Photography" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          Photography
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Areas/Photography/Film/" class="md-nav__link">
+        Film
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Areas/Photography/Mamiya%20ZE-2%20Quartz/" class="md-nav__link">
+        Mamiya ZE 2 Quartz
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" type="checkbox" id="__nav_4_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_5">
+          School
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="School" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_5">
+          <span class="md-nav__icon md-icon"></span>
+          School
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5_1" type="checkbox" id="__nav_4_5_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_5_1">
+          Numerical Analysis
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Numerical Analysis" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_5_1">
+          <span class="md-nav__icon md-icon"></span>
+          Numerical Analysis
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Areas/School/Numerical%20Analysis/Intro/" class="md-nav__link">
+        Intro
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" type="checkbox" id="__nav_4_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_6">
+          iGEM
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="iGEM" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_6">
+          <span class="md-nav__icon md-icon"></span>
+          iGEM
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Areas/iGEM/Task/" class="md-nav__link">
+        Task
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Areas/iGEM/iGEM%20UCopenhagen%202022/" class="md-nav__link">
+        iGEM UCopenhagen 2022
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Projects
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Projects" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Projects
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ESA%20Design%20Booster/" class="md-nav__link">
+        ESA Design Booster
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" type="checkbox" id="__nav_5_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_2">
+          GitHub
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="GitHub" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          GitHub
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../African%20Buffalo%20Optimization%20%28ABO%29/" class="md-nav__link">
+        African Buffalo Optimization (ABO)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Summation By Parts (SBP)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Summation By Parts (SBP)
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#julia-implementation" class="md-nav__link">
+    Julia Implementation
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" type="checkbox" id="__nav_5_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_3">
+          Thesis
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Thesis" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_3">
+          <span class="md-nav__icon md-icon"></span>
+          Thesis
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Thesis/Tsitsas%20Email/" class="md-nav__link">
+        Tsitsas Email
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" type="checkbox" id="__nav_5_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_4">
+          Website
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Website" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_4">
+          <span class="md-nav__icon md-icon"></span>
+          Website
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Website/Franklin.jl-notes/" class="md-nav__link">
+        Franklin.jl Notes
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          References
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="References" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          References
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../References/%40ajo-franklinRationalDesignMemory2007/" class="md-nav__link">
+        Rational design of memory in eukaryotic cells
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../References/%40alonIntroductionSystemsBiology2019/" class="md-nav__link">
+        An introduction to systems biology: Design principles of biological circuits
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../References/%40mattssonBoundaryOptimizedDiagonalnorm2018/" class="md-nav__link">
+        Boundary optimized diagonal-norm SBP operators
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../References/%40odiliStochasticProcessTutorial2022/" class="md-nav__link">
+        Stochastic process and tutorial of the African buffalo optimization
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Summation By Parts (SBP)</h1>
+
+<p>From <a href="../../../References/%40mattssonBoundaryOptimizedDiagonalnorm2018/">@mattssonBoundaryOptimizedDiagonalnorm2018</a>: </p>
+<blockquote>
+<p>The Matlab functions return the differentiation matrix D1, the norm matrix H , the grid point vector x, and the interior grid spacing h. Input to the functions are the grid size m and the width L of the domain.</p>
+</blockquote>
+<p>(<code>m</code> is actually <code>N</code> in code):
+<div class="highlight"><pre><span></span><code><span class="k">function</span><span class="w"> </span>[D1,H,x,h]<span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nf">D1_accurate_8th</span><span class="p">(</span>N,L<span class="p">)</span><span class="w"></span>
+</code></pre></div></p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D1</td>
+<td>Differentiation matrix</td>
+</tr>
+<tr>
+<td>H</td>
+<td>Norm matrix</td>
+</tr>
+<tr>
+<td>x</td>
+<td>Grid (non-equidistant) point vector</td>
+</tr>
+<tr>
+<td>h</td>
+<td>Interior grid spacing</td>
+</tr>
+<tr>
+<td>m</td>
+<td>Grid size</td>
+</tr>
+<tr>
+<td>L</td>
+<td>Domain length</td>
+</tr>
+<tr>
+<td>BP</td>
+<td>Number of boundary points</td>
+</tr>
+<tr>
+<td>order</td>
+<td>Accuracy of interior stencil</td>
+</tr>
+</tbody>
+</table>
+<h3 id="julia-implementation">Julia Implementation<a class="headerlink" href="#julia-implementation" title="Permanent link">&para;</a></h3>
+<p>Split between <a href="https://github.com/ranocha/SummationByPartsOperators.jl/tree/main/dev"><code>/dev/MattssonAlmquistVanDerWeide2018...</code></a> and <a href="https://github.com/ranocha/SummationByPartsOperators.jl/tree/main/src/SBP_coefficients"><code>/src/MattssonAlmquistVanDerWeide2018...</code></a>.</p>
+<p>$x_k$, the non-equidistant grid points in MATLAB (<a href="https://bitbucket.org/martinalmquist/optimized_sbp_operators/src/master/Accurate/D1_accurate_8th.m"><code>D1_accurate_8th.m</code></a>):
+<div class="highlight"><pre><span></span><code><span class="c">%%%% Non-equidistant grid points %%%%%</span><span class="w"></span>
+<span class="n">x0</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">0.0000000000000e+00</span><span class="p">;</span><span class="w"></span>
+<span class="n">x1</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">3.8118550247622e-01</span><span class="p">;</span><span class="w"></span>
+<span class="n">x2</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">1.1899550868338e+00</span><span class="p">;</span><span class="w"></span>
+<span class="n">x3</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">2.2476300175641e+00</span><span class="p">;</span><span class="w"></span>
+<span class="n">x4</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">3.3192851303204e+00</span><span class="p">;</span><span class="w"></span>
+<span class="n">x5</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">4.3192851303204e+00</span><span class="p">;</span><span class="w"></span>
+<span class="n">x6</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">5.3192851303204e+00</span><span class="p">;</span><span class="w"></span>
+<span class="n">x7</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">6.3192851303204e+00</span><span class="p">;</span><span class="w"></span>
+<span class="n">x8</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">7.3192851303204e+00</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
+Reside in <code>/src/</code>:
+<div class="highlight"><pre><span></span><code><span class="k">elseif</span><span class="w"> </span><span class="n">accuracy_order</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">8</span><span class="w"></span>
+<span class="w">    </span><span class="n">xstart</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SVector</span><span class="p">(</span><span class="w"></span>
+<span class="w">      </span><span class="n">T</span><span class="p">(</span><span class="mf">0.0000000000000e+00</span><span class="p">),</span><span class="w"></span>
+<span class="w">      </span><span class="n">T</span><span class="p">(</span><span class="mf">3.8118550247622e-01</span><span class="p">),</span><span class="w"></span>
+<span class="w">      </span><span class="n">T</span><span class="p">(</span><span class="mf">1.1899550868338e+00</span><span class="p">),</span><span class="w"></span>
+<span class="w">      </span><span class="n">T</span><span class="p">(</span><span class="mf">2.2476300175641e+00</span><span class="p">),</span><span class="w"></span>
+<span class="w">      </span><span class="n">T</span><span class="p">(</span><span class="mf">3.3192851303204e+00</span><span class="p">),</span><span class="w"></span>
+<span class="w">      </span><span class="n">T</span><span class="p">(</span><span class="mf">4.3192851303204e+00</span><span class="p">),</span><span class="w"></span>
+<span class="w">      </span><span class="n">T</span><span class="p">(</span><span class="mf">5.3192851303204e+00</span><span class="p">),</span><span class="w"></span>
+<span class="w">      </span><span class="n">T</span><span class="p">(</span><span class="mf">6.3192851303204e+00</span><span class="p">),</span><span class="w"></span>
+<span class="w">      </span><span class="n">T</span><span class="p">(</span><span class="mf">7.3192851303204e+00</span><span class="p">),</span><span class="w"></span>
+<span class="w">    </span><span class="p">)</span><span class="w"></span>
+</code></pre></div></p>
+<p>There is a mention in <a href="../../../References/%40mattssonBoundaryOptimizedDiagonalnorm2018/">@mattssonBoundaryOptimizedDiagonalnorm2018</a> about the $Q$ matrix:</p>
+<blockquote>
+<p>Definition 2.2: A difference operator $D_1 = H^{-1}Q$, approximating $\partial/\partial x$ using a repeated narrow-stencil in the interior, is said to be a diagonal-norm first-derivative SBP operator if $H$ is diagonal and positive definite, and $Q + Q^T = diag(-1, 0, \ldots, 0, 1)$.</p>
+</blockquote>
+<p>The interior stencil of $Q$ is in MATLAB:
+<div class="highlight"><pre><span></span><code><span class="k">switch</span><span class="w"> </span><span class="n">order</span><span class="w"></span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="w"></span>
+<span class="w">        </span><span class="n">d</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">];</span><span class="w"></span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">4</span><span class="w"></span>
+<span class="w">        </span><span class="n">d</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mi">12</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">12</span><span class="p">];</span><span class="w"></span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">6</span><span class="w"></span>
+<span class="w">        </span><span class="n">d</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">60</span><span class="p">,</span><span class="mi">3</span><span class="o">/</span><span class="mi">20</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="o">/</span><span class="mi">4</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="o">/</span><span class="mi">4</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="o">/</span><span class="mi">20</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">60</span><span class="p">];</span><span class="w"></span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">8</span><span class="w"></span>
+<span class="w">        </span><span class="n">d</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mi">280</span><span class="p">,</span><span class="o">-</span><span class="mi">4</span><span class="o">/</span><span class="mi">105</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">5</span><span class="p">,</span><span class="o">-</span><span class="mi">4</span><span class="o">/</span><span class="mi">5</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="o">/</span><span class="mi">5</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="o">/</span><span class="mi">105</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">280</span><span class="p">];</span><span class="w"></span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">10</span><span class="w"></span>
+<span class="w">        </span><span class="n">d</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">1260</span><span class="p">,</span><span class="mi">5</span><span class="o">/</span><span class="mi">504</span><span class="p">,</span><span class="o">-</span><span class="mi">5</span><span class="o">/</span><span class="mi">84</span><span class="p">,</span><span class="mi">5</span><span class="o">/</span><span class="mi">21</span><span class="p">,</span><span class="o">-</span><span class="mi">5</span><span class="o">/</span><span class="mi">6</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="o">/</span><span class="mi">6</span><span class="p">,</span><span class="o">-</span><span class="mi">5</span><span class="o">/</span><span class="mi">21</span><span class="p">,</span><span class="mi">5</span><span class="o">/</span><span class="mi">84</span><span class="p">,</span><span class="o">-</span><span class="mi">5</span><span class="o">/</span><span class="mi">504</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">1260</span><span class="p">];</span><span class="w"></span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">12</span><span class="w"></span>
+<span class="w">        </span><span class="n">d</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mi">5544</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">385</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">56</span><span class="p">,</span><span class="o">-</span><span class="mi">5</span><span class="o">/</span><span class="mi">63</span><span class="p">,</span><span class="mi">15</span><span class="o">/</span><span class="mi">56</span><span class="p">,</span><span class="o">-</span><span class="mi">6</span><span class="o">/</span><span class="mi">7</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">6</span><span class="o">/</span><span class="mi">7</span><span class="p">,</span><span class="o">-</span><span class="mi">15</span><span class="o">/</span><span class="mi">56</span><span class="p">,</span><span class="mi">5</span><span class="o">/</span><span class="mi">63</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">56</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">385</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">5544</span><span class="p">];</span><span class="w"></span>
+<span class="k">end</span><span class="w"></span>
+</code></pre></div>
+For, e.g. order 8, the relevant part is
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">8</span><span class="w"></span>
+<span class="w">        </span><span class="n">d</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mi">280</span><span class="p">,</span><span class="o">-</span><span class="mi">4</span><span class="o">/</span><span class="mi">105</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">5</span><span class="p">,</span><span class="o">-</span><span class="mi">4</span><span class="o">/</span><span class="mi">5</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="o">/</span><span class="mi">5</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="o">/</span><span class="mi">105</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">280</span><span class="p">];</span><span class="w"></span>
+</code></pre></div>
+which can be found in <code>src/</code>:
+<div class="highlight"><pre><span></span><code><span class="n">upper_coef</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SVector</span><span class="p">(</span><span class="n">T</span><span class="p">(</span><span class="mi">4</span><span class="o">//</span><span class="mi">5</span><span class="p">),</span><span class="w"> </span><span class="n">T</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="o">//</span><span class="mi">5</span><span class="p">),</span><span class="w"> </span><span class="n">T</span><span class="p">(</span><span class="mi">4</span><span class="o">//</span><span class="mi">105</span><span class="p">),</span><span class="w"> </span><span class="n">T</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="o">//</span><span class="mi">280</span><span class="p">))</span><span class="w"></span>
+<span class="n">lower_coef</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="n">upper_coef</span><span class="w"></span>
+</code></pre></div></p>
+<p>For the norm matrix, we have:
+<div class="highlight"><pre><span></span><code><span class="n">P0</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">1.0758368078310e-01</span><span class="p">;</span><span class="w"></span>
+<span class="n">P1</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">6.1909685107891e-01</span><span class="p">;</span><span class="w"></span>
+<span class="n">P2</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">9.6971176519117e-01</span><span class="p">;</span><span class="w"></span>
+<span class="n">P3</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">1.1023441350947e+00</span><span class="p">;</span><span class="w"></span>
+<span class="n">P4</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">1.0244688965833e+00</span><span class="p">;</span><span class="w"></span>
+<span class="n">P5</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">9.9533550116831e-01</span><span class="p">;</span><span class="w"></span>
+<span class="n">P6</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">1.0008236941028e+00</span><span class="p">;</span><span class="w"></span>
+<span class="n">P7</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">9.9992060631812e-01</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
+which can be found in <code>dev/</code>:
+<div class="highlight"><pre><span></span><code><span class="n">h</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">  </span><span class="mf">1.0758368078310e-01</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="mf">6.1909685107891e-01</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="mf">9.6971176519117e-01</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="mf">1.1023441350947e+00</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="mf">1.0244688965833e+00</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="mf">9.9533550116831e-01</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="mf">1.0008236941028e+00</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="mf">9.9992060631812e-01</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span><span class="w"></span>
+</code></pre></div>
+<em>question</em>: what about the trailing ones? TODO: how do I determine how many to add?</p>
+<p>The boundaries, $Q_k$ are:
+<div class="highlight"><pre><span></span><code><span class="k">...</span><span class="w"></span>
+<span class="n">Q0_0</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="o">-</span><span class="mf">5.0000000000000e-01</span><span class="p">;</span><span class="w"></span>
+<span class="n">Q0_1</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">6.7284756079369e-01</span><span class="p">;</span><span class="w"></span>
+<span class="n">Q0_2</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="o">-</span><span class="mf">2.5969732837062e-01</span><span class="p">;</span><span class="w"></span>
+<span class="n">Q0_3</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">1.3519390385721e-01</span><span class="p">;</span><span class="w"></span>
+<span class="n">Q0_4</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="o">-</span><span class="mf">6.9678474730984e-02</span><span class="p">;</span><span class="w"></span>
+<span class="n">Q0_5</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">2.6434024071371e-02</span><span class="p">;</span><span class="w"></span>
+<span class="n">Q0_6</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="o">-</span><span class="mf">5.5992311465618e-03</span><span class="p">;</span><span class="w"></span>
+<span class="n">Q0_7</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">4.9954552590464e-04</span><span class="p">;</span><span class="w"></span>
+<span class="n">Q0_8</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">0.0000000000000e+00</span><span class="p">;</span><span class="w"></span>
+<span class="n">Q0_9</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">0.0000000000000e+00</span><span class="p">;</span><span class="w"></span>
+<span class="n">Q0_10</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">0.0000000000000e+00</span><span class="p">;</span><span class="w"></span>
+<span class="n">Q0_11</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">0.0000000000000e+00</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
+which also reside in <code>dev/</code>:
+<code>julia
+q1 = [0,
+  6.7284756079369e-01,
+  -2.5969732837062e-01,
+  1.3519390385721e-01,
+  -6.9678474730984e-02,
+  2.6434024071371e-02,
+  -5.5992311465618e-03,
+  4.9954552590464e-04,
+  0, 0, 0, 0]'</code>
+<em>question</em>: in this example, why is the original <code>Q0_0 = -5.0000000000000e-01;</code>, while it's <code>0</code> in the Julia implementation?</p>
+<p><em>question</em>: why <code>D1 = H \ (Q - 1//2*e*e')</code> to construct the difference operator $D1$?</p>
+<p><em>question</em>: I understand that <code>dev/</code> is used first to get the values used in <code>src/</code>, e.g. for the <code>DerivativeCoefficientRow</code>s. How?</p>
+<hr />
+<ul>
+<li><code>dev</code> is just the authors' set of notes while translating, the real coefficients live in <code>src</code></li>
+<li>For the derivative operator, coefficients of <code>D1</code> are used, not of <code>Q</code>. Thus, the author usually translated <code>Q</code> coefficients from a paper to <code>D1</code> coefficients for this package</li>
+<li>The SBP property is <code>M * D1 + D1' * M' = eR * eR' - eL * eL'</code> with <code>eL = [1, 0, ..., 0]</code> and <code>eR = [0, ..., 0, 1]</code>. This allows to translate <code>Q</code> to <code>D1</code> and vice-versa</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../African%20Buffalo%20Optimization%20%28ABO%29/" class="md-footer__link md-footer__link--prev" aria-label="Previous: African Buffalo Optimization (ABO)" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              African Buffalo Optimization (ABO)
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../Thesis/Tsitsas%20Email/" class="md-footer__link md-footer__link--next" aria-label="Next: Tsitsas Email" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Tsitsas Email
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "toc.follow", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      
+    
+    
+  </body>
+</html>

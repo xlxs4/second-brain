@@ -1,0 +1,1385 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://xlxs4.github.io/second-brain/Areas/Julia/JuliaHub/Model%20Calibration%20and%20Parameter%20Estimation%20with%20JuliaSim%20Model%20Optimizer/">
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>Model Calibration and Parameter Estimation with JuliaSim Model Optimizer - xlxs4 second brain</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.975780f9.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.2505c338.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#model-paradigms" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="xlxs4 second brain" class="md-header__button md-logo" aria-label="xlxs4 second brain" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            xlxs4 second brain
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Model Calibration and Parameter Estimation with JuliaSim Model Optimizer
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../../3D-printing-101/" class="md-tabs__link">
+      FDM 3D printers 101
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../../Playground/" class="md-tabs__link">
+      Playground
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../BJJ/Explosiveness/" class="md-tabs__link md-tabs__link--active">
+        Areas
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../Projects/ESA%20Design%20Booster/" class="md-tabs__link">
+        Projects
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../References/%40ajo-franklinRationalDesignMemory2007/" class="md-tabs__link">
+        References
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="xlxs4 second brain" class="md-nav__button md-logo" aria-label="xlxs4 second brain" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    xlxs4 second brain
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../3D-printing-101/" class="md-nav__link">
+        FDM 3D printers 101
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Playground/" class="md-nav__link">
+        Playground
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Areas
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Areas" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Areas
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_1">
+          BJJ
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="BJJ" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          BJJ
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../BJJ/Explosiveness/" class="md-nav__link">
+        Explosiveness
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../BJJ/Flexibility/" class="md-nav__link">
+        Flexibility
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_2">
+          Julia
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Julia" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Julia
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ModelingToolkit.jl/" class="md-nav__link">
+        ModelingToolkit.jl
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ModelingToolkitStandardLibrary.jl/" class="md-nav__link">
+        ModelingToolkitStandardLibrary.jl
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2_3" type="checkbox" id="__nav_4_2_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_2_3">
+          JuliaHub
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="JuliaHub" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          JuliaHub
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Model Calibration and Parameter Estimation with JuliaSim Model Optimizer
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Model Calibration and Parameter Estimation with JuliaSim Model Optimizer
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#model-paradigms" class="md-nav__link">
+    Model paradigms
+  </a>
+  
+    <nav class="md-nav" aria-label="Model paradigms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#causal-modeling" class="md-nav__link">
+    Causal Modeling
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acausal-modeling" class="md-nav__link">
+    Acausal modeling
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Using%20Large%20Datasets%20in%20JuliaHub/" class="md-nav__link">
+        Using Large Datasets in JuliaHub
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_3">
+          Math
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Math" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Math
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Math/Markov%20Process/" class="md-nav__link">
+        Markov Process
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_4">
+          Photography
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Photography" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          Photography
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Photography/Film/" class="md-nav__link">
+        Film
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Photography/Mamiya%20ZE-2%20Quartz/" class="md-nav__link">
+        Mamiya ZE 2 Quartz
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" type="checkbox" id="__nav_4_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_5">
+          School
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="School" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_5">
+          <span class="md-nav__icon md-icon"></span>
+          School
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5_1" type="checkbox" id="__nav_4_5_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_5_1">
+          Numerical Analysis
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Numerical Analysis" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_5_1">
+          <span class="md-nav__icon md-icon"></span>
+          Numerical Analysis
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../School/Numerical%20Analysis/Intro/" class="md-nav__link">
+        Intro
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" type="checkbox" id="__nav_4_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_6">
+          iGEM
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="iGEM" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_6">
+          <span class="md-nav__icon md-icon"></span>
+          iGEM
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../iGEM/Task/" class="md-nav__link">
+        Task
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../iGEM/iGEM%20UCopenhagen%202022/" class="md-nav__link">
+        iGEM UCopenhagen 2022
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Projects
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Projects" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Projects
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Projects/ESA%20Design%20Booster/" class="md-nav__link">
+        ESA Design Booster
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" type="checkbox" id="__nav_5_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_2">
+          GitHub
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="GitHub" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          GitHub
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Projects/GitHub/African%20Buffalo%20Optimization%20%28ABO%29/" class="md-nav__link">
+        African Buffalo Optimization (ABO)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Projects/GitHub/Summation%20By%20Parts%20%28SBP%29/" class="md-nav__link">
+        Summation By Parts (SBP)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" type="checkbox" id="__nav_5_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_3">
+          Thesis
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Thesis" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_3">
+          <span class="md-nav__icon md-icon"></span>
+          Thesis
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Projects/Thesis/Tsitsas%20Email/" class="md-nav__link">
+        Tsitsas Email
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" type="checkbox" id="__nav_5_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_4">
+          Website
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Website" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_4">
+          <span class="md-nav__icon md-icon"></span>
+          Website
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Projects/Website/Franklin.jl-notes/" class="md-nav__link">
+        Franklin.jl Notes
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          References
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="References" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          References
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../References/%40ajo-franklinRationalDesignMemory2007/" class="md-nav__link">
+        Rational design of memory in eukaryotic cells
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../References/%40alonIntroductionSystemsBiology2019/" class="md-nav__link">
+        An introduction to systems biology: Design principles of biological circuits
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../References/%40mattssonBoundaryOptimizedDiagonalnorm2018/" class="md-nav__link">
+        Boundary optimized diagonal-norm SBP operators
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../References/%40odiliStochasticProcessTutorial2022/" class="md-nav__link">
+        Stochastic process and tutorial of the African buffalo optimization
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Model Calibration and Parameter Estimation with JuliaSim Model Optimizer</h1>
+
+<p>TODO: for blog posts do acronyms as in <a href="https://xlxs4.github.io/notes/esa-design-booster/">here</a>.</p>
+<p>Some time ago I attended a remote workshop titled "Model Calibration and Parameter Estimation with JuliaSim Model Optimizer" by the JuliaHub team, specifically <a href="https://jvaverka.com/">Jacob Vaverka</a> and <a href="https://chrisrackauckas.com/">Dr. Christopher Rackauckas</a>.</p>
+<p><a href="https://juliahub.com/products/juliasim/">JuliaSim</a> is a cloud-hosted platform for physical simulation. It combines a vast array of bleeding edge <a href="https://sciml.ai/">SciML</a> techniques, acausal equation-based digital twin modeling and simulation and is powered by the <a href="https://julialang.org/">Julia</a> programming language. It is preview-only software in the time of writing this post (December 2022).</p>
+<p>JuliaSim produces surrogates of blackbox (and regular) dynamical systems using <a href="https://arxiv.org/pdf/2010.04004.pdf">Continuous Time Echo State Networks</a> (CTESNs). This technique allows, amongst other features, for implicit training in parameter space to stabilize the ill-conditioning present in stiff systems.</p>
+<p>You can leverage the surrogates to accelerate the process, there's a variety of techniques for quantifying uncertainty and noise (see the virtual populations below). You can use JuliaSim for parameter estimation and optimal control, which is what this post is about. There's the so-called <a href="https://help.juliahub.com/juliasim/stable/ModelLibrary/">Model Library</a>, a collection of acausal (equation-based) components with pre-trained surrogates of models that are ready to use. You can thus discover and import/exchange various models, and combine yours with pre-built models and digital twins. Lastly, there's specialized numerical environments available for use upon demand. Everything can happen on the JuliaHub cloud-based IDE.</p>
+<p><img alt="Pasted image 20221211223759.png" src="../../../../Pasted%20image%2020221211223759.png" /></p>
+<p>If you want to build models, you can use the pre-made model libraries, e.g. <a href="https://help.juliahub.com/CellMLPhysiome/dev/">CellMLPhysiome.jl</a> and <a href="https://help.juliahub.com/SBMLBioModels/stable/">SBMLBioModels.jl</a>. You can use the <a href="https://github.com/SciML/Catalyst.jl">Catalyst.jl</a> and <a href="https://github.com/SciML/ModelingToolkit.jl">ModelingToolkit.jl</a> GUIs. If you want to generate models using existing data, you can use a Digital Twin generator. If you want to generate data using existing models, you can use a surrogatizer and more:</p>
+<p><img alt="Pasted image 20221212140200.png" src="../../../../Pasted%20image%2020221212140200.png" /></p>
+<p><img alt="Pasted image 20221212140317.png" src="../../../../Pasted%20image%2020221212140317.png" /></p>
+<p>ModelOptimizer: package methodology to perform model calibration, analysis, HPC environment, user-friendly manner. Robust and automated framework to scale large and complex models</p>
+<p><img alt="Pasted image 20221211223830.png" src="../../../../Pasted%20image%2020221211223830.png" /></p>
+<p><img alt="model-optimizer1.png" src="../../../../Assets/model-optimizer1.png" /></p>
+<p>It can be difficult to run optimization techniques in distributed fashion, so you're oftentimes constrained to serial implementations which is costly from many aspects.
+Some model parameters may be unidentifiable from the data.</p>
+<p><img alt="model-optimizer2.png" src="../../../../Assets/model-optimizer2.png" /></p>
+<p>To address the first challenge — how do we avoid local optima?
+Leverage specialized methods from Model Optimizer. There are many calibration methods available, some of which are below. Which one you choose is going to depend at the specific problem at hand.
+To address the second challenge — how do you do effective parallelism on a particular strategy that you're deploying, how do you leverage large-scale cloud compute systems to solve these problems?
+The proper strategy selection plays a big role here. You can enable parallelism with certain strategies. Multiple shooting is one example where if it's an effective strategy it helps you break out the serial of execution. Some of the many available techniques are more amenable to distributed compute.</p>
+<p><img alt="model-optimizer3.png" src="../../../../Assets/model-optimizer3.png" /></p>
+<p>To address the third challenge — how do you quantify the uncertainty in the fit? with introducing the concept of virtual populations.
+Virtual populations are sets of parameters which sufficiently fit all trials, all observations. A trial is a different variation of the model which can be ran, it describes an <em>experiment</em>. It's a data observation. We can have collections of trials, multiple trials. With the collection we can define multi-simulation optimization problems.</p>
+<p><img alt="Pasted image 20221212014521.png" src="../../../../Pasted%20image%2020221212014521.png" /></p>
+<p>This is the problem. Before we really get into seeing this in action, we need to discuss different modeling paradigms. How do we create these simulations and have something that we can apply these model optimizer techniques to?</p>
+<h2 id="model-paradigms">Model paradigms<a class="headerlink" href="#model-paradigms" title="Permanent link">&para;</a></h2>
+<h3 id="causal-modeling">Causal Modeling<a class="headerlink" href="#causal-modeling" title="Permanent link">&para;</a></h3>
+<p><img alt="model-optimizer4.png" src="../../../../Assets/model-optimizer4.png" /></p>
+<p>So, in causal modeling, we describe the causal mechanisms of a system. The way that this works is we provide clear rules for the interactions between functional blocks. We can make an analogy to imperative programming, we're worried about the flow of computation. This leads us nicely into</p>
+<h3 id="acausal-modeling">Acausal modeling<a class="headerlink" href="#acausal-modeling" title="Permanent link">&para;</a></h3>
+<p><img alt="Pasted image 20221212015134.png" src="../../../../Pasted%20image%2020221212015134.png" /></p>
+<p>Describe the behavior and the properties of the model components and then models are built up out of the composition of the components. The overall dynamics of the model fall out of the cumulative behavior of the composition. Here, let's employ the declarative programming analogy, we only worry about the connections and the relationships between these functional blocks, we don't want to frame the problem particularly in terms of the flow of computation that has to happen, we want to think instead about individual components and the relationships between one another.</p>
+<p>Acausal modeling can be expressive. We can think like scientists and engineers and we're not limited in framing the problem only in terms of how to compute the results. We can be concise, so we can build large-scale models by connecting well-tested components. We can be reusable in that we can bring these well-tested components and entire component models with us to build new systems.</p>
+<p><img alt="model-optimizer5.png" src="../../../../Assets/model-optimizer5.png" /></p>
+<p>ModelingToolkit.jl is a Julia acausal modeling framework (TODO: <a href="../../ModelingToolkit.jl/">ModelingToolkit.jl</a>) and it will allow us to be expressive and concise when we write our DE models. It will also enable us to reuse these models so we can automatically rearrange equations for better stability. We're gonna get some extra perks here. We're gonna get optimal code by default, without having to worry about the most optimal way to compute these things we just worry about the mechanics and then we get the optimal code for free. The code will also be parallelizable by default.</p>
+<p><img alt="model-optimizer6.png" src="../../../../Assets/model-optimizer6.png" /></p>
+<p>We're also going to use some components from the ModelingToolkit Standard Library (TODO: <a href="../../ModelingToolkit.jl/">ModelingToolkit.jl</a>). So, speaking of reusability, we're gonna leverage some pre-built components from the standard library and this is going to help us dive directly into the engineering and not focus as much on the math and the programming of building all these things up from scratch. So this is exactly the intended purpose of this library.</p>
+<p><img alt="model-optimizer7.png" src="../../../../Assets/model-optimizer7.png" /></p>
+<p>A Chua circuit is a simple electrical circuit (TODO: check GitHub) that exhibits chaotic behavior. It's easy to construct and it's a classic real world example of what a chaotic system can look like. In order to get this chaotic behavior, we need to satisfy a couple requirements. We need at least one nonlinear element if you look at the diagram, and that's what $N_R$ stands for, it's going to be our nonlinear resistor. We need at least one locally active resistor, also $N_R$ in the diagram, and then we need at least three energy storage elements, so that's where the capacitors $C_1$ and $C_2$ and the inductor $L$ come into play. This is the diagram we're going to be building.</p>
+<p><img alt="model-optimizer8.png" src="../../../../Assets/model-optimizer8.png" /></p>
+<p>First, we load some packages. <code>JuliaSimModelOptimizer</code> is the first package. We're going to be pulling from the <code>Electrical</code> module from the standard library, and we have some various packages here.</p>
+<p>First we need to define the components that are not readily available in the standard library (TODO: SynBio link!). So first we need a parameter for time, and then we can build the nonlinear resistor. So this is the code representation of exactly what was shown in the diagram.
+You can see we're using some components from the electrical module, and then it's pretty straightforward to describe the various equations that we want to govern this nonlinear resistor's behavior. There's a couple nested <code>ifelse</code> statements which employ different equations based on different conditions of the nonlinear resistor. What we return from this function here is an ODESystem which is going to help us create the component. <code>NonlinearResistor</code> was the only component we needed to build ourselves.</p>
+<p><img alt="700" src="../../../../Assets/model-optimizer10.png" /></p>
+<p>So, after defining model parameters not readily available in the model library, we can now create the model components (using the standard library components and the nonlinear resistor we built).
+<code>Inductor</code>, <code>Resistor</code>, <code>Conductor</code> and <code>Ground</code> are all from the electrical module of the standard library. We can create the model components with the same labels we saw on the diagram.
+Once we have each of these elements, we can start defining the relationships between the components. That's what you see in the <code>connect</code> statements.</p>
+<p><img alt="model-optimizer11.png" src="../../../../Assets/model-optimizer11.png" /></p>
+<p>When talking about not necessarily having to worry about writing the optimal code, but instead just describing the relationships between each of the components, this is what you see here. We can connect the inductor to the ground, the nonlinear resistor to the ground, the capacitor to the ground, we can do all of this with connect statements and at the end we feed all of these connections, so all of these equations along with the <code>ODESystem</code> that we've created, put it in an element called model, and that's going to give us everything needed.
+But! We didn't pay close attention at all in making sure this runs in an optimal way, so that's where <code>structural_simplify</code> is a very handy tool. We can pass our model into this structural_simplify call. It is going to simplify the algebraic equations of the system, so wherever possible, it's going to not make redundant calls, it's going to find the fastest method to solve this model for us. TODO: look into this.
+So if we just call it we can get the optimal version of the model for free.
+After we get that, we can create our <code>ODEProblem</code> run it over a particular timespan, and give it some instructions to save at certain times (mostly for plotting later), and then we can solve the problem.</p>
+<p><img alt="model-optimizer12.png" src="../../../../Assets/model-optimizer12.png" /></p>
+<p>Now we can move on with defining the inverse problem (up to this problem model optimizer wasn't needed. Add things on that and on what the inverse problem is).
+The first step here is typically we would load the experimental data. Typically you might see something here like using the CSV package read in a file where i had all the experiment data saved and then i want to tie this data back to the model.
+In this example we're going to use the solution that we got directly above from calling <code>solve</code> on our problem.
+We have everything needed to define a trial. A trial is the model plus our data.
+We just pass in the data, the system and tell it what time to run over.
+Now that we have a trial, we can create the inverse problem.
+We're specifying the parameters that we want to optimize and we also specify the search space we wanna look for.
+We're passing a collection of trials, granted it's a single trial in this collection, but it's still a collection. We pass the model.</p>
+<p><img alt="model-optimizer13.png" src="../../../../Assets/model-optimizer13.png" /></p>
+<p>Then, we pass the search space. You can see here the model parameter, the lower and the upper bound for each. What it's gonna do, is it's going to find the model parameters in the system, it's gonna find the parameters which cause the model to be a sufficiently good fit to all data, all data here being the collection of trials that we've passed.</p>
+<p><img alt="model-optimizer14.png" src="../../../../Assets/model-optimizer14.png" /></p>
+<p>Since that's done, we move on to the next block here which is the virtual population. It's the plausible population of optimal points. So, creating this virtual population is as easy as feeding in the inverse problem, passing an optimization algorithm, in this case we're using the stochastic global optimization algorithm, we're gonna do a max iteration of 1000, 5000 is a much more realistic number to use.</p>
+<p>This DataFrame is produced:
+<img alt="Pasted image 20221212032312.png" src="../../../../Pasted%20image%2020221212032312.png" /></p>
+<p>Note that when we defined our capacitors, <code>C1</code> and <code>C2</code> we passed in values for <code>C</code>.
+You can see in the results of the virtual population (dataframe) there is parameter c, for c1 we passed in 10 you can see many of these values are right around 10. That's a good sign, it means we're getting close to that value, same thing for C2 which is at 100. This is an eyeball test.</p>
+<p>We can then run these visualizations for a more clear way to see these results.
+We're going to create a single image which is a layout of three images and for each one we're gonna use a smooth density plot to show the virtual population. Then since we know the true value we can plot it too to use for comparison.</p>
+<p><img alt="model-optimizer15.png" src="../../../../Assets/model-optimizer15.png" /></p>
+<p><img alt="Pasted image 20221212032654.png" src="../../../../Pasted%20image%2020221212032654.png" /></p>
+<p>We can see that even with a low number of iterations we're still capturing the true values pretty well in the virtual populations.</p>
+<p>To reiterate, we first created the model with ModelingToolkit, the acausal modeling framework, we had to create only one component from scratch, we were able to leverage the oneport component from the electrical module. We connected all of the model components, we got some optimized code, and then we used that to generate some synthetic data and create this inverse problem. Directly from there, we can create this virtual population. This is the whirlwind overview of what a Model Optimizer workflow may look like.</p>
+<hr />
+<p>Let's take another look at an example of a building model.
+This building model is an 81-room building, it's 9 by 3 by 3, cooled by circulating water, in the graphs is data from real meteorological data.</p>
+<p>The image on the left, the building, correlates to the vertical line moving across the graphs on the right.
+On the top we get the room temperature for each room, on the bottom the ambient temperature. There are 7 peaks and valleys on the bottom, which correlates with 7 sunrises and falls during a week. We can see the time of day and how it affects both ambient temperature and room temperature.</p>
+<p><img alt="model-optimizer16.png" src="../../../../Assets/model-optimizer16.png" /></p>
+<p><img alt="model-optimizer17.png" src="../../../../Assets/model-optimizer17.png" /></p>
+<p>How might we construct a model like this with an acausal modeling framework like modelingtoolkit?
+After we load some packages, like modelingtoolkit, differentialequations, some things to handle experimental data like DataFrames and CSV, a data interpolation package, we're also going to pull a package of components that we've developed to break down this problem into smaller portions, very similar to a standard library. So, after we've done that, and we load our meteorological data and slice the data, get everything ready, we can start setting our structural parameters for the model and the building. We set some initial temperatures for the building, the temperatures are measured in kelvin in the model. After we've also set our initial conditions, we can do some component setup.
+Very similar to how we would just pull in the capacitor, the inductor, the ground source, we can pull in these interpolated sources, constant sources, step sources, we have a function to create a HEX fan there.
+We can create each one of these components and we can create many of them in one go, which is this array syntax.</p>
+<p><img alt="model-optimizer18.png" src="../../../../Assets/model-optimizer18.png" /></p>
+<p>Then, just like before, instead of writing this massive model by hand, which comes out to be over 17000 equations, we can focus purely on the relationships between these components.
+So this model is built up by the composition of each one of these components seen before.
+The overall dynamics of this building model fall out of the cumulative behavior of that composition. Of all the individual components, of all their dynamics, and of all the connections that we've declared here you can get the dynamics of the full model.
+We only worry about the relationships, the connections between these things.
+This happens to happen in a concise, fast way because we're able to do this in a for loop so we're gonna go over each room, set up these equations, these connections for every room in the building without having to code this by hand. The output is an ODESystem.</p>
+<p><img alt="model-optimizer20.png" src="../../../../Assets/model-optimizer20.png" /></p>
+<p><img alt="model-optimizer21.png" src="../../../../Assets/model-optimizer21.png" /></p>
+<p>Loading the model directly from data now.
+Note there's 2619 equations, a massive reduction from the 17000 equations we started with.
+The model we get out of the <code>initialize_model</code> call has already went through all the various reduction algorithms to get this structurally and algebraically simplified.
+We now got a nice lean model to work with, we now want to define some model parameters, this is where the unit conversion package comes into nicely, seconds to hours, kelvin to Celsius, leaves little room for developer error.</p>
+<p><img alt="Pasted image 20221212042558.png" src="../../../../Pasted%20image%2020221212042558.png" /></p>
+<p>We're going to do the same 3 steps. Load the experimental data, define our trials, then define the inverse problem.</p>
+<p><img alt="model-optimizer23.png" src="../../../../Assets/model-optimizer23.png" /></p>
+<p>Then, we can calibrate the model.
+calibrate comes from model optimizer.
+Then, we just convert the results from Kelvin to Celsius and we have the parameter estimation for this model.</p>
+<p><img alt="model-optimizer24.png" src="../../../../Assets/model-optimizer24.png" /></p>
+<p>All these methods shown here are designed for large-scale simulations to fit to data.
+It's a form of curve fitting that is made for robustness to nonlinear behavior.
+In the questions "how do you do this chaotic system", they are well-founded.
+Because for example, chaotic system, you have O(1) error in your simulation, if you simulate it for multiple lyapunov times.
+The techniques here are robust to these behaviors. They make use of multiple shooting and they make use of things like collocation to be able to be fitting in the derivative space in a way that does not have this compounding of errors.
+If you naively slap an ODE solver into BFGS and then just directly fit and then hope and pray, a chaotic system is an example of where this approach would fail.
+This building example shows the robustness of the methods.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../../ModelingToolkitStandardLibrary.jl/" class="md-footer__link md-footer__link--prev" aria-label="Previous: ModelingToolkitStandardLibrary.jl" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              ModelingToolkitStandardLibrary.jl
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../Using%20Large%20Datasets%20in%20JuliaHub/" class="md-footer__link md-footer__link--next" aria-label="Next: Using Large Datasets in JuliaHub" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Using Large Datasets in JuliaHub
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "toc.follow", "toc.integrate"], "search": "../../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      
+    
+    
+  </body>
+</html>
